@@ -20,6 +20,7 @@ import { SupportedStatesModelsArgs } from "../../global/api/interfaces/general/s
 import { NameCheckApiArgs } from "src/app/global/api/interfaces/general/name-check.interface";
 import { NameCheckModel } from "./models/name-check.model";
 import { DisplayContainerModel } from "./models/displaycontainer.model";
+import { MockSearchService } from "./mock-search.service";
 /**
  * The service powering the property search where the user can look up claim totals for a name
  */
@@ -37,7 +38,8 @@ export class PropertySearchService extends BaseService {
     logger: LoggerService,
     storage: StorageService,
     router: Router,
-    errorModService: ErrorModalService
+    errorModService: ErrorModalService,
+    public mock: MockSearchService
   ) {
     super(http, logger, storage, router, errorModService);
   }
@@ -53,20 +55,7 @@ export class PropertySearchService extends BaseService {
       this.storage.write("cf-user-last-name", modelData.lastName);
     }
 
-    const data: NameCheckApiArgs = {
-      stateWiseSplit: [
-        {
-          state: "FL",
-          number: 102,
-          value: 4564.54,
-        },
-      ],
-      number: 102,
-      totalValue: 4564.54,
-      referralToken: "",
-    };
-
-    return from([new NameCheckModel(data)]);
+    return this.mock.search(modelData);
   }
 
   /**

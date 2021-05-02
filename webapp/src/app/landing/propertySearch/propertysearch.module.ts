@@ -19,6 +19,7 @@ import { ReferralModule } from "../../referrals/referral.module";
 import { GlobalDirectivesModule } from "../../global/directives/global-directives.module";
 import { CommonModule } from "@angular/common";
 import { SignUpModalService } from "src/app/loginsignup/signup/sign-up-modal.service";
+import { MockSearchService } from "./mock-search.service";
 
 /**
  * The Property Search module allows the user to look up for a first and last name,
@@ -51,6 +52,6 @@ import { SignUpModalService } from "src/app/loginsignup/signup/sign-up-modal.ser
     DisplayDivComponent,
   ],
   exports: [PropertySearchComponent],
-  providers: [PropertySearchService, SignUpModalService],
+  providers: [PropertySearchService, SignUpModalService, MockSearchService],
 })
 export class PropertySearchModule {}
