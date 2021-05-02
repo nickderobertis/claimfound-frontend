@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="36px" viewBox="0 0 25 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Pin-drop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="---▶︎--Graphics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-9" transform="translate(-286.000000, -274.000000)" fill="#24D2AA">
+            <g id="Pin-drop" transform="translate(286.000000, 274.000000)">
+                <path d="M25,12.6971437 C25,17.5328509 23.3839583,22.225292 20.4166667,26.0062898 L12.4264583,36 L4.58333333,26.0062898 C1.61604167,22.2250804 0,17.5326393 0,12.6971437 C0,5.68472287 5.59645833,0 12.5,0 C19.4035417,0 25,5.68472287 25,12.6971437 Z M16.9976379,14.1600885 C16.9976379,11.6129048 14.9647868,9.54799263 12.4571523,9.54799263 C9.94951776,9.54799263 7.91666667,11.6129048 7.91666667,14.1600885 C7.91666667,15.9165284 8.50367578,17.6210053 9.5815114,18.9944874 L12.4304391,22.6245912 L15.3327932,18.9944874 C16.4106288,17.6210821 16.9976379,15.9166052 16.9976379,14.1600885 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="93px" height="91px" viewBox="0 0 93 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>no-data-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="---▶︎--Graphics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-6" transform="translate(-3103.000000, -3277.000000)">
+            <g id="no-data-icon" transform="translate(3103.000000, 3277.000000)">
+                <ellipse id="Oval" fill="#BDCDE5" cx="46.5" cy="76.5" rx="46.5" ry="14.5"></ellipse>
+                <g id="review-documents-graphic" transform="translate(19.000000, 5.000000)">
+                    <polyline id="Fill-4" fill="#F4F4F1" points="12.0740016 0 12.0740016 12.0751342 0 12.0751342 0 75 57 75 57 0 12.0740016 0"></polyline>
+                    <polyline id="Fill-5" fill="#C7C6C1" points="12 0 0 12 12 12 12 0"></polyline>
+                    <polygon id="Fill-6" fill="#D8D8D2" points="7 50 50 50 50 47 7 47"></polygon>
+                    <polygon id="Fill-7" fill="#D8D8D2" points="7 57 50 57 50 54 7 54"></polygon>
+                    <polygon id="Fill-6" fill="#D8D8D2" points="7 36 50 36 50 33 7 33"></polygon>
+                    <polygon id="Fill-7" fill="#D8D8D2" points="7 43 50 43 50 40 7 40"></polygon>
+                    <polygon id="Fill-7" fill="#D8D8D2" points="7 29 50 29 50 26 7 26"></polygon>
+                    <polygon id="Fill-8" fill="#D8D8D2" points="7 64 32 64 32 61 7 61"></polygon>
+                    <polygon id="Fill-8" fill="#D8D8D2" points="7 22 32 22 32 19 7 19"></polygon>
+                </g>
+                <g id="Exit-Icon" transform="translate(62.000000, 0.000000)">
+                    <circle id="Oval-2" fill="#DF817F" cx="10" cy="10" r="10"></circle>
+                    <path d="M10,9.2156664 L13.8234996,5.3921668 L14.2156664,5 L15,5.7843336 L14.6078332,6.17650039 L10.7843336,10 L14.6078332,13.8234996 L15,14.2156664 L14.2156664,15 L13.8234996,14.6078332 L10,10.7843336 L6.17650039,14.6078332 L5.7843336,15 L5,14.2156664 L5.3921668,13.8234996 L9.2156664,10 L5.3921668,6.17650039 L5,5.7843336 L5.7843336,5 L6.17650039,5.3921668 L10,9.2156664 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="0.5" fill="#FFFFFF" stroke-linecap="square"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

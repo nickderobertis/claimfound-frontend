@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="33px" viewBox="0 0 25 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>no-data-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="---▶︎--Map-Landing-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Map-Landing-Page" transform="translate(-92.000000, -335.000000)">
+            <g id="Hero-Banner" transform="translate(76.000000, 167.000000)">
+                <g id="Group-14" transform="translate(16.000000, 165.000000)">
+                    <g id="Group-4" transform="translate(0.000000, 2.000000)">
+                        <g id="no-data-icon" transform="translate(0.000000, 1.000000)">
+                            <g id="review-documents-graphic">
+                                <polyline id="Fill-4" fill="#F4F4F1" points="5.29561472 0 5.29561472 5.31305903 0 5.31305903 0 33 25 33 25 0 5.29561472 0"></polyline>
+                                <polyline id="Fill-5" fill="#C7C6C1" points="5.68181818 0 0 5.68965517 5.68181818 5.68965517 5.68181818 0"></polyline>
+                                <polygon id="Fill-6" fill="#D8D8D2" points="3.40909091 21.6206897 22.7272727 21.6206897 22.7272727 20.4827586 3.40909091 20.4827586"></polygon>
+                                <polygon id="Fill-7" fill="#D8D8D2" points="3.40909091 25.0344828 22.7272727 25.0344828 22.7272727 23.8965517 3.40909091 23.8965517"></polygon>
+                                <polygon id="Fill-6" fill="#D8D8D2" points="3.40909091 15.9310345 22.7272727 15.9310345 22.7272727 14.7931034 3.40909091 14.7931034"></polygon>
+                                <polygon id="Fill-7" fill="#D8D8D2" points="3.40909091 18.2068966 22.7272727 18.2068966 22.7272727 17.0689655 3.40909091 17.0689655"></polygon>
+                                <polygon id="Fill-7" fill="#D8D8D2" points="3.40909091 12.5172414 22.7272727 12.5172414 22.7272727 11.3793103 3.40909091 11.3793103"></polygon>
+                                <polygon id="Fill-8" fill="#D8D8D2" points="3.40909091 28.4482759 14.7727273 28.4482759 14.7727273 27.3103448 3.40909091 27.3103448"></polygon>
+                                <polygon id="Fill-8" fill="#D8D8D2" points="3.40909091 9.10344828 14.7727273 9.10344828 14.7727273 7.96551724 3.40909091 7.96551724"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

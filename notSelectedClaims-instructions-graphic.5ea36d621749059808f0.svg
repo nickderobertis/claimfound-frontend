@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="53px" viewBox="0 0 40 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="---▶︎--Pick-Claims" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pick-claims---dekstop---state-2" transform="translate(-295.000000, -1699.000000)">
+            <g id="Canvas" transform="translate(270.000000, 148.000000)">
+                <g id="Previously-Viewed-claims" transform="translate(1.000000, 1492.000000)">
+                    <g id="message" transform="translate(0.000000, 43.000000)">
+                        <g id="Group-5" transform="translate(24.000000, 16.000000)">
+                            <g id="Group-20">
+                                <polygon id="Fill-16" fill="#E4E4E4" points="0 52.990625 40 52.990625 40 0.5 0 0.5"></polygon>
+                                <polygon id="Fill-17" fill="#A9A9A9" points="0 10.5 40 10.5 40 0.5 0 0.5"></polygon>
+                            </g>
+                            <g id="Group-9" transform="translate(28.000000, 18.000000)">
+                                <polygon id="Fill-18" fill="#E8C14C" points="0 34.990625 5 34.990625 5 13.75 0 13.75"></polygon>
+                                <polygon id="Fill-19" fill="#DB9D3D" points="5 34.990625 10 34.990625 10 13.75 5 13.75"></polygon>
+                                <polyline id="Fill-21" fill="#E0C090" points="10 14 5 0 0 14"></polyline>
+                                <polygon id="Fill-22" fill="#F1DCB9" points="0 14 10 14 5 6"></polygon>
+                                <polygon id="Fill-23" fill="#797979" points="2 8 8 8 5 0"></polygon>
+                            </g>
+                            <path d="M12,19 C12,21.209 10.209,23 8,23 C5.791,23 4,21.209 4,19 C4,16.791 5.791,15 8,15 C10.209,15 12,16.791 12,19 Z" id="Fill-27" fill="#24D2AA"></path>
+                            <path d="M12,32 C12,34.209 10.209,36 8,36 C5.791,36 4,34.209 4,32 C4,29.791 5.791,28 8,28 C10.209,28 12,29.791 12,32 Z" id="Fill-27" stroke="#245AAA"></path>
+                            <path d="M12,45 C12,47.209 10.209,49 8,49 C5.791,49 4,47.209 4,45 C4,42.791 5.791,41 8,41 C10.209,41 12,42.791 12,45 Z" id="Fill-27" stroke="#245AAA"></path>
+                            <polygon id="Fill-33" fill="#E4E4E4" points="4 6 6 6 6 4 4 4"></polygon>
+                            <polygon id="Fill-34" fill="#E4E4E4" points="9 6 11 6 11 4 9 4"></polygon>
+                            <polygon id="Fill-35" fill="#E4E4E4" points="14 6 16 6 16 4 14 4"></polygon>
+                            <polygon id="Fill-18" fill="#C6C6C6" points="15 18 24 18 24 16 15 16"></polygon>
+                            <polygon id="Fill-18" fill="#C6C6C6" points="15 21 22 21 22 19 15 19"></polygon>
+                            <polygon id="Fill-18" fill="#C6C6C6" points="15 31 24 31 24 29 15 29"></polygon>
+                            <polygon id="Fill-18" fill="#C6C6C6" points="15 34 22 34 22 32 15 32"></polygon>
+                            <polygon id="Fill-18" fill="#C6C6C6" points="15 45 24 45 24 43 15 43"></polygon>
+                            <polygon id="Fill-18" fill="#C6C6C6" points="15 48 22 48 22 46 15 46"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
