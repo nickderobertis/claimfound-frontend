@@ -7,7 +7,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Router } from "@angular/router";
-import { BehaviorSubject, Observable } from "rxjs";
+import { BehaviorSubject, from, Observable } from "rxjs";
 
 import { LoggerService } from "../../global/logger.service";
 import { StorageService } from "../../global/storage.service";
@@ -82,11 +82,12 @@ export class PropertySearchService extends BaseService {
       url: "supported-states",
     });
 
-    return this.postInject(
-      this.get(options),
-      (res: SupportedStatesModelsArgs) => {
-        return new SupportedStatesModel(res);
-      }
-    );
+    const supportedStatesData: SupportedStatesModelsArgs = {
+      supportedStates: ["FL"],
+      allStates: ["FL"],
+      state_code_to_state: { FL: "Florida" },
+    };
+
+    return from([new SupportedStatesModel(supportedStatesData)]);
   }
 }
