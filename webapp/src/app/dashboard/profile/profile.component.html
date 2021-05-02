@@ -1,0 +1,18 @@
+
+
+<cf-dashboard-header></cf-dashboard-header>
+<div class="profilepagewrapper">
+  <cf-searching-message-widget *ngIf="!totalsLoaded"></cf-searching-message-widget>
+  <cf-profile-claims-totals-widget (finishedLoading)="totalsWidgetFinishedLoadingEvent($event)" [hidden]="!totalsLoaded"></cf-profile-claims-totals-widget>
+  <div *ngIf="userDetailsLoaded" class="profilecontainer">
+    <div class="profile-headerdiv">
+      <div class="profile-header-textblock">Profile Information</div>
+    </div>
+    <div class="profile-bodycontainer">
+      <div class="navwrapper">
+        <cf-profile-navigation-component [userDetailsModel]="userDetailsStatus"></cf-profile-navigation-component>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

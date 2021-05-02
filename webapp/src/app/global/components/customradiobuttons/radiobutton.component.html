@@ -1,0 +1,6 @@
+
+<div class="profile-input-row-question-buttonwrapper">
+    <div *ngFor="let option of model.options" class="profile-input-row-question-buttondiv {{isOptionSelected(option)}}" (click)="onOptionSelect(option)">
+        <div id="{{prefix}}-{{option}}" class="profile-input-row-question-button-textblock">{{option}}</div>
+    </div>
+</div>

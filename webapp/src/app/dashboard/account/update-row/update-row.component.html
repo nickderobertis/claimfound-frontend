@@ -1,0 +1,157 @@
+<div class="update-rowContainer">
+  <div class="update-rowWrapper">
+    <div class="update-row-leftDiv">
+      <p class="update-row-left-textHeader">Email</p>
+      <p class="update-row-left-textBlock" id="account-displayed-email">
+        {{ emailUpdateModel.currentEmail }}
+      </p>
+    </div>
+    <div class="update-row-rightDiv">
+      <cf-loading-spinner
+        [size]="30"
+        *ngIf="emailUpdateLoading"
+      ></cf-loading-spinner>
+      <button
+        class="accountButton"
+        id="account-change-email-button"
+        (click)="toggleEmail()"
+        [@openClose]="isEmailOpen ? 'close' : 'open'"
+      >
+        Update
+      </button>
+    </div>
+  </div>
+  <div
+    class="update-inputContainer"
+    [@openClose]="isEmailOpen ? 'open' : 'close'"
+  >
+    <cf-error-bar [form]="emailUpdateForm"
+      [showErrors]="showEmailErrors"
+      [backendErrorKeysToFrontendFormMap]="backendErrorKeysToFrontendFormMap"
+      id="updateEmailErrorBar">
+    </cf-error-bar>
+    <button class="update-input-exitIcon" (click)="toggleEmail()">
+      <img src="../../../../../images/documents-exit-icon.svg" width="20" />
+    </button>
+    <form
+      class="update-input-formWrapper"
+      (ngSubmit)="updateEmail()"
+      [formGroup]="emailUpdateForm"
+    >
+      <input
+        class="update-input-formField"
+        id="account-change-email-new-email-input"
+        type="text"
+        name="new-email"
+        placeholder="Enter New Email"
+        [formControlName]="'email'"
+        [ngClass]="{ error: fieldHasErrors(emailFormCtrl, 'email') }"
+      />
+      <div
+        class="input-form-passwordwrapper"
+        [ngClass]="{ error: fieldHasErrors(emailFormCtrl, 'password') }"
+      >
+        <input
+          type="password"
+          id="account-change-email-password-input"
+          class="password-input"
+          name="password"
+          placeholder="Enter Password"
+          [formControlName]="'password'"
+        />
+        <div
+          class="input-form-passwordtoggle"
+          cfPasswordToggle
+          [passwordId]="'password'"
+        ></div>
+      </div>
+      <!-- <cf-progress-button [model]="emailProgressButtonModel" (submitEvent)="updateEmail()" (finishAnimationEvent)="toggleEmailIfNecessary()" #emailProgressButton [ngClass]="{'enabled': emailUpdateForm.valid}"></cf-progress-button> -->
+      <cf-simple-progress-button
+        [model]="emailProgressButtonModel"
+        id="account-change-email-submit"
+      ></cf-simple-progress-button>
+    </form>
+  </div>
+</div>
+
+<div class="update-rowContainer">
+  <div class="update-rowWrapper">
+    <div class="update-row-leftDiv">
+      <p class="update-row-left-textHeader password">Password</p>
+    </div>
+    <div class="update-row-rightDiv">
+      <cf-loading-spinner
+        [size]="30"
+        *ngIf="passwordUpdateLoading"
+      ></cf-loading-spinner>
+      <button
+        class="accountButton"
+        id="account-change-password-button"
+        (click)="togglePassword()"
+        [@openClose]="isPasswordOpen ? 'close' : 'open'"
+      >
+        Update
+      </button>
+    </div>
+  </div>
+  <div
+    class="update-inputContainer"
+    [@openClose]="isPasswordOpen ? 'open' : 'close'"
+  >
+    <cf-error-bar [form]="passwordUpdateForm"
+      [showErrors]="showPasswordErrors"
+      [backendErrorKeysToFrontendFormMap]="passwordBackendErrorKeysToFrontendFormMap"
+      id="updatePasswordErrorBar">
+    </cf-error-bar>
+    <button class="update-input-exitIcon" (click)="togglePassword()">
+      <img src="../../../../../images/documents-exit-icon.svg" width="20" />
+    </button>
+    <form
+      class="update-input-formWrapper"
+      (ngSubmit)="updatePassword()"
+      [formGroup]="passwordUpdateForm"
+    >
+      <div
+        class="input-form-passwordwrapper"
+        [ngClass]="{ error: fieldHasErrors(passwordFormCtrl, 'newPassword') }"
+      >
+        <input
+          class="password-input new"
+          id="newPassword"
+          type="password"
+          name="newPassword"
+          placeholder="Enter New Password"
+          [formControlName]="'newPassword'"
+        />
+        <div
+          class="input-form-passwordtoggle"
+          cfPasswordToggle
+          [passwordId]="'newPassword'"
+        ></div>
+      </div>
+      <div
+        class="input-form-passwordwrapper"
+        [ngClass]="{ error: fieldHasErrors(passwordFormCtrl, 'password') }"
+      >
+        <input
+          class="password-input current"
+          id="currentPassword"
+          type="password"
+          name="password"
+          placeholder="Enter Current Password"
+          [formControlName]="'password'"
+        />
+        <div
+          class="input-form-passwordtoggle"
+          cfPasswordToggle
+          [passwordId]="'currentPassword'"
+        ></div>
+      </div>
+      <!--<cf-progress-button [model]="passwordProgressButtonModel" (submitEvent)="updatePassword()" (finishAnimationEvent)="togglePasswordIfNecessary()" #passwordProgressButton [ngClass]="{'enabled': passwordUpdateForm.valid}"></cf-progress-button>-->
+      <cf-simple-progress-button
+        [model]="passwordProgressButtonModel"
+        id="account-change-password-submit"
+      ></cf-simple-progress-button>
+    </form>
+  </div>
+</div>

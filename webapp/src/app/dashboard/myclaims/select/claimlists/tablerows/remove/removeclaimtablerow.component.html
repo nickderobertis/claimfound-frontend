@@ -1,0 +1,25 @@
+<div class="selectclaimstablerowcomponent">
+    <div class="selectclaims-table-rowcontainer">
+      <div class="selectclaims-table-rowdatawrapper">
+        <div class="selectclaims-table-rowdatadiv amount">
+          <div class="selectclaims-table-rowdata-textblock amount">{{model.formattedAmount}}</div>
+        </div>
+        <div class="selectclaims-table-rowdatadiv name">
+          <div class="selectclaims-table-rowdata-textblock">{{model.concatenatedNames}}</div>
+        </div>
+        <div class="selectclaims-table-rowdatadiv state">
+          <div class="selectclaims-table-rowdata-textblock">{{model.state}}</div>
+        </div>
+        <div class="selectclaims-table-rowdatadiv address">
+          <div class="selectclaims-table-rowdata-textblock">{{model.concatenatedAddresses}}</div>
+        </div>
+        <div class="selectclaims-table-rowdatadiv reporting-company">
+          <div class="selectclaims-table-rowdata-textblock">{{model.reportingCompany}}</div>
+        </div>
+      </div>
+      <div class="{{buttonClass}}" (click)="onClaimRemoved()">
+        <div *ngIf="!model.updating" class="selectclaims-table-rowselect-textblock">Remove</div>
+        <cf-loading-spinner [size]="30" *ngIf="model.updating"></cf-loading-spinner>
+      </div>
+    </div>
+</div>

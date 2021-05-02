@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Help-Modal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="questions---Desktop" transform="translate(-386.000000, -236.000000)">
+            <g id="Group-10" transform="translate(231.000000, 147.000000)">
+                <g id="Group-12" transform="translate(82.000000, 90.000000)">
+                    <g id="Group-11" transform="translate(74.000000, 0.000000)">
+                        <g id="Envalope" transform="translate(14.000000, 18.000000)">
+                            <rect id="Rectangle-4" stroke="#888A8D" stroke-width="1.5" x="0" y="0" width="33" height="24" rx="3"></rect>
+                            <path d="M16.5,14.1176471 L26.8125,4.94117647" id="Line" stroke="#24D2AA" stroke-linecap="square"></path>
+                            <path d="M16.1278103,14.3231541 L6.16132113,4.75212463" id="Line" stroke="#24D2AA" stroke-linecap="square"></path>
+                            <path d="M13.75,12.7058824 L7.5625,19.0588235" id="Line" stroke="#24D2AA" stroke-linecap="square"></path>
+                            <path d="M18.8488464,13.0851907 L25.0363464,19.4381319" id="Line" stroke="#24D2AA" stroke-linecap="square"></path>
+                        </g>
+                        <ellipse id="Oval" stroke="#24D2AA" stroke-width="2" cx="30" cy="30" rx="30" ry="30"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

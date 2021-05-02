@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<cf-help-modal
+  #modal
+  *ngIf="modal"
+  (closeModalEvent)="closeDocument($event)"
+></cf-help-modal>
+<div class="navbar-custom">
+  <div class="navbar-logo-div">
+    <img class="logo-full-icon" routerLink="/" />
+    <img width="50" class="logo-half-icon" routerLink="/" />
+  </div>
+  <div class="navbar-menu-container">
+    <div class="navbar-menu-links-wrapper">
+      <div class="navbar-menu-links-div" routerLink="/dashboard/myclaims">
+        <div class="navbar-selected-div not-selected"></div>
+        <a class="navbar-menu-links-textlink">My Claims</a>
+      </div>
+      <div class="navbar-menu-links-div" routerLink="/dashboard/profile">
+        <div class="navbar-selected-div profile not-selected"></div>
+        <a class="navbar-menu-links-textlink">Profile</a>
+      </div>
+      <div class="navbar-menu-links-div help" (click)="openDocument($event)">
+        <img src="/images/Life Preserver_1.svg" width="30" class="help-icon" />
+      </div>
+    </div>
+    <div
+      class="navbar-menu-dropdown-wrapper"
+      id="dashboard-navigation-dropdown"
+    >
+      <div class="navbar-menu-dropdown-div">
+        <div class="navbar-menu-dropdown-textblock">Hi {{ userName }}</div>
+        <img
+          src="/images/navbar-menu-icon.png"
+          width="15"
+          class="dropdown-arrow-icon"
+        />
+      </div>
+      <div class="navbar-menu-dropdown-drop">
+        <div
+          class="dropdown-drop-div dashboard"
+          routerLink="/dashboard/myclaims"
+        >
+          <a class="dropdown-drop-textblock">My Claims</a>
+        </div>
+        <div class="dropdown-drop-div profile" routerLink="/dashboard/profile">
+          <a class="dropdown-drop-textblock">Profile</a>
+        </div>
+        <div
+          class="dropdown-drop-div account"
+          id="dashboard-account-link"
+          routerLink="/dashboard/account"
+        >
+          <a class="dropdown-drop-textblock">Account</a>
+        </div>
+        <div class="dropdown-drop-div help" (click)="openDocument($event)">
+          <div class="dropdown-drop-textblock">Help</div>
+        </div>
+        <div
+          class="dropdown-drop-div logout"
+          id="dashboard-log-out-link"
+          routerLink="/login/logout"
+        >
+          <a class="dropdown-drop-textblock">Log Out</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

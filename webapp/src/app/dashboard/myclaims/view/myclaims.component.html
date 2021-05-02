@@ -1,0 +1,173 @@
+<div class="top-level-container">
+  <div *ngIf="loadingSpinner" class="loading-spinner-div">
+    <cf-loading-spinner></cf-loading-spinner>
+  </div>
+
+  <div [hidden]="!showSubmittedClaims || loading">
+    <div class="claims-container">
+      <div class="submitted-claims-wrapper">
+        <cf-submitted-claims-totals-widget
+          (showWidgetEmitter)="setShowWidget($event)"
+        ></cf-submitted-claims-totals-widget>
+      </div>
+    </div>
+  </div>
+
+  <div class="claims-container" *ngIf="!loading">
+    <cf-my-claims-box *ngIf="!isDetailsEmpty" [details]="details"></cf-my-claims-box>
+
+    <div
+      *ngIf="hasMultiOwnerClaims"
+      class="multi-owner-container"
+      id="multi-owner-pause-message"
+    >
+      <div class="multi-owner-wrapper">
+        <div class="multi-owner-div-right">
+          <div class="multi-owner-div-textblock-1">
+            It looks like you have a multi-owner claim!
+          </div>
+          <div class="multi-owner-div-textblock-2">
+            Multi-owner claims require special steps to process and we are
+            currently working to add this feature to our platform.
+          </div>
+          <div class="multi-owner-div-textblock-2">
+            They are listed in the “Claims In Process” box above, but will not
+            be included in the claims process if you have a single-owner claim.
+          </div>
+        </div>
+        <div class="multi-owner-div-left">
+          <img src="/images/multi-owner-graphic.svg" width="120" />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="myclaims-instructionscomponent"
+      *ngIf="(hasDetails || hasPreviouslyViewedClaims) && !loadingSpinner && !isDetailsEmpty && !hasOnlyMultiOwnerClaims"
+    >
+      <div class="myclaims-instructionscontainer">
+        <div class="instructions-headerwrapper">
+          <div class="instructions-header-textheader">
+            Claims Process Instructions
+          </div>
+          <div class="instructions-header-textblock">
+            Please complete the steps below to recover your unclaimed money.
+          </div>
+        </div>
+        <div class="instructionsrowcomponent">
+          <div class="instructions-rowwrapper">
+            <div class="instructions-row-graphicdiv hide">
+              <div class="instructions-row-graphic1"></div>
+            </div>
+            <div class="instructions-row-contentdiv">
+              <div class="instructions-row-textheader">
+                Step 1: Upload Documents
+              </div>
+              <div class="instructions-row-textblock">
+                Provide documentation to prove your claims actually belongs to
+                you.
+              </div>
+            </div>
+            <div class="instructions-row-navdiv hidden">
+              <a href="#" class="instructions-row-nav-button hidden w-button"
+                >Start Task</a
+              >
+              <div class="instructions-row-nav-taskwrapper">
+                <div class="instructions-row-nav-taskdiv">
+                  <!-- <img src="images/Checkmark-icon.png" width="20" alt="" class="instructions-row-nav-task-icon"> -->
+                  <div class="instructions-row-nav-task-textblock">
+                    Complete
+                  </div>
+                </div>
+                <a href="#" class="instructions-row-nav-textlink">View Task</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="instructionsrowcomponent">
+          <div class="instructions-rowwrapper">
+            <div class="instructions-row-graphicdiv">
+              <div class="instructions-row-graphic2"></div>
+            </div>
+            <div class="instructions-row-contentdiv">
+              <div class="instructions-row-textheader">
+                Step 2: E-sign Claim Forms
+              </div>
+              <div class="instructions-row-textblock">
+                Review and sign your state claim forms to finalize the
+                paperwork.
+              </div>
+            </div>
+            <div class="instructions-row-navdiv hidden">
+              <a href="#" class="instructions-row-nav-button w-button"
+                >Start Task</a
+              >
+              <div class="instructions-row-nav-taskwrapper hidden">
+                <div class="instructions-row-nav-taskdiv">
+                  <!-- <img src="images/Checkmark-icon.png" width="20" alt="" class="instructions-row-nav-task-icon"> -->
+                  <div class="instructions-row-nav-task-textblock">
+                    Complete
+                  </div>
+                </div>
+                <a href="#" class="instructions-row-nav-textlink">View Task</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="instructionsrowcomponent">
+          <div class="instructions-rowwrapper">
+            <div class="instructions-row-graphicdiv">
+              <div class="instructions-row-graphic3"></div>
+            </div>
+            <div class="instructions-row-contentdiv">
+              <div class="instructions-row-textheader">
+                Step 3: Final Review &amp; Submit
+              </div>
+              <div class="instructions-row-textblock">
+                Review your claim package for errors and then we’ll submit it to
+                the state for you.
+              </div>
+            </div>
+            <div class="instructions-row-navdiv hidden">
+              <a href="#" class="instructions-row-nav-button inactive w-button"
+                >Start Task</a
+              >
+              <div class="instructions-row-nav-taskwrapper hidden">
+                <div class="instructions-row-nav-taskdiv">
+                  <!-- <img src="images/Checkmark-icon.png" width="20" alt="" class="instructions-row-nav-task-icon"> -->
+                  <div class="instructions-row-nav-task-textblock">
+                    Complete
+                  </div>
+                </div>
+                <a href="#" class="instructions-row-nav-textlink">View Task</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-step-wrapper" *ngIf="!isDetailsEmpty && !hasOnlyMultiOwnerClaims">
+      <cf-dashboard-step
+        [hidden]="loading"
+        [currentPage]="pageName"
+      ></cf-dashboard-step>
+    </div>
+
+    <cf-select-claims-totals-widget
+      [showSelectClaimsLink]="true"
+      (gotHasNewOrPreviouslyViewedClaims)="
+        onGetHasNewOrPreviouslyViewedClaims($event)
+      "
+    ></cf-select-claims-totals-widget>
+  </div>
+
+  <cf-profile-completion-modal
+    [raiseImmediately]="raiseImmediately"
+    [showRedCross]="showRedCross"
+  ></cf-profile-completion-modal>
+
+  <cf-relative-claims-widget-container
+    [hidden]="loading"
+  ></cf-relative-claims-widget-container>
+</div>

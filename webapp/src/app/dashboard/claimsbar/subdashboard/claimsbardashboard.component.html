@@ -1,0 +1,11 @@
+
+<div class="dashboard-body">
+    <cf-dashboard-header></cf-dashboard-header>
+    <cf-claimsbar></cf-claimsbar>
+    <cf-loading-modal *ngIf="loading"></cf-loading-modal>
+    <div class="dashboard-canvas-section" [ngClass]="{'hidden': loading}">
+            <div class="canvas-body-wrapper">
+                <router-outlet></router-outlet>
+            </div>
+    </div>
+</div>

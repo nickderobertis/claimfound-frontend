@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<div class="header-section">
+  <div class="header-container">
+    <div
+      class="header-wrapper-logo-div"
+      routerLink="{{ links.header.landing.url }}"
+    ></div>
+    <div class="header-wrapper-right-div-1">
+      <a
+        class="header-textlink customers"
+        routerLink="{{ links.header.userStories.url }}"
+      >
+        {{ links.header.userStories.text }}
+      </a>
+      <a class="header-textlink" href="{{ links.header.help.url }}">
+        {{ links.header.help.text }}
+      </a>
+
+      <a class="header-textlink" routerLink="{{ links.header.about.url }}">
+        {{ links.header.about.text }}
+      </a>
+
+      <a class="header-textlink blog" routerLink="{{ links.header.maps.url }}">
+        {{ links.header.maps.text }}
+      </a>
+
+      <a
+        id="sign-up-button"
+        class="sign-up-button"
+        (click)="showSignUpModal($event)"
+        *ngIf="!isLoggedIn"
+      >
+        {{ links.header.signup.text }}
+      </a>
+
+      <a
+        id="sign-in-button"
+        class="sign-in-button"
+        routerLink="{{ links.header.signin.url }}"
+        *ngIf="!isLoggedIn"
+      >
+        {{ links.header.signin.text }}
+      </a>
+
+      <a
+        class="sign-up-button"
+        routerLink="{{ dashboardButtonRoute }}"
+        *ngIf="isLoggedIn"
+      >
+        {{ links.header.dashboard.text }}
+      </a>
+
+      <a
+        class="sign-in-button"
+        routerLink="{{ links.header.signout.url }}"
+        *ngIf="isLoggedIn"
+      >
+        {{ links.header.signout.text }}
+      </a>
+    </div>
+    <div class="header-wrapper-right-div-2">
+      <img
+        src="/images/hamberger-menu.svg"
+        width="25"
+        (click)="showMenu($event)"
+      />
+    </div>
+  </div>
+  <div class="header-wrapper-right-div-2">
+    <img
+      src="/images/hamberger-menu.svg"
+      width="25"
+      (click)="showMenu($event)"
+    />
+  </div>
+</div>
+
+<div *ngIf="menuVisible" class="hamberger-menu-section">
+  <div class="hamberger-menu-container">
+    <div class="hamberger-menu-exit-wrapper">
+      <img
+        src="/images/exit-icon.svg"
+        href="#"
+        (click)="hideMenu($event)"
+        class="exit-icon"
+        width="20"
+        height="auto"
+      />
+    </div>
+    <div class="hamberger-menu-selection-wrapper">
+      <a
+        class="hamberger-menu-textlink"
+        routerLink="{{ links.header.userStories.url }}"
+        (click)="hideMenu($event)"
+      >
+        {{ links.header.userStories.text }}
+      </a>
+
+      <a class="hamberger-menu-textlink" href="{{ links.header.help.url }}">
+        {{ links.header.help.text }}
+      </a>
+
+      <a
+        class="hamberger-menu-textlink"
+        routerLink="{{ links.header.about.url }}"
+        (click)="hideMenu($event)"
+      >
+        {{ links.header.about.text }}
+      </a>
+
+      <a class="hamberger-menu-textlink" href="{{ links.header.blog.url }}">
+        {{ links.header.blog.text }}
+      </a>
+
+      <a
+        class="hamberger-menu-textlink"
+        routerLink="{{ links.header.maps.url }}"
+      >
+        {{ links.header.maps.text }}
+      </a>
+
+      <a
+        class="hamberger-menu-up-button"
+        (click)="showSignUpModal($event)"
+        (click)="hideMenu($event)"
+        *ngIf="!isLoggedIn"
+      >
+        {{ links.header.signup.text }}
+      </a>
+
+      <a
+        class="hamberger-menu-in-button"
+        routerLink="{{ links.header.signin.url }}"
+        *ngIf="!isLoggedIn"
+      >
+        {{ links.header.signin.text }}
+      </a>
+
+      <a
+        class="hamberger-menu-up-button"
+        routerLink="{{ links.header.dashboard.url }}"
+        *ngIf="isLoggedIn"
+      >
+        {{ links.header.dashboard.text }}
+      </a>
+
+      <a
+        class="hamberger-menu-in-button"
+        routerLink="{{ links.header.signout.url }}"
+        *ngIf="isLoggedIn"
+      >
+        {{ links.header.signout.text }}
+      </a>
+
+      <img
+        src="/images/Claimfound-logo-white.png"
+        width="175"
+        heigh="auto"
+        class="hamberger-menu-logo"
+      />
+      <div class="hamberger-menu-address">{{ address }}</div>
+      <div class="hamberger-menu-rights">{{ year }} All Rights Reserved</div>
+    </div>
+  </div>
+</div>

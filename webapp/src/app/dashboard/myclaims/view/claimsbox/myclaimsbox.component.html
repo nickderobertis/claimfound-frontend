@@ -1,0 +1,26 @@
+
+<div class="claims-container">
+    <div class="claims-header">
+        <h3 class="claims-header-h3">Claims In Process</h3>
+    </div>
+
+     <div class="claims-load-container">
+
+        <div class="loading-spinner-container" *ngIf="dispModal">
+            <cf-loading-spinner *ngIf="dispModal" [size]="30" style="padding-top: 75px;" ></cf-loading-spinner>
+        </div>
+
+         <div *ngIf="!displayNoClaims">
+             <cf-claim-table [model]="details"></cf-claim-table>
+         </div>
+
+        <div class="dashboard-content-myclaims-body" *ngIf="displayNoClaims">
+            <div class="no-claims-body-div">
+                <div id="no-claims-h1" class="no-claims-h1">You are a very responsible and organized person!</div>
+                <div class="no-claims-textblock">You don't currently have any claims to process, but we'll alert you in the future when we find you some unclaimed money.</div>
+            </div>
+            <img src="/images/results-graphic-claimsGraphic.svg" width="150" class="no-claims-body-icon">
+        </div>
+
+     </div>
+</div>

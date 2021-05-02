@@ -1,0 +1,10 @@
+<div class="profileentrycomponent">
+  <div class="profile-entrycontainer">
+    <div *ngIf="hasNoData" class="profile-entry-nodata-icon" class="profile-entry-nodataWrapper">
+      <div *ngIf="hasNoData" class="profile-entry-nodata-textblock"><span style="font-size: 18px; margin-right: 5px;">✏️</span>You haven't added any information yet, please add some below.</div>
+    </div>
+    <div *ngFor='let row of model.rows'>
+      <cf-profile-entry-row-component [model]="row" (deleteEvent)="onDeleteEvent($event)"></cf-profile-entry-row-component>
+    </div>
+  </div>
+</div>

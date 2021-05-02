@@ -1,0 +1,33 @@
+<div *ngIf="!loading" class="locationpagecomponent">
+  <div class="locationoverviewcomponent">
+    <cf-location-overview
+      [model]="model"
+      [locationsModel]="locationsModel"
+      [urlLocationsModel]="urlLocationsModel"
+    >
+    </cf-location-overview>
+  </div>
+  <div class="locationmapcomponent">
+    <cf-googlemap-view [overviewModel]="model"></cf-googlemap-view>
+  </div>
+  <cf-map-point-table></cf-map-point-table>
+  <div class="locationtablecontainer">
+    <div class="locationtablewrapper">
+      <div class="locationtablecomponent">
+        <cf-location-table
+          [model]="model.topLists.companies"
+          [locationsModel]="locationsModel"
+        ></cf-location-table>
+      </div>
+      <div class="locationtablecomponent">
+        <cf-location-table
+          [model]="model.topLists.upTypes"
+          [locationsModel]="locationsModel"
+        ></cf-location-table>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="loading" class="map-page-spinner">
+  <cf-loading-spinner></cf-loading-spinner>
+</div>

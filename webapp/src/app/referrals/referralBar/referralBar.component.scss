@@ -1,0 +1,1410 @@
+.widget-container {
+  margin-bottom: 25px;
+}
+
+.panel-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 730px;
+  height: 50px;
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 0.5px solid hsla(216, 2%, 54%, 0.5);
+  border-right: 0.5px solid hsla(216, 2%, 54%, 0.5);
+  border-left: 0.5px solid hsla(216, 2%, 54%, 0.5);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #e4e7e9;
+}
+
+.panel-header-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.panel-body {
+  display: block;
+  width: 730px;
+  padding: 0px;
+  margin: auto;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  border-style: none solid solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  background-color: #fff;
+}
+
+.panel-body-message-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.panel-body-message-wrapper-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.panel-body-message-wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.panel-body-message-div-header-texblock {
+  margin-bottom: 2.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.panel-body-message-div-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-data-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-top: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.deceased-claims-data-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.deceaed-claims-data-div-textheader {
+  margin-bottom: 7.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-data-div-textblock-1 {
+  font-family: Graphik, sans-serif;
+  color: rgba(36, 90, 170, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-data-div-textblock-2 {
+  font-family: Graphik, sans-serif;
+  color: #24d2aa;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-questions-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid hsla(216, 2%, 54%, 0.5);
+  border-bottom: 1px none hsla(216, 2%, 54%, 0.5);
+  background-color: rgba(36, 90, 170, 0.25);
+}
+
+.deceased-claims-questions-container {
+  padding-left: 25px;
+}
+
+.deceased-claims-questions-textblock {
+  margin-right: 50px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  line-height: 24px;
+}
+
+.deceaed-claims-data-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 135px;
+  height: 40px;
+  margin-right: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.deceaed-claims-data-button:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.deceased-claims-questions-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.deceased-claims-refer-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75px;
+  border-top: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.deceased-claims-refer-container.property-search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75px;
+  border-top: 1px solid hsla(216, 2%, 54%, 0.5);
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.deceased-claims-refer-div-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 67.5%;
+  padding-left: 15px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.the-god-damnit-div {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 32.5%;
+}
+
+.deceased-claims-refer-div-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 27.5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid hsla(216, 2%, 54%, 0.5);
+  cursor: pointer;
+}
+
+.deceased-claims-refer-div-2:hover {
+  background-color: rgba(36, 90, 170, 0.25);
+}
+
+.deceased-claims-refer-div-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 27.5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid hsla(216, 2%, 54%, 0.5);
+  cursor: pointer;
+}
+
+.deceased-claims-refer-div-3:hover {
+  background-color: rgba(36, 90, 170, 0.25);
+}
+
+.deceased-claims-refer-div-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.deceased-claims-refer-div-4-spacer-1 {
+  height: 60px;
+  padding-top: 17px;
+}
+.deceased-claims-refer-div-4-spacer-2 {
+  height: 15px;
+  padding-top: 2px;
+}
+
+.deceased-claims-refer-div-4-spacer-2-textblock {
+  font-family: Graphik, sans-serif;
+  color: #24d2aa;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.deceased-claims-refer-div-4:hover {
+  background-color: rgba(36, 90, 170, 0.25);
+}
+
+.deceased-claims-refer-div-1-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-refer-div-2-textblock {
+  margin-bottom: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-refer-div-3-textblock {
+  margin-bottom: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-refer-div-4-textblock-1 {
+  margin-bottom: 7.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-refer-div-4-graphic {
+  margin-left: 25px;
+}
+
+.deceased-claims-refer-div-4-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  width: 92%;
+  height: 30px;
+  padding-left: 7.5px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f6f7f9;
+}
+
+.deceased-claims-refer-div-4-textblock-2 {
+  font-family: Graphik, sans-serif;
+  color: #888a8d;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.deceased-claims-refer-div-spacer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+}
+
+.deceased-claims-refer-green-check-image {
+  margin-right: 20px;
+}
+
+.deceased-claims-loading-spinner-div {
+  position: relative;
+  left: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.deceased-relative-modal {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.deceased-relative-modal-container {
+  width: 400px;
+  height: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+  position: fixed;
+  top: 15%;
+  left: 40%;
+  z-index: 1;
+}
+
+.deceased-relative-modal-exit-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.deceased-relative-modal-header-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.deceased-claims-email-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  padding-left: 20px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid hsla(216, 2%, 54%, 0.5);
+  background-color: rgba(36, 90, 170, 0.25);
+}
+
+.deceased-claims-email-container.property-search {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+}
+
+.deceased-claims-email-container.sent.property-search {
+  height: auto;
+  padding: 10px 15px 10px;
+  margin-top: -35px;
+  border-top: 1px solid hsla(216, 2%, 54%, 0.5);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  background-color: #c8f4ea;
+}
+
+.deceased-claims-email-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 30px;
+  margin-right: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.deceased-claims-email-textblock {
+  margin-right: 20px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.deceased-claims-email-textblock.sent {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.deceased-claims-email-box-textblock {
+  padding-left: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
+
+.deceased-claims-email-box-textblock.property-search {
+  background-color: #f5f7fa;
+}
+
+.deceased-claims-email-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.deceased-claims-email-button:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.deceased-relative-modal-exit-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.deceased-relative-modal-exit-icon {
+  cursor: pointer;
+}
+
+.deceased-relative-modal-header-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.claimfound-check-graphic {
+  margin-bottom: 25px;
+}
+
+.deceased-relative-modal-header-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  font-size: 14px;
+}
+
+.deceased-relative-modal-data-wrapper {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.deceased-relative-modal-data-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.deceased-relative-modal-data-textblock-1 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-relative-modal-data-textblock-2 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.deceased-relative-modal-data-textblock-3 {
+  font-family: Graphik, sans-serif;
+  color: #24d2aa;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-relative-modal-message-wrapper {
+  padding: 15px 20px 20px;
+}
+
+.deceased-relative-modal-message-textblock {
+  margin-bottom: 10px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+}
+
+.deceased-relative-modal-message-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.deceased-relative-modal-message-button:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.deceased-relative-modal-message-button-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .widget-container {
+  }
+
+  .panel-header {
+  }
+
+  .panel-header-textblock {
+  }
+
+  .panel-body {
+  }
+
+  .panel-body-message-container {
+  }
+
+  .panel-body-message-wrapper-left {
+  }
+
+  .panel-body-message-wrapper-right {
+  }
+
+  .panel-body-message-div-header-texblock {
+  }
+
+  .panel-body-message-div-textblock {
+  }
+
+  .deceased-claims-data-wrapper {
+  }
+
+  .deceased-claims-data-div {
+  }
+
+  .deceaed-claims-data-div-textheader {
+  }
+
+  .deceased-claims-data-div-textblock-1 {
+  }
+
+  .deceased-claims-data-div-textblock-2 {
+  }
+
+  .deceased-claims-questions-container {
+  }
+
+  .deceased-claims-questions-textblock {
+  }
+
+  .deceaed-claims-data-button {
+  }
+
+  .deceaed-claims-data-button:hover {
+  }
+
+  .deceased-claims-questions-wrapper {
+  }
+
+  .deceased-claims-refer-container {
+  }
+
+  .deceased-claims-refer-div-1 {
+  }
+
+  .deceased-claims-refer-div-2 {
+  }
+
+  .deceased-claims-refer-div-2:hover {
+  }
+
+  .deceased-claims-refer-div-3 {
+  }
+
+  .deceased-claims-refer-div-3:hover {
+  }
+
+  .deceased-claims-refer-div-4 {
+  }
+
+  .deceased-claims-refer-div-1-textblock {
+  }
+
+  .deceased-claims-refer-div-2-textblock {
+  }
+
+  .deceased-claims-refer-div-3-textblock {
+  }
+
+  .deceased-claims-refer-div-4-textblock-1 {
+  }
+
+  .deceased-claims-refer-div-4-box {
+  }
+
+  .deceased-claims-refer-div-4-textblock-2 {
+  }
+
+  .deceased-claims-refer-div-spacer {
+  }
+
+  .deceased-claims-refer-green-check-image {
+  }
+
+  .deceased-claims-loading-spinner-div {
+  }
+
+  .deceased-relative-modal-container {
+    left: 25%;
+  }
+
+  .deceased-relative-modal-exit-div {
+  }
+
+  .deceased-relative-modal-header-div {
+  }
+
+  .deceased-claims-email-container {
+  }
+
+  .deceased-claims-email-box {
+  }
+
+  .deceased-claims-email-textblock {
+  }
+
+  .deceased-claims-email-box-textblock {
+  }
+
+  .deceased-claims-email-button {
+  }
+
+  .deceased-relative-modal {
+  }
+
+  .deceased-relative-modal-exit-div {
+  }
+
+  .deceased-relative-modal-header-div {
+  }
+
+  .claimfound-check-graphic {
+  }
+
+  .deceased-relative-modal-header-textblock {
+  }
+
+  .deceased-relative-modal-data-wrapper {
+  }
+
+  .deceased-relative-modal-data-div {
+  }
+
+  .deceased-relative-modal-data-textblock-1 {
+  }
+
+  .deceased-relative-modal-data-textblock-2 {
+  }
+
+  .deceased-relative-modal-data-textblock-3 {
+  }
+
+  .deceased-relative-modal-message-wrapper {
+  }
+
+  .deceased-relative-modal-message-textblock {
+  }
+
+  .deceased-relative-modal-message-button {
+  }
+
+  .deceased-relative-modal-message-button:hover {
+  }
+
+  .deceased-relative-modal-message-button-div {
+  }
+}
+
+@media (max-width: 767px) {
+  .widget-container {
+  }
+
+  .panel-header {
+    width: 481px;
+  }
+
+  .panel-header-textblock {
+    font-size: 13px;
+  }
+
+  .panel-body {
+    width: 481px;
+  }
+
+  .deceaed-claims-data-div-textheader {
+    font-size: 12px;
+  }
+  .deceased-claims-data-div-textblock-1 {
+    font-size: 12px;
+  }
+  .deceased-claims-questions-container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .deceased-claims-questions-textblock {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .deceaed-claims-data-button {
+    width: 125px;
+    margin-right: 0px;
+    font-size: 14px;
+  }
+
+  .deceaed-claims-data-button.middle {
+    margin: 0px 15px;
+  }
+
+  .deceased-claims-questions-wrapper {
+    width: 100%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .deceased-claims-refer-container.property-search {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    height: auto;
+    border-top: none;
+  }
+
+  .deceased-claims-refer-div-1.property-search {
+    width: 100%;
+    padding: 15px 10px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: 1px solid hsla(216, 2%, 54%, 0.5);
+  }
+
+  .the-god-damnit-div {
+    width: 55%;
+  }
+
+  .the-god-damnit-div.property-search {
+    width: 100%;
+  }
+
+  .deceased-claims-refer-div-1 {
+    width: 45%;
+    padding-right: 10px;
+  }
+  .deceased-claims-refer-div-2 {
+    width: 27.5%;
+  }
+  .deceased-claims-refer-div-3 {
+    width: 27.5%;
+  }
+  .deceased-claims-refer-div-4 {
+    width: 45%;
+  }
+  .deceased-claims-refer-div-1-textblock {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .deceased-claims-refer-div-1-textblock.property-search {
+    text-align: center;
+  }
+
+  .deceased-claims-refer-div-spacer {
+    width: 67.5%;
+  }
+
+  .deceased-claims-email-container {
+    padding-left: 10px;
+  }
+
+  .deceased-claims-email-container.property-search {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    padding: 15px 0px;
+  }
+
+  .deceased-claims-email-container.sent.property-search {
+    display: block;
+  }
+
+  .deceased-claims-email-textblock {
+    width: 150px;
+    line-height: 18px;
+    margin-right: 15px;
+  }
+
+  .deceased-claims-email-textblock.property-search {
+    width: auto;
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
+
+  .deceased-claims-email-textblock.sent {
+    width: auto;
+  }
+
+  .deceased-claims-email-box {
+    width: 175px;
+    margin-right: 15px;
+  }
+
+  .deceased-claims-email-box.property-search {
+    width: 75%;
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
+
+  .deceased-claims-email-button.property-search {
+    width: 75%;
+  }
+
+  .deceased-relative-modal-container {
+    left: 7.5%;
+  }
+
+  .deceased-relative-modal-container {
+    left: 7.5%;
+  }
+}
+
+@media (max-width: 479px) {
+  .widget-container {
+  }
+
+  .widget-wrapper {
+    display: block;
+    width: 350px;
+  }
+
+  .panel-header {
+    width: 350px;
+  }
+  .panel-header-textblock {
+    font-size: 13px;
+  }
+
+  .panel-body {
+    width: 350px;
+    float: none;
+  }
+
+  .deceased-claims-data-wrapper {
+    padding-bottom: 20px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .deceased-claims-data-div {
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .deceased-claims-questions-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .deceased-claims-questions-textblock {
+    font-size: 14px;
+  }
+  .deceaed-claims-data-button {
+    width: 120px;
+    font-size: 12px;
+  }
+  .deceased-claims-questions-wrapper {
+    width: 90%;
+  }
+  .deceased-claims-refer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+  }
+  .deceased-claims-refer-div-1 {
+    width: 100%;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-bottom: 0.5px solid hsla(216, 2%, 54%, 0.5);
+    border-right-style: none;
+  }
+
+  .deceased-claims-refer-div-1-textblock {
+    text-align: center;
+  }
+
+  .the-god-damnit-div {
+    width: 100%;
+  }
+
+  .deceased-claims-refer-div-spacer {
+    width: 100%;
+  }
+  .deceased-relative-modal-container {
+    left: 5%;
+    right: 5%;
+    width: auto;
+  }
+  .deceased-relative-modal-header-div {
+    padding-bottom: 15px;
+  }
+  .deceased-relative-modal-header-textblock {
+    font-size: 12px;
+    text-align: center;
+  }
+  .deceased-relative-modal-data-wrapper {
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  .deceased-relative-modal-data-textblock-1 {
+    font-size: 12px;
+  }
+  .deceased-relative-modal-data-textblock-2 {
+    font-size: 12px;
+  }
+  .deceased-relative-modal-data-textblock-3 {
+    font-size: 12px;
+  }
+  .deceased-relative-modal-message-textblock {
+    font-size: 11px;
+  }
+  .deceased-relative-modal-message-button {
+    width: 175px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+
+  .deceased-claims-email-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    padding: 15px;
+  }
+
+  .deceased-claims-email-container.sent {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: auto;
+    padding: 10px 10px;
+  }
+
+  .deceased-claims-email-textblock {
+    width: auto;
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
+
+  .deceased-claims-email-textblock.sent {
+    width: auto;
+    margin-bottom: 0px;
+  }
+
+  .deceased-claims-refer-green-check-image {
+    margin-right: 10px;
+  }
+
+  .deceased-claims-email-box {
+    width: 200px;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    height: 40px;
+  }
+
+  .deceased-claims-email-button {
+    width: 200px;
+    height: 40px;
+  }
+
+  .deceased-claims-email-container.property-search {
+    padding: 15px 25px;
+  }
+
+  .deceased-claims-email-textblock.property-search {
+    width: auto;
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
+
+  .deceased-claims-email-box.property-search {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 0px;
+  }
+
+  .deceased-claims-email-button.property-search {
+    width: 100%;
+  }
+}

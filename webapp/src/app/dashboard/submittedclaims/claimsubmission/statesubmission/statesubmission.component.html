@@ -1,0 +1,10 @@
+<div class="submittedclaims-statecontainer">
+    <div class="statecontainer-textheader">📬 Claim Tracking</div>
+    <div class="statecontainer-textblock1">{{ model.state }} Submission ID: <span class="statecontainer-textblock-span1">{{ model.stateSubmissionId }}</span></div>
+
+    <cf-state-claim-status [model]="model"></cf-state-claim-status>
+
+    <div class="statecontainer-toggletextblock" (click)="toggleDetailsClick()">{{ displayToggleText }}</div>
+
+    <cf-claim-review *ngIf="displayDetails" [model]="model.details"></cf-claim-review>
+</div>

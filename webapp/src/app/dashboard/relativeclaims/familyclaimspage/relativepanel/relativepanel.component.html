@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<div class="family-claims-container">
+
+  <div class="widget-container">
+
+    <div class="panel-header">
+      <div class="panel-header-textblock">{{model.name.capitalizedFirstAndLastName}}
+      </div>
+    </div>
+
+    <div class="panel-body">
+      <div class="deceased-claims-data-wrapper">
+        <div class="deceased-claims-data-div">
+          <div class="deceaed-claims-data-div-textheader">Relationship</div>
+          <div class="deceased-claims-data-div-textblock-1">{{model.relationship}}</div>
+        </div>
+        <div class="deceased-claims-data-div">
+          <div class="deceaed-claims-data-div-textheader">Total Claims</div>
+          <div class="deceased-claims-data-div-textblock-2">{{model.claimTotals.numberOfClaims | number}}</div>
+        </div>
+        <div class="deceased-claims-data-div">
+          <div class="deceaed-claims-data-div-textheader">Total Value</div>
+          <div class="deceased-claims-data-div-textblock-2">{{model.claimTotals.formattedTotalValue}}</div>
+        </div>
+        <div class="deceased-claims-data-div">
+          <div class="deceaed-claims-data-div-textheader">Average Value</div>
+          <div class="deceased-claims-data-div-textblock-2">{{model.claimTotals.formattedAverageValue}}</div>
+        </div>
+      </div>
+
+      <div class="deceased-claims-questions-container" *ngIf="displayDeceasedConfirmationQuestion">
+        <div class="deceased-claims-questions-textblock">Is {{model.name.capitalizedFirstAndLastName}} Alive?</div>
+        <div class="deceased-claims-questions-wrapper">
+          <div class="deceaed-claims-data-button" (click)="isDeceasedConfirmationClick(false)">Yes</div>
+          <div class="deceaed-claims-data-button" (click)="isDeceasedConfirmationClick(true)">No</div>
+        </div>
+      </div>
+
+      <div class="deceased-claims-loading-spinner-div" *ngIf="ongoingUpdate">
+        <cf-loading-spinner></cf-loading-spinner>
+      </div>
+
+      <div class="deceased-claims-questions-container" *ngIf="displayUserIsHeirQuestion">
+        <div class="deceased-claims-questions-textblock will">Are you listed on
+          {{model.name.capitalizedFirstAndLastName}}'s Will?</div>
+        <div class="deceased-claims-questions-wrapper">
+          <div class="deceaed-claims-data-button" (click)="isUserHeirClick('True')">Yes</div>
+          <div class="deceaed-claims-data-button middle" (click)="isUserHeirClick('False')">No</div>
+          <div class="deceaed-claims-data-button" (click)="isUserHeirClick('unsure')">I don't know</div>
+        </div>
+      </div>
+
+      <div *ngIf="displayClaimReferrals">
+
+        <cf-referral-bar [name]="referralName" [token]="model.referralToken"></cf-referral-bar>
+
+      </div>
+
+    </div>
+  </div>
+</div>

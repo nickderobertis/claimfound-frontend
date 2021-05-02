@@ -1,0 +1,136 @@
+<div class="profile-body-contentcontainer">
+  <div class="profilemessagecomponent">
+    <div class="profile-body-content-messagediv">
+      <div class="profile-body-content-message-textblock1">
+        Addresses help us match you with your lost money.
+      </div>
+      <div class="profile-body-content-message-textblock2">
+        It is very important to
+        <span class="selectedclaims-instructions-content-textblock-span"
+          >list an address for every state</span
+        >
+        you have lived in so we can know what unclaimed property databases to
+        check for you.
+      </div>
+    </div>
+  </div>
+  <div [hidden]="loading">
+    <cf-profile-entry-component
+      [model]="profileEntryModel"
+      [title]="'Addresses'"
+      (deleteEvent)="onDeleteEvent($event)"
+    ></cf-profile-entry-component>
+    <div class="profile-inputcontainer">
+      <div
+        class="profile-input-add-button w-button"
+        *ngIf="!showInput"
+        (click)="onAddButtonClick()"
+        id="profile-add-address-button"
+      >
+        Add Address
+      </div>
+      <div class="profile-inputwrapper">
+        <div *ngIf="showInput" class="profile-input-rowwrapper">
+          <div class="profile-input-row-exitdiv">
+            <img
+              src="images/exit-icon-red.svg"
+              (click)="closeInput()"
+              width="20"
+              alt=""
+              class="profile-input-row-exiticon"
+            />
+          </div>
+
+          <cf-error-bar [form]="inputForm"
+                  [showErrors]="showError" 
+                  [backendErrorKeysToFrontendFormMap]="backendErrorKeysToFrontendFormMap"
+                  id="profileInputErrorBar">
+          </cf-error-bar>
+
+          <div [formGroup]="inputForm" class="profile-input-row-fieldwrapper">
+            <div class="profile-input-row-fieldwrapper-spacer address">
+              <div class="profile-input-row-fielddiv-addressspacer">
+                <div class="profile-input-row-fielddiv street">
+                  <input
+                    id="street-address"
+                    class="profile-input-row-field-inputfield {{
+                      textBoxErrorClass(formConstants.streetAddress)
+                    }}"
+                    placeholder="Street Address"
+                    formControlName="{{ formConstants.streetAddress }}"
+                  />
+                </div>
+              </div>
+              <div class="profile-input-row-fielddiv-addressspacer">
+                <div class="profile-input-row-fielddiv city">
+                  <input
+                    id="city"
+                    class="profile-input-row-field-inputfield {{
+                      textBoxErrorClass(formConstants.city)
+                    }}"
+                    placeholder="City"
+                    formControlName="{{ formConstants.city }}"
+                  />
+                </div>
+                <div class="profile-input-row-fielddiv state">
+                  <input
+                    id="state"
+                    class="profile-input-row-field-inputfield {{
+                      textBoxErrorClass(formConstants.state)
+                    }}"
+                    placeholder="State (FL)"
+                    formControlName="{{ formConstants.state }}"
+                    maxlength="2"
+                  />
+                </div>
+                <div class="profile-input-row-fielddiv zip">
+                  <input
+                    id="zip-code"
+                    class="profile-input-row-field-inputfield {{
+                      textBoxErrorClass(formConstants.zipCode)
+                    }}"
+                    placeholder="Zip Code"
+                    formControlName="{{ formConstants.zipCode }}"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="profile-input-row-questionwrapper question address spacer"
+          >
+            <div class="profile-input-row-question-textblock">
+              Is this your primary address?
+            </div>
+            <cf-radio-button
+              [model]="radioOptions"
+              (select)="isPrimary($event)"
+            ></cf-radio-button>
+          </div>
+          <div
+            *ngIf="!primary"
+            class="profile-input-row-questionwrapper question"
+          >
+            <div class="profile-input-row-question-textblock">
+              Is this address current?
+            </div>
+            <cf-radio-button [model]="radioCurrentOptions"></cf-radio-button>
+          </div>
+          <div
+            class="profile-input-row-field-savebutton w-button"
+            (click)="onSaveButtonClick()"
+            id="profile-save-button"
+          >
+            Save
+          </div>
+        </div>
+      </div>
+    </div>
+    <cf-profile-step-component
+      [model]="prevNextButtonsModel"
+    ></cf-profile-step-component>
+  </div>
+  <div *ngIf="loading" class="loading-spinner-div">
+    <cf-loading-spinner></cf-loading-spinner>
+  </div>
+</div>

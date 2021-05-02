@@ -1,0 +1,180 @@
+.selectclaims-table-footerwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid rgba(136, 138, 141, 0.5);
+}
+.selectclaims-table-footer-numberdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  padding-left: 20px;
+}
+.selectclaims-table-footer-number-textblock1 {
+  margin-right: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.selectclaims-table-footer-number-textblock2 {
+  margin-right: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(36, 90, 170, 0.8);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.selectclaims-table-footer-number-textblock3 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.selectclaims-table-footer-pageselectcontainer {
+  width: 75%;
+}
+.selectclaims-table-footer-pageselectwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 20px;
+  padding-left: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.pageselect-navwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 37.5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  border-radius: 5px;
+}
+.pageselect-navdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 32.5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.pageselect-nav-arrowicon {
+  font-family: Graphik, sans-serif;
+  color: rgba(36, 90, 170, 0.8);
+  font-size: 24px;
+  font-weight: 500;
+}
+.pageselect-navdiv.number {
+  width: 34px;
+  border-left: 1px solid rgba(136, 138, 141, 0.5);
+}
+.pageselect-navdiv.number.selected {
+  background-color: rgba(36, 90, 170, 0.15);
+}
+.pageselect-navdiv-numberblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(51, 51, 51, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+}
+.pageselect-navdiv:hover {
+  background-color: rgba(36, 90, 170, 0.15);
+}
+.pageselect-navdiv:active {
+  background-color: rgba(125, 166, 173, 0.15);
+}
+.pageselect-navdiv-numberblock.selected {
+  color: rgba(36, 90, 170, 0.8);
+}
+@media (max-width: 991px) {
+  .selectclaims-table-footerwrapper {
+    height: 80px;
+  }
+  .pageselect-navwrapper {
+    height: 40px;
+  }
+  .pageselect-navdiv.number {
+    width: 35px;
+  }
+  .pageselect-navdiv-numberblock {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .selectclaims-table-footerwrapper {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .selectclaims-table-footer-numberdiv {
+    width: auto;
+    padding-left: 0px;
+  }
+  .selectclaims-table-footer-pageselectcontainer {
+    width: auto;
+  }
+  .selectclaims-table-footer-pageselectwrapper {
+    padding-right: 0px;
+  }
+  .pageselect-navwrapper {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 479px) {
+  .selectclaims-table-footer-number-textblock1 {
+    font-size: 12px;
+  }
+  .selectclaims-table-footer-number-textblock2 {
+    font-size: 12px;
+  }
+  .selectclaims-table-footer-number-textblock3 {
+    font-size: 12px;
+  }
+  .pageselect-navwrapper {
+    height: 45px;
+  }
+  .pageselect-navdiv {
+    width: 37.5px;
+  }
+  .pageselect-navdiv.number.inactive {
+    display: none;
+  }
+}

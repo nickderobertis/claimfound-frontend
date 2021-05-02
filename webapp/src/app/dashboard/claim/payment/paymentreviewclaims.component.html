@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<div class="claims-container" id="final-review-main-section">
+  <div class="claims-header">
+    <h3 class="claims-header-h3">Review Claims</h3>
+  </div>
+
+  <div class="claims-body">
+    <div class="claims-body-instructionsDiv">
+      <div class="claims-body-instructions-textBlock">
+        Please review your claim details, uploaded documents, and claim forms to
+        make sure all of the information is correct before submitting.
+      </div>
+    </div>
+
+    <!--<div class="state-tab-wrapper">-->
+    <!--<div *ngFor='let mod of model.formTabModels'>-->
+    <!--<button *ngIf="mod.state == selectedState" (click)="switchStateTab(mod.state)" class="state-tab-div active">{{mod.state}}</button>-->
+    <!--<button *ngIf="mod.state != selectedState" (click)="switchStateTab(mod.state)" class="state-tab-div inactive">{{mod.state}}</button>-->
+    <!--</div>-->
+    <!--</div>   -->
+
+    <div *ngFor="let mod of model.formTabModels">
+      <div *ngIf="mod.state == selectedState">
+        <cf-claim-review [model]="mod"></cf-claim-review>
+      </div>
+    </div>
+  </div>
+</div>

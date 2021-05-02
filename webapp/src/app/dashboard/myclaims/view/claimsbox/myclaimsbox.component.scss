@@ -1,0 +1,779 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Dec 22, 2016, 11:44:25 AM
+    Author     : christofferprompovitch
+*/
+@import "src/variables";
+.welcome-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.message-container {
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.welcome-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 730px;
+  height: auto;
+  min-height: 125px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+}
+
+.welcome-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 678px;
+  padding: 0px;
+  float: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-style: none;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-radius: 2px;
+  background-color: #fff;
+  height: auto;
+}
+
+.welcome-header {
+  display: block;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  font-size: 14px;
+  border-bottom: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.welcome-h1 {
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: Graphik, sans-serif;
+}
+
+.welcome-message-div {
+  width: 100%;
+  padding: 15px;
+}
+
+.welcome-ul {
+  padding-left: 25px;
+  margin-bottom: 0px;
+}
+
+.welcome-li {
+  margin-bottom: 5px;
+}
+
+.welcome-message-textblock {
+  margin-bottom: 10px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+
+.claims-process-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 678px;
+  margin-top: 0px;
+  padding: 0px;
+  border-style: none solid solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  background-color: #fff;
+}
+
+.claim-process-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33.3%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.claim-process-div.middle {
+  border-right: 1px solid hsla(216, 2%, 54%, 0.5);
+  border-left: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.claims-process-step-textblock {
+  display: block;
+  margin-bottom: 15px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.claims-process-step-graphic {
+  width: 110px;
+  height: 70px;
+}
+
+.claims-process-step-graphic.step1 {
+  background-image: url("/images/claim-process-graphic-1.jpg");
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.claims-process-step-graphic.step2 {
+  background-image: url("/images/claim-process-graphic-2.jpg");
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.claims-process-step-graphic.step3 {
+  background-image: url("/images/claim-process-graphic-3.jpg");
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.claims-process-text-textblock {
+  margin-top: 15px;
+  padding-left: 0px;
+  font-family: Graphik, sans-serif;
+  color: rgba(36, 90, 170, 0.8);
+  font-weight: 400;
+  text-align: left;
+}
+
+.claims-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+}
+
+.claims-header {
+  width: 730px;
+  height: 50px;
+  padding-left: 15px;
+  border-style: solid solid none;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: $dashboard-module-header-color;
+}
+
+.claims-header-h3 {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+
+.claims-load-container {
+  display: block;
+  width: 730px;
+  min-height: 80px;
+  background-color: #fff;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-style: none solid solid;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.loading-spinner-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0px 0px 40px;
+}
+
+.dashboard-content-myclaims-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-style: solid none none;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  height: auto;
+  padding: 30px;
+}
+
+.no-claims-body-icon {
+  margin-left: 25px;
+}
+
+.no-claims-body-div {
+}
+
+.no-claims-h1 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 0.75px;
+}
+
+.no-claims-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+
+@media (max-width: 991px) {
+  .welcome-container {
+  }
+
+  .message-container {
+  }
+
+  .welcome-wrapper {
+  }
+
+  .welcome-div {
+  }
+
+  .welcome-header {
+  }
+
+  .welcome-h1 {
+  }
+
+  .welcome-message-div {
+  }
+
+  .welcome-ul {
+  }
+
+  .welcome-li {
+  }
+
+  .welcome-message-textblock {
+  }
+
+  .claims-process-wrapper {
+    width: auto;
+  }
+
+  .claim-process-div {
+  }
+
+  .claim-process-div.middle {
+  }
+
+  .claims-process-step-textblock {
+  }
+
+  .claims-process-step-graphic {
+  }
+
+  .claims-process-step-graphic.step1 {
+  }
+
+  .claims-process-step-graphic.step2 {
+  }
+
+  .claims-process-step-graphic.step3 {
+  }
+
+  .claims-process-text-textblock {
+  }
+
+  .claims-container {
+    display: block;
+  }
+
+  .claims-header {
+    width: 730px;
+  }
+
+  .claims-header-h3 {
+  }
+
+  .claims-load-container {
+  }
+
+  .dashboard-content-myclaims-body {
+    width: auto;
+  }
+
+  .no-claims-body-icon {
+  }
+
+  .no-claims-body-div {
+  }
+
+  .no-claims-h1 {
+  }
+
+  .no-claims-textblock {
+  }
+
+  .no-claims-textblock-2 {
+  }
+}
+
+@media (max-width: 767px) {
+  .welcome-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-bottom: 25px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  .message-container {
+  }
+
+  .welcome-wrapper {
+    width: 481px;
+  }
+
+  .welcome-div {
+  }
+
+  .welcome-header {
+    width: 100%;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+  }
+
+  .welcome-h1 {
+    font-size: 13px;
+  }
+
+  .welcome-message-div {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .welcome-ul {
+  }
+
+  .welcome-li {
+  }
+
+  .welcome-message-textblock {
+    font-size: 12px;
+  }
+
+  .claims-process-wrapper {
+    width: 481px;
+  }
+
+  .claim-process-div {
+  }
+
+  .claim-process-div.middle {
+  }
+
+  .claims-process-step-textblock {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+  }
+
+  .claims-process-step-graphic.step1 {
+    width: 100px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .claims-process-step-graphic.step2 {
+    width: 100px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .claims-process-step-graphic.step3 {
+    width: 100px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .claims-process-text-textblock {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+  }
+
+  .claims-container {
+    display: block;
+    width: 450px;
+  }
+
+  .claims-header {
+    width: 450px;
+    height: 45px;
+    border-style: solid solid none;
+  }
+
+  .claims-header-h3 {
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Graphik, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    line-height: 45px;
+  }
+
+  .claims-load-container {
+    width: auto;
+    height: auto;
+    min-height: 0px;
+  }
+
+  .dashboard-content-myclaims-body {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 25px 20px 20px;
+  }
+
+  .no-claims-body-icon {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .no-claims-body-div {
+  }
+
+  .no-claims-h1 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .no-claims-textblock {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .no-claims-textblock-2 {
+  }
+}
+
+@media (max-width: 479px) {
+  .welcome-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .message-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 305px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .welcome-wrapper {
+    width: auto;
+    max-width: 305px;
+    margin-bottom: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .welcome-div {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .welcome-header {
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 13px;
+  }
+
+  .welcome-h1 {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.75px;
+  }
+
+  .welcome-message-div {
+    padding: 15px 17.5px 15px 10px;
+  }
+
+  .welcome-ul {
+  }
+
+  .welcome-li {
+    margin-bottom: 10px;
+  }
+
+  .welcome-message-textblock {
+    margin-bottom: 0px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+    letter-spacing: 0.75px;
+  }
+
+  .claims-process-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 305px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .claim-process-div {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .claim-process-div.middle {
+    border-style: solid none;
+    border-top-width: 1px;
+    border-top-color: hsla(216, 2%, 54%, 0.5);
+    border-bottom-width: 1px;
+    border-bottom-color: hsla(216, 2%, 54%, 0.5);
+  }
+
+  .claims-process-step-textblock {
+    margin-bottom: 10px;
+  }
+
+  .claims-process-step-graphic.step1 {
+  }
+
+  .claims-process-step-graphic.step2 {
+  }
+
+  .claims-process-step-graphic.step3 {
+  }
+
+  .claims-process-text-textblock {
+    margin-top: 10px;
+  }
+
+  .claims-container {
+    display: block;
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .claims-header {
+    width: auto;
+  }
+
+  .claims-header-h3 {
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Graphik, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .dashboard-content-myclaims-body {
+    height: auto;
+    padding: 25px 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    border-right: solid 1px hsla(216, 2%, 54%, 0.5);
+  }
+
+  .no-claims-body-icon {
+    margin-right: 0px;
+  }
+
+  .no-claims-body-div {
+  }
+
+  .no-claims-h1 {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+  }
+
+  .no-claims-textblock {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0px 10px;
+  }
+
+  .no-claims-textblock-2 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .claims-load-container {
+    width: auto;
+    border-right: none;
+  }
+}

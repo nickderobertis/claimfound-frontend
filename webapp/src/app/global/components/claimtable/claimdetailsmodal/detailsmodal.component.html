@@ -1,0 +1,103 @@
+<div class="details-modal" (click)="closeIfClickedOutside($event)">
+    <div class="details-modal-container">
+        <div #detailsModalWrapper class="details-modal-wrapper">
+            <div class="details-modal-header">
+                <div class="details-modal-header-h2">Claim Details</div>
+
+                <div class="details-modal-header-close">
+                    <a href="#" (click)="closeModal()">
+                        <img src="/images/documents-exit-icon.svg" width="15">
+                    </a>
+                </div>
+
+            </div>
+            <div class="details-modal-body">
+
+                <div *ngIf="isMultiOwnerClaim" class="multi-owner-modal-container">
+                    <div class="multi-owner-modal-textblock-1">Multi-Owner Claim</div>
+                    <div class="multi-owner-modal-textblock-2">This claim requires special steps to process and we are currently adding this feature to our platform.</div>
+                    <div class="multi-owner-modal-textblock-2">You may contact us at support@claimfound.com, if you would like to process them manually.</div>
+                </div>
+
+                <div class="details-modal-amount-div">
+                    <div class="details-modal-amount-textblock-1">Amount</div>
+                    <div class="details-modal-amount-textblock-2">
+                        {{ amount | currency:'USD':'symbol':'1.2-2' }}
+                    </div>
+                </div>
+
+                <div class="details-modal-info-wrapper">
+                    <div class="details-modal-info-div">
+                        <div class="details-modal-info-textblock-1">Reported Name(s)</div>
+                        <div class="details-modal-info-textblock-div">
+                            <div class="details-modal-info-textblock-2">{{model.firstandLastNameCapitalizedString}}</div>
+                        </div>
+                    </div>
+
+                    <div class="details-modal-info-div">
+                        <div class="details-modal-info-textblock-1">State</div>
+                        <div class="details-modal-info-textblock-div">
+                            <div class="details-modal-info-textblock-2">
+                                {{ model.state }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-modal-info-div">
+                        <div class="details-modal-info-textblock-1">Claim#</div>
+                        <div class="details-modal-info-textblock-div">
+                            <div class="details-modal-info-textblock-2">
+                                {{ model.claimId }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-modal-info-div">
+                        <div class="details-modal-info-textblock-1">Reporting Company</div>
+                        <div class="details-modal-info-textblock-div">
+                            <div class="details-modal-info-textblock-2">
+                                {{ model.reportingCompany }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-modal-info-div">
+                        <div class="details-modal-info-textblock-1">Property Type</div>
+                        <div class="details-modal-info-textblock-div">
+                            <div class="details-modal-info-textblock-2">
+                                {{ model.propertyType }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details-modal-info-div">
+                        <div class="details-modal-info-textblock-1">Reported Address</div>
+                        <div class="details-modal-info-textblock-div">
+                            <div class="details-modal-info-textblock-2">
+                                {{ model.streetAddressString }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-modal-status-wrapper" *ngIf="showStepUrl">
+                    <div class="details-modal-info-div">
+                        <div class="details-modal-info-textblock-1">Next Action</div>
+                        <div class="details-modal-info-textblock-div">
+                            <div class="details-modal-info-textblock-2 action">
+                                <div (click)="onNextStepClick()" *ngIf="!isMultiOwnerClaim">
+                                    {{ step }}
+                                </div>
+
+                                <a href="#" *ngIf="isMultiOwnerClaim" (click)="openHelpModal()">
+                                    Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

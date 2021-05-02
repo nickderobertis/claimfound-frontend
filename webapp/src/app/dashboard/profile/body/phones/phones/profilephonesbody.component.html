@@ -1,0 +1,107 @@
+<div class="profile-body-contentcontainer">
+  <div class="profile-body-content-messagediv">
+    <div class="profile-body-content-message-textblock1">
+      We need a phone number to put on your claim form.
+    </div>
+    <div class="profile-body-content-message-textblock2">
+      We need to provide the unclaimed property division with a phone number if
+      they need to contact you about your claim. It also helps us match your
+      claims.
+    </div>
+  </div>
+  <div [hidden]="loading">
+    <cf-profile-entry-component
+      [model]="profileEntryModel"
+      [title]="'Phone Numbers'"
+      (deleteEvent)="onDeleteEvent($event)"
+    ></cf-profile-entry-component>
+    <div class="profile-inputcontainer">
+      <div *ngIf="!showInput" class="profileinputaddcomponent">
+        <div
+          class="profile-input-add-button w-button"
+          (click)="onAddButtonClick()"
+          id="profile-add-phone-button"
+        >
+          Add Numbers
+        </div>
+      </div>
+      <div *ngIf="showInput" class="profile-inputwrapper">
+        <div class="profile-input-rowwrapper">
+          <div class="profile-input-row-exitdiv">
+            <img
+              src="images/exit-icon-red.svg"
+              (click)="closeInput()"
+              width="18"
+              alt=""
+              class="profile-input-row-exiticon"
+            />
+          </div>
+
+          <cf-error-bar
+            [form]="inputForm"
+            [showErrors]="showError"
+            [backendErrorKeysToFrontendFormMap]="
+              backendErrorKeysToFrontendFormMap
+            "
+            id="profileInputErrorBar"
+          >
+          </cf-error-bar>
+
+          <div
+            [formGroup]="inputForm"
+            class="profile-input-row-fieldwrapper phone"
+          >
+            <div class="profile-input-row-fieldwrapper-spacer">
+              <div class="profile-input-row-fielddiv pohne">
+                <input
+                  id="phone-box"
+                  type="text"
+                  phoneMask
+                  [preValue]="inputForm.value.phone"
+                  [phoneControl]="inputForm.get('phone')"
+                  class="profile-input-row-field-inputfield {{
+                    textBoxErrorClass(formConstants.phone)
+                  }}"
+                  placeholder="Phone Number(U.S only)"
+                  formControlName="{{ formConstants.phone }}"
+                  maxlength="14"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="profile-input-row-questionwrapper question phone">
+            <div class="profile-input-row-question-textblock">
+              Is this your primary phone number?
+            </div>
+            <cf-radio-button
+              [model]="primaryRadioOptions"
+              (select)="isPrimary($event)"
+            ></cf-radio-button>
+          </div>
+          <div
+            *ngIf="!primary"
+            class="profile-input-row-questionwrapper question phone"
+          >
+            <div class="profile-input-row-question-textblock">
+              Is this phone number current?
+            </div>
+            <cf-radio-button [model]="currentRadioOptions"></cf-radio-button>
+          </div>
+          <div
+            class="profile-input-row-field-savebutton w-button"
+            id="profile-save-button"
+            (click)="onSaveButtonClick()"
+          >
+            Save
+          </div>
+        </div>
+      </div>
+    </div>
+    <cf-profile-step-component
+      [model]="prevNextButtonsModel"
+    ></cf-profile-step-component>
+  </div>
+  <div *ngIf="loading" class="loading-spinner-div">
+    <cf-loading-spinner></cf-loading-spinner>
+  </div>
+</div>

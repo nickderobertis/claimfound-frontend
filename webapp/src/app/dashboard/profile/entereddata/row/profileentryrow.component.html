@@ -1,0 +1,16 @@
+
+<div class="profile-entry-row-datadiv">
+    <div class="profile-entry-row-dataspacer">
+        <div class="profile-entry-row-dataspacer2">
+            <div class="profile-entry-row-data-textblock1">{{model.boldText}}:</div>
+            <div class="profile-entry-row-data-textblock2">{{model.text}}</div>
+        </div>
+        <div *ngFor='let label of model.labelText' class="profile-entry-row-data-attributediv">
+            <div class="profile-entry-row-data-attribute-textblock">{{label}}</div>
+        </div>
+    </div>    
+    <div *ngIf="model.canDelete" class="profile-entry-row-data-deletediv" (click)="onDelete()">
+        <div class="profile-entry-row-data-delete-textblock">Delete</div>
+        <img src="../../../../../images/exit-icon-red.svg" width="8" alt="" class="profile-entry-row-data-delete-icon">
+    </div>
+</div>

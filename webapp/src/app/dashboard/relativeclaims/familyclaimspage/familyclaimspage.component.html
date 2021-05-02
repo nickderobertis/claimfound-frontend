@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<div class="family-claims-wrapper">
+  <div class="navigation-container">
+    <div class="navigation-wrapper">
+      <div class="back-button" routerLink="/dashboard">To My Claims</div>
+    </div>
+  </div>
+
+  <div class="welcome-container">
+    <div class="general-message-container">
+      <div class="general-message-wrapper-right">
+        <div class="general-message-textheader">It looks like your family members have unclaimed property. </div>
+        <div class="general-message-textblock-1">If you are listed in the will of a deceased family member, you may be
+          eligible to claim their money. Answer the questions for each family member to find out! </div>
+      </div>
+      <div class="general-message-wrapper-left">
+        <img src="/images/family-claims-graphic.svg" alt="" class="family-claims-page-graphic">
+      </div>
+    </div>
+  </div>
+
+  <div *ngFor="let relative of model.relativeClaims;">
+    <div *ngIf="checkIfShouldShow(relative)">
+      <cf-relative-panel [model]="relative" (addedDeceasedClaimEvent)="openClaimAddedToDashboardModal($event)"></cf-relative-panel>
+    </div>
+  </div>
+
+  <div *ngIf="checkIfAnyDeceasedAndHeir">
+    <cf-deceased-claims-widget [model]="widgetModel.deceasedTotalsModel"></cf-deceased-claims-widget>
+  </div>
+
+  <div *ngIf=loading>
+    <div class="landing-spinner-container">
+      <svg class="landing-page-spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+        <circle class="landing-page-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33"
+          r="30"></circle>
+      </svg>
+    </div>
+  </div>
+
+</div>
+
+<cf-claim-added-to-dashboard-modal *ngIf="showClaimAddedModal" [model]="modalModel" (closeModalEvent)="closeClaimsAddedModal()"></cf-claim-added-to-dashboard-modal>

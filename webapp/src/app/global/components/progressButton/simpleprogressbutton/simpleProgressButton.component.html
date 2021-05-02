@@ -1,0 +1,4 @@
+<button class="accountButton {{accountButtonClass}}" [style.width]="model.width + '%'" [style.height]="model.height + 'px'" (click)="onButtonClicked()" [disabled]="model.disabled">
+    <div *ngIf="!model.showSpinner">{{model.buttonText}}</div>
+    <cf-loading-spinner *ngIf="model.showSpinner" [size]="model.spinnerSize"></cf-loading-spinner>
+</button>

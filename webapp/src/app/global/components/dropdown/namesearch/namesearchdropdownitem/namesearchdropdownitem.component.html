@@ -1,0 +1,9 @@
+<div class="items-li-wrapper {{getDropDownClass()}}" (click)="onItemSelected()">
+    <label class="items-li-label">{{ item }}</label>
+    <input
+            class="items-li-input"
+            type="checkbox"
+            [value]="item"
+            [(ngModel)]="selectBooleans[itemIndex]"
+    />
+</div>

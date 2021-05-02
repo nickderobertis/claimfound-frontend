@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<div class="dashboard-body">
+  <cf-dashboard-header></cf-dashboard-header>
+
+  <cf-loading-modal *ngIf="loading"></cf-loading-modal>
+  <!--TODO when epic is more stable and can view all affected pages
+  which are the ones in dashboard.routes.ts then decide wether to change the
+  pages which look bad with option a or the ones that look bad with option b-->
+  <!--OPTION A-->
+  <!--<div class="dashboard-canvas-section" [hidden]="loading">
+    <div class="canvas-body-wrapper">
+      <router-outlet ></router-outlet>
+    </div>
+  </div>-->
+  <!--OPTION B-->
+  <router-outlet [hidden]="loading"></router-outlet>
+
+  <script src="js/webflow.js" type="text/javascript"></script>
+</div>

@@ -1,0 +1,22 @@
+<div [class]="formFieldAttr.divClass" [formGroup]="emailForm" [ngClass]="{'error': fieldHasErrors()}">
+
+
+    <input
+        [type]="formFieldAttr.type"
+        [class]="'signupmodal-input-form-textfield ' + formFieldAttr.id + ' w-input'"
+        [placeholder]="formFieldAttr.placeholder"
+        [id]="formFieldAttr.id"
+        [formControlName]="formFieldAttr.id"
+        [ngClass]="{'error': fieldHasErrors()}"
+    >
+<!--  password eye-->
+<div
+        class="signupmodal-input-form-passwordtoggle"
+        *ngIf="formFieldAttr.id === 'password'"
+        id="passwordToggle"
+        cfPasswordToggle
+        [passwordId]="formFieldAttr.id"
+    >  </div>
+
+<!--  passwoed eyeend-->
+</div>

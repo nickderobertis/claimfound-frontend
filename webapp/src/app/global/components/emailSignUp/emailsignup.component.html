@@ -1,0 +1,7 @@
+<div class="referral-cta-wrapper">
+    <div class="referral-cta-textblock-1">{{ sideText }}</div>
+    <div class="referral-cta-div">
+        <input class="referral-cta-div-input" type="textbox" [(ngModel)]="email" placeholder="Enter Email Address">
+    </div>
+    <div class="referral-cta-button" (click)="onEmailSubmit()" [ngStyle]="submitButtonStyles">{{ btnText }}</div>
+</div>

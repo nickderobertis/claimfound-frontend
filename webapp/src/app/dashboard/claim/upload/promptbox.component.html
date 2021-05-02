@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<div class="document-prompt-body">
+    <div class="document-prompt-bodyDiv">
+       <div class="document-prompt-body-textblock">{{question}}</div>
+        <div class="document-prompt-tooltip-holder">
+          <cf-address-tooltip [model]="model" (updateEvent)="emitUpdateEvent()"></cf-address-tooltip>
+        </div>
+    </div>
+    <label class="document-prompt-body-button w-button" href="#" for="doc-upload" *ngIf="!docIsUploading">Upload</label>
+    <label class="document-prompt-body-button inactive" href="#" for="doc-upload" *ngIf="docIsUploading">Upload</label>
+    <input id="doc-upload" type="file" *ngIf="!docIsUploading" accept="application/pdf, image/*" style="visibility: hidden; display: none;" (change)=onUpload($event)>
+    <!-- Below code is html for handling states that allow multiple doc types currently unused -->
+    <!--<div class="document-prompt-body-textblock" *ngIf="displayOr">OR, upload</div>
+    <div *ngFor="let docIndex of associatedIndices; let i = index">
+        <div class="document-prompt-body-textblock" (click)="selectDoc(docIndex)">
+            <p *ngIf="associatedDocs[i]['docType'] == 'company'">Proof of relationship with </p>
+            <p *ngIf="associatedDocs[i]['docType'] == 'address'">Proof you lived at </p> {{associatedDocs[i]['references']}}
+        </div> 
+        <div class="document-prompt-body-textblock" *ngIf="i + 1 < associatedIndices.length">AND</div> 
+    </div>-->
+
+    <!--<div class="document-prompt-tooltip-holder" matTooltip="{{ helpText }}" matTooltipPosition="before">Why do I need to upload this?</div>-->
+</div>
+

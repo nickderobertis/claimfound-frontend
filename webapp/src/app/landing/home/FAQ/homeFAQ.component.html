@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<div class="faqsection">
+  <div class="faqcontainer">
+    <div class="faq-headerdiv">
+      <h1 class="faq-header-textheader">FAQs</h1>
+      <div class="faq-header-textblock">
+        We know, free money sounds too good to be true. It’s real, we promise.
+        <br />Here are some answers to our most frequently asked questions to
+        ease your concerns.
+      </div>
+    </div>
+    <div class="faqwrapper">
+      <div class="faq-contentcontainer">
+        <div class="faq-contentheaderdiv">
+          <img
+            src="../../../../images/coins-graphic.svg"
+            width="30"
+            alt=""
+            class="faq-contentheader-graphic"
+          />
+          <h2 class="faq-contentheader">Unclaimed Property Overview</h2>
+        </div>
+
+        <div class="faq-contentwrapper" (click)="toggleSection(0)">
+          <div class="faq-questionwrapper">
+            <h3 class="faq-questionheader">
+              What exactly is unclaimed property?
+            </h3>
+            <div class="faq-questiontrigger {{ sectionTriggerClass(0) }}"></div>
+          </div>
+          <div *ngIf="sectionIsExpanded(0)" class="faq-answerdiv">
+            <div class="faq-answer-textblock">
+              “Unclaimed property,” also known as “unclaimed money,” refers to
+              misplaced money that has been turned over to a government agency
+              (typically the state treasury) after a period of inactivity
+              between the money and the person who it belongs to originally.
+            </div>
+            <div class="faq-answer-textblock alt">
+              Examples of unclaimed property include: forgotten utility
+              deposits, dorman bank accounts, back taxes, rebates, life
+              insurance policies of deceased relatives, dividends, and more than
+              500 other examples.
+            </div>
+            <a
+              href="https://claimfound.com/blog/claimfound-blog-posts/understanding-unclaimed-money-what-it-and-how-get-it-back/"
+              target="_blank"
+              class="faq-answer-textlink"
+              >Learn more here - Understanding Unclaimed Money</a
+            >
+          </div>
+        </div>
+
+        <div class="faq-contentwrapper" (click)="toggleSection(1)">
+          <div class="faq-questionwrapper">
+            <h3 class="faq-questionheader">
+              I'm an organized person, how did I lose my money?
+            </h3>
+            <div class="faq-questiontrigger {{ sectionTriggerClass(1) }}"></div>
+          </div>
+          <div *ngIf="sectionIsExpanded(1)" class="faq-answerdiv">
+            <div class="faq-answer-textblock">
+              Most people don't think they could have any unclaimed money
+              because they tend to be organized, but that mean things still
+              don't fall through the cracks. There wouldn't be $70+ billion in
+              lost money if everyone was as organized as they thought.
+            </div>
+            <div class="faq-answer-textblock alt">
+              Any time money or assets change hands it can be “lost in transit.”
+              Whether your former employer mailed your last paycheck to the
+              wrong address, you forgot about an old savings account, or you
+              didn’t know about a deceased relative’s life insurance policy…
+              there are literally hundreds of ways money can become unclaimed.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-contentwrapper" (click)="toggleSection(2)">
+          <div class="faq-questionwrapper">
+            <h3 class="faq-questionheader">Is unclaimed proeprty a scam?</h3>
+            <div class="faq-questiontrigger {{ sectionTriggerClass(2) }}"></div>
+          </div>
+          <div *ngIf="sectionIsExpanded(2)" class="faq-answerdiv">
+            <div class="faq-answer-textblock">
+              No, unclaimed property is legitimate and managed by federal and
+              state government agencies. If you don’t believe us Google
+              “Unclaimed Property Florida” and you’ll find a state sponsored
+              website.
+            </div>
+            <div class="faq-answer-textblock alt">
+              However, Unclaimed Property is an industry surrounded by
+              misinformation and skepticism. There are many reported cases of
+              individuals who fraudulently try to claim other peoples money each
+              year. You may have even received a letter in the mail by someone
+              trying to help you get your money back for a fee.
+            </div>
+            <a
+              href="https://claimfound.com/blog/claimfound-blog-posts/does-government-owe-me-money-how-find-unclaimed-money/"
+              target="_blank"
+              class="faq-answer-textlink"
+              >Learn more about how to identify scammers.</a
+            >
+          </div>
+        </div>
+
+        <div class="faq-contentwrapper" (click)="toggleSection(3)">
+          <div class="faq-questionwrapper">
+            <h3 class="faq-questionheader">
+              How much unclaimed money is out there?
+            </h3>
+            <div class="faq-questiontrigger {{ sectionTriggerClass(3) }}"></div>
+          </div>
+          <div *ngIf="sectionIsExpanded(3)" class="faq-answerdiv">
+            <div class="faq-answer-textblock">
+              Although the exact dollar amount is not published, based on
+              ClaimFound’s research we believe there is more than $70 billion
+              held by state agencies and more than $26 billion held by the
+              federal government.
+            </div>
+            <div class="faq-answer-textblock alt">
+              Every year the amount of new unclaimed property increases. In 2018
+              new unclaimed property across the U.S. totalled $7.1 billion and
+              in 2019 it increased to over $8 billion.
+            </div>
+            <div class="faq-answer-textblock alt">
+              We conservatively estimate there are at least 100 million
+              Americans that have unclaimed money either owed directly to them
+              or to a deceased family member for which you can claim their
+              money.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-contentwrapper" (click)="toggleSection(4)">
+          <div class="faq-questionwrapper">
+            <h3 class="faq-questionheader">
+              Can I claim someone else's unclaimed money?
+            </h3>
+            <div class="faq-questiontrigger {{ sectionTriggerClass(4) }}"></div>
+          </div>
+          <div *ngIf="sectionIsExpanded(4)" class="faq-answerdiv">
+            <div class="faq-answer-textblock">
+              Yes, if the person is a deceased family member, or if you are
+              listed on the will of the deceased individual, you can make a
+              claim to retrieve their unclaimed money.
+            </div>
+            <div class="faq-answer-textblock alt">
+              There are extra steps in claiming your deceased family members'
+              money though, typically you will need to provide a modified will
+              to the unclaimed property department that shows the unclaimed
+              property is listed on it and who it should be dispersed to.
+            </div>
+            <a
+              href="https://claimfound.com/blog/claimfound-blog-posts/how-find-and-claim-unclaimed-money-behalf-deceased-relative/"
+              target="_blank"
+              class="faq-answer-textlink"
+              >Learn more about How to Claim Money for a Deceased Relative.</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-contentcontainer">
+        <div class="faq-contentheaderdiv">
+          <img
+            src="../../../../images/ClaimFound-Icon.svg"
+            width="25"
+            alt=""
+            class="faq-contentheader-graphic"
+          />
+          <h2 class="faq-contentheader">Why Should I Use ClaimFound?</h2>
+        </div>
+
+        <div class="faq-contentwrapper" (click)="toggleSection(5)">
+          <div class="faq-questionwrapper">
+            <h3 class="faq-questionheader">
+              Who Is ClaimFound &amp; what do you do?
+            </h3>
+            <div class="faq-questiontrigger {{ sectionTriggerClass(5) }}"></div>
+          </div>
+          <div *ngIf="sectionIsExpanded(5)" class="faq-answerdiv">
+            <div class="faq-answer-textblock">
+              ClaimFound is a financial technology company with a mission to
+              help the financial well-being of Americans by putting actual money
+              in their pockets. We make software to automate financial processes
+              and link people with opportunities they would not have knowledge
+              or access to otherwise.
+            </div>
+            <div class="faq-answer-textblock alt">
+              We’re starting with unclaimed property because there is $70
+              billion that is waiting to be returned to more than 100 million
+              Americans.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-contentwrapper" (click)="toggleSection(6)">
+          <div class="faq-questionwrapper">
+            <h3 class="faq-questionheader">
+              Why would I use ClaimFound over just doing it with the State?
+            </h3>
+            <div class="faq-questiontrigger {{ sectionTriggerClass(6) }}"></div>
+          </div>
+          <div *ngIf="sectionIsExpanded(6)" class="faq-answerdiv">
+            <div class="faq-answer-textblock">
+              Just like the State, ClaimFound is a
+              <span class="faq-text-span-1">completely free service </span> that
+              enables you to get your unclaimed money back, but we’ve built a
+              modern platform with the sole purpose of making the experience of
+              getting your money back delightful, quick, and transparent. We do
+              three primary things for you:
+            </div>
+            <div class="faq-answer-textblock alt">
+              <span class="faq-text-span-2">Search:</span> We help you search
+              for your money through better search results and new tools like
+              our
+              <a
+                routerLink="/map/FL/florida-unclaimed-money"
+                target="_blank"
+                class="faq-link-span"
+                >unclaimed property maps.</a
+              >
+            </div>
+            <div class="faq-answer-textblock alt">
+              <span class="faq-text-span-2">Process:</span> We’ve taken the
+              manual, paperwork-oriented process of getting your money back and
+              streamlined it online - think TurboTax&copy; for unclaimed
+              property.
+            </div>
+            <div class="faq-answer-textblock alt">
+              <span class="faq-text-span-2">Monitor:</span> Rest assured that
+              you will never have to think about unclaimed property again
+              because we’ll alert you if you ever have any new money in your
+              name. With $8 billion in new unclaimed property each year, you’re
+              bound to have some in the future - ClaimFound has your back.
+            </div>
+            <div class="faq-answer-textblock alt">
+              Learn more about what makes ClaimFound differ from the state:<a
+                href="https://claimfound.com/blog/claimfound-blog-posts/why-claimfound/"
+                target="_blank"
+                class="faq-link-span"
+              >
+                Why ClaimFound?</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-contentwrapper" (click)="toggleSection(7)">
+          <div class="faq-questionwrapper">
+            <h3 class="faq-questionheader">
+              If ClaimFound is free, how do you make money?
+            </h3>
+            <div class="faq-questiontrigger {{ sectionTriggerClass(7) }}"></div>
+          </div>
+          <div *ngIf="sectionIsExpanded(7)" class="faq-answerdiv">
+            <div class="faq-answer-textblock">
+              ClaimFound’s core services including unclaimed money search,
+              processing, and monitoring will always be free. However, there are
+              still still some parts of the claims process that can be difficult
+              to complete and we offer premium features to help you with those
+              challenges, including:
+            </div>
+            <div class="faq-answer-textblock alt">
+              <span class="faq-text-span-2">Address Verification Service:</span>
+              Typically you must prove that you are associated with the address
+              listed on your claim and that can be very challenging and
+              time-consuming if it is a prior address. ClaimFound can search
+              thousands of public records for you to try and verify your
+              address. If we’re successful, we charge a small fee for the
+              service.
+            </div>
+            <div class="faq-answer-textblock alt">
+              <span class="faq-text-span-2"
+                >LegalFound Attorney Directory:</span
+              >
+              If you are the heir or on the will of a deceased individual with
+              unclaimed money, you are entitled to claim it. However, in many
+              cases you must provide a modified will that has been certified by
+              the courts to the unclaimed property division. This process
+              typically requires the help of an attorney.
+            </div>
+            <div class="faq-answer-textblock alt">
+              When you find unclaimed money for someone through ClaimFound, we
+              direct you to our special attorney directory so you can connect
+              with a local attorney that can help you in the claims process.
+              Attorneys pay ClaimFound to be partnered on our legal directory.
+            </div>
+            <div class="faq-answer-textblock alt">
+              If you are an attorney and want to partner with ClaimFound to help
+              people with unclaimed property owed to them by deceased relatives
+              -
+              <a href="www.legalfound.co" target="_blank" class="faq-link-span"
+                >sign up here.</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-contentwrapper" (click)="toggleSection(8)">
+          <div class="faq-questionwrapper">
+            <h3 class="faq-questionheader">
+              Why does ClaimFound ask for my personal information?
+            </h3>
+            <div class="faq-questiontrigger {{ sectionTriggerClass(8) }}"></div>
+          </div>
+          <div *ngIf="sectionIsExpanded(8)" class="faq-answerdiv">
+            <div class="faq-answer-textblock">
+              The state requires certain information to verify your identity and
+              make sure you’re not trying to fraudulently claim someone else's
+              money. Furthermore, your information helps us accurately match you
+              with your unclaimed property, auto-fill your claim forms, and
+              communicate with you about the status of your claims being
+              processed by the state.
+            </div>
+            <div class="faq-answer-textblock alt">
+              ClaimFound does not ask for your social security number during
+              sign up, but it is required by the state if you have a claim.
+              Don’t worry, we never save your SSN directly, it is only stored on
+              your claim form. Once you have processed your claim with the
+              unclaimed property division, we remove your claim form from our
+              database and no longer have access to your SSN.
+            </div>
+            <div class="faq-answer-textblock alt">
+              Read our<a
+                href="https://help.claimfound.com/en/articles/4135435-creating-your-profile"
+                target="_blank"
+                class="faq-link-span"
+              >
+                overview of the Profile Page</a
+              >
+              during onboarding process to learn more about what information we
+              ask for and why.
+            </div>
+            <div class="faq-answer-textblock alt">
+              Remember, all of your information is secure and protected! Read
+              our<a routerLink="/privacy" target="_blank" class="faq-link-span">
+                privacy policy</a
+              >
+              to learn more about how ClaimFound handles your data.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-contentwrapper" (click)="toggleSection(9)">
+          <div class="faq-questionwrapper">
+            <h3 class="faq-questionheader">
+              How do I know my data is secure and safe?
+            </h3>
+            <div class="faq-questiontrigger {{ sectionTriggerClass(9) }}"></div>
+          </div>
+          <div *ngIf="sectionIsExpanded(9)" class="faq-answerdiv">
+            <div class="faq-answer-textblock">
+              All data entered into the Site is encrypted using
+              industry-standard SSL technology before being sent to our servers
+              in an off-site data center. Our servers are supported by multiple
+              levels of protection including firewalls, private subnets and
+              multi-factor authentication.
+            </div>
+            <div class="faq-answer-textblock alt">
+              Read our<a
+                routerLink="/privacy"
+                target="_blank"
+                class="faq-link-span"
+              >
+                privacy policy</a
+              >
+              to learn more about how ClaimFound handles your data.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

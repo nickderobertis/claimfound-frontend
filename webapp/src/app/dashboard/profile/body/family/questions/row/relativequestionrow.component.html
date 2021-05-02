@@ -1,0 +1,19 @@
+<div class="profilequestionitemcomponent">
+  <div class="profile-question-itemnamewrapper">
+    <div class="profile-question-itemnamediv name">
+      <div class="profile-question-item-textblock">{{model.name}}</div>
+    </div>
+    <cf-relative-questions-dropdown [model]="dropDownModel" [disabled]="model.disabled"
+      (selectionsChanged)="onDropDownSelectionChange($event)"></cf-relative-questions-dropdown>
+    <div *ngIf="!onSmallScreen || checkBoxesActive" class="profile-question-itemnamediv deceased">
+      <div class="profile-question-item-textblock2">Are they deceased?</div>
+      <input type="checkbox" (focus)="model.toggleDeceasedConfirmed()" [(ngModel)]=" model.deceased"
+        class="profile-question-item-checkbox" [attr.disabled]="!checkBoxesActive ? '' : null">
+    </div>
+    <div *ngIf="!onSmallScreen || checkBoxesActive" class="profile-question-itemnamediv will">
+      <div class="profile-question-item-textblock2">Are you the heir or listed on their will?</div>
+      <input type="checkbox" (focus)="model.toggleIsHeirAnswered()" [(ngModel)]="model.isHeirCheckbox"
+        class="profile-question-item-checkbox" [attr.disabled]="!checkBoxesActive ? '' : null">
+    </div>
+  </div>
+</div>

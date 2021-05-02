@@ -1,0 +1,162 @@
+/****IMPORT BOOTSTRAP STYLES***/
+@import url("../../../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css");
+
+.submittedclaims-statuscontainer {
+  margin-bottom: 30px;
+}
+
+.statuscontainer-headerwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.statusheaderwrappercomponent {
+  width: 25%;
+}
+.headerwrapper-contentdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.headerwrapper-contentdiv-textblock {
+  margin-right: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.headerwrapper-contentdiv-helpicon {
+  width: 12px;
+  height: 12px;
+  background-image: url("../../../../../../images/Life Preserver_1.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+}
+.headerwrapper-contentdiv-helpcontent {
+  background: white;
+  border: 5px solid rgba(211, 198, 198, 0.418);
+  color: rgba(1, 0, 0, 0.8) !important;
+  max-width: 100;
+}
+
+.submittedclaimsstatusrowcomponent {
+  margin-top: 10px;
+}
+
+/******TOOLTIP STYLES*****/
+/* :host ::ng-deep div { background-color: red; }  */
+:host ::ng-deep .tooltip .tooltip-inner {
+  background-color: #ffff !important;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Graphik, sans-serif;
+  box-shadow: 0 3px 8px 0 #dbd9d9;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  max-width: 250px;
+  text-align: left;
+  padding: 5px 10px;
+  transform: translateZ(0);
+  font-size: 12px;
+}
+
+:host ::ng-deep .tooltip.show {
+  opacity: 1;
+  position: static;
+}
+
+:host ::ng-deep .tooltip .tooltip-inner .tooltip-header {
+  font-weight: 600;
+  font-size: 12px;
+  padding-top: 5px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  height: 30px;
+}
+
+:host ::ng-deep .tooltip .tooltip-inner .tooltip-para {
+  padding: 0px 10px 10px;
+  margin: 0px;
+}
+
+:host ::ng-deep .tooltip .tooltip-inner .tooltip-header::after {
+  position: absolute;
+  left: 0;
+  top: 38px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  content: "";
+  width: 100%;
+  display: block;
+}
+
+:host ::ng-deep .tooltip .arrow::before {
+  z-index: 5;
+}
+
+:host ::ng-deep .bs-tooltip-top .arrow::before {
+  border-top-color: #fff;
+  border-width: 0.6rem 0.6rem 0;
+}
+
+:host ::ng-deep .bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #fff;
+  border-width: 0 0.6rem 0.6rem;
+}
+
+:host ::ng-deep .bs-tooltip-left .arrow::before {
+  border-left-color: #fff;
+  border-width: 0.6rem 0 0.6rem 0.6rem;
+}
+
+:host ::ng-deep .bs-tooltip-right .arrow::before {
+  border-right-color: #fff;
+  border-width: 0.6rem 0.6rem 0.6rem 0;
+}
+
+@media (max-width: 767px) {
+  .submittedclaims-statuscontainer {
+    margin-bottom: 20px;
+  }
+  .submittedclaimsstatusheadercomponent {
+    display: block;
+  }
+  .statuscontainer-headerwrapper {
+    margin-bottom: 10px;
+  }
+  .headerwrapper-contentdiv-textblock {
+    font-size: 10px;
+  }
+  .headerwrapper-contentdiv-textblock-span {
+    display: none;
+  }
+  .submittedclaimsstatusrowcomponent {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .submittedclaims-statuscontainer {
+  }
+  .statuscontainer-headerwrapper {
+    display: none;
+  }
+}

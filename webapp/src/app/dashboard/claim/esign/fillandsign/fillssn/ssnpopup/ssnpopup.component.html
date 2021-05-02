@@ -1,0 +1,31 @@
+<div class="ssn-modal">
+	<div class="modal-body" #modalBody>
+		<button class="clear exit-button" (click)="onCloseClick()"><img src="../../../../../../../images/documents-exit-icon.svg" height="20"></button>
+		<div class="header-section">
+			<h2>Social Security Number Required</h2>
+			<img src="../../../../../../../images/No-SSN-Icon.svg" height="100">
+			<p>The Unclaimed Property Department requires that you provide a social security number so they can process your claim. </p>
+		</div>
+		<div class="cf-section">
+			<h3>How ClaimFound Handles Your SSN</h3>
+      <ul>
+        <li>ClaimFound never stores your SSN in its database directly, it is only kept on your signed claim form.</li>
+        <li>Once your claim is processed by the Unclaimed Property Department, we remove the form and your SSN from our platform. </li>
+        <li>During the short period of time where we store and transmit your claim form, we encrypt it at all times using bank-level security to avoid any anyone from getting access to it.</li>
+      </ul>
+			<p class="privacy">Learn more about how we protect your privacy on our <a class="privacy link" (click)="onPrivacyLinkClick()">Privacy Policy.</a></p>
+		</div>
+		<div class="cf-section">
+			<h3>How To Process Your Claim Manually</h3>
+			<p>If you don't want to provide your SSN to ClaimFound, you will have to manually process your claim through the state.</p>
+			<ul>
+				<li>Google your state unclaimed property department website.</li>
+				<li>Find the unclaimed property search bar and look up your name and then find the claims you have selected in ClaimFound.</li>
+				<li>Research your state's instructions to determine what steps you need to take to get your money back.</li>
+				<li>Print your documentation and state claim form and then provide your SSN and sign the form.</li>
+				<li>Package all of your documents and mail them to the unclaimed property department.</li>
+				<li>Wait 2 - 4 weeks for confirmation from the unclaimed property department that your claim has been received </li>
+			</ul>
+		</div>
+	</div>
+</div>

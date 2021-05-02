@@ -1,0 +1,11 @@
+<div>
+	<p class="formData-textHeader">📞 Phone Number</p>
+	<p class="formData-textBlock end">If you want to be updated about your claim on a different number, you can change your primary phone by <a class="formData-textLink" (click)="onClickProfileLink()">updating your profile</a>.</p>
+	<div class="formData-resultsBlock">{{formattedPhoneNumber}}</div>
+	<!--<div *ngIf="showError && anyFieldInvalid(formConstants)" class="error-message">Phone number: please re-enter your phone number.</div>-->
+	<!--<div class="phone-form">-->
+		<!--<form [formGroup]="fillAndSignForm">-->
+			<!--<input type="text" class="phone {{textBoxErrorClass(formConstants.phone)}}" placeholder="Phone Number" formControlName="{{formConstants.phone}}" maxlength="11">	-->
+		<!--</form>-->
+	<!--</div>-->
+</div>

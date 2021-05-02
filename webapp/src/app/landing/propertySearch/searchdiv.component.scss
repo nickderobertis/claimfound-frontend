@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+ 
+    Created on : Feb 27, 2017, 4:29:33 PM
+    Author     : christofferprompovitch
+*/
+
+.hero-search-box-div-textblock {
+  outline: none;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(136, 148, 141);
+}
+
+@media (max-width: 991px) {
+  .hero-search-box-div-textblock {
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-search-box-div-textblock {
+  }
+}
+
+@media (max-width: 479px) {
+  .hero-search-box-div-textblock {
+  }
+}

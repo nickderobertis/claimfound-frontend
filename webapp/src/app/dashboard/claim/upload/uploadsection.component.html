@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+
+<div class="completed-documents-wrapper">
+    <div class="completed-documents-header">
+        <div class="header-h1">Completed Documents</div>
+    </div>
+ <cf-upload-box [model]="model" (deleteEvent)="emitDeleteEvent($event)"></cf-upload-box>
+</div>

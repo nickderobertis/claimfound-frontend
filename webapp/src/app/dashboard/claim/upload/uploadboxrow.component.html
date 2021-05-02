@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<div class="completed-documents-body-text-div">
+  <div class="completed-documents-body-textblock-1">
+    {{ model.docType | titlecase }} {{ labelSeparator }}
+  </div>
+  <div class="completed-documents-body-textblock-2">
+    {{ description }}
+  </div>
+</div>
+<div class="completed-documents-body-view-wrapper">
+  <div class="{{ viewDivClass }}" (click)="openDocument($event)">
+    <div class="completed-documents-body-view-textblock">View</div>
+  </div>
+  <div
+    *ngIf="model.userUploaded"
+    class="completed-documents-body-view-div exit"
+    (click)="deleteDocument($event)"
+  >
+    <img src="/images/documents-exit-icon.svg" width="15" />
+  </div>
+</div>
+
+<!-- View Document Modal -->
+<div
+  id="docModal"
+  class="modal"
+  *ngIf="modal"
+  (click)="closeIfClickedOutside($event)"
+>
+  <div #docModalWrapper class="doc-modal-wrapper">
+    <div class="doc-modal-header">
+      <div class="doc-modal-header-textblock">
+        {{ model.docType | titlecase }} Document
+      </div>
+      <div class="doc-modal-header-close">
+        <a href="#" (click)="closeDocument($event)">
+          <img src="/images/documents-exit-icon.svg" width="15" />
+        </a>
+      </div>
+    </div>
+    <!-- Modal content -->
+    <div class="doc-modal-body">
+      <iframe [src]="url" class="modal-iframe"></iframe>
+    </div>
+  </div>
+</div>

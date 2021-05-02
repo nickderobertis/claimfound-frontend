@@ -1,0 +1,41 @@
+<div class="deceased-claims-refer-container">
+
+    <div class="deceased-claims-refer-div-1">
+        <div class="deceased-claims-refer-div-1-textblock">Show your <span style="color:red"> &hearts; </span> by telling {{name}} about their lost money!</div>
+    </div>
+
+    <div class="the-god-damnit-div">
+        <div class="deceased-claims-refer-div-2" (click)="showReferralEmailClick()">
+            <div class="deceased-claims-refer-div-2-textblock">Email</div>
+            <img src="/images/gmail.png" width="28" alt="" class="deceased-claims-refer-div-2-image">
+        </div>
+
+        <div class="deceased-claims-refer-div-3" (click)="openFacebookShareWindow()">
+            <div class="deceased-claims-refer-div-3-textblock">Facebook</div>
+            <img src="/images/facebook.png" width="25" alt="" class="deceased-claims-refer-div-3-graphic">
+        </div>
+
+        <div class="deceased-claims-refer-div-4" (click)="copyReferralLinkClick()">
+            <div class="deceased-claims-refer-div-4-spacer-1">
+                <div class="deceased-claims-refer-div-4-textblock-1">Copy Referral Link</div>
+                <img src="/images/referral-link-graphic.png" width="40" alt="" class="deceased-claims-refer-div-4-graphic">
+            </div>
+            <div class="deceased-claims-refer-div-4-spacer-2">
+                <div class="deceased-claims-refer-div-4-spacer-2-textblock" *ngIf="showCopiedToClipboard">Copied To Clipboard</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="deceased-claims-email-container" [ngStyle]="referralEmailStyles">
+    <div class="deceased-claims-email-textblock">Sending {{name}} an email is very classy - go you!</div>
+    <div class="deceased-claims-email-box">
+        <input class="deceased-claims-email-box-textblock" type="text" placeholder="Enter Email Address ..." #emailInput>
+    </div>
+    <div class="deceased-claims-email-button" (click)="submitReferralEmailClick(emailInput)">Submit &gt;</div>
+</div>
+
+<div class="deceased-claims-email-container sent" [ngStyle]="emailSentMessageStyles">
+    <div class="deceased-claims-email-textblock sent">Great job, you successfully sent an email to {{name}} at {{lastSentEmailAddress}}.</div>
+</div>

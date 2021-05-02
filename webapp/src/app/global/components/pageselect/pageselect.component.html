@@ -1,0 +1,26 @@
+<div class="selectclaimstablefootercomponent">
+    <div class="selectclaims-table-footerwrapper">
+      <div class="selectclaims-table-footer-numberdiv">
+        <div class="selectclaims-table-footer-number-textblock1">{{itemName}}</div>
+        <div class="selectclaims-table-footer-number-textblock2">{{firstPageItemNumber}} - {{lastPageItemNumber}}</div>
+        <div class="selectclaims-table-footer-number-textblock3">of {{numberOfItems}}</div>
+      </div>
+      <div class="selectclaims-table-footer-pageselectcontainer">
+        <div class="pageselectwidgetcomponent">
+          <div class="selectclaims-table-footer-pageselectwrapper">
+            <div class="pageselect-navwrapper">
+              <div class="pageselect-navdiv" (click)="selectPreviousPage()">
+                <div class="pageselect-nav-arrowicon">&lt;</div>
+              </div>
+              <div *ngFor="let i of selectablePageNumberArray" (click)="selectPage(i)" [className]="i == currentPage ? 'pageselect-navdiv number selected': 'pageselect-navdiv number'">
+                <div [className]="i == currentPage ? 'pageselect-navdiv-numberblock selected': 'pageselect-navdiv-numberblock'">{{i}}</div>
+              </div>
+              <div class="pageselect-navdiv number" (click)="selectNextPage()">
+                <div class="pageselect-nav-arrowicon">&gt;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

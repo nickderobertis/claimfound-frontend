@@ -1,0 +1,601 @@
+@import "src/variables";
+.messagecontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.message-headerWrapper {
+  width: 730px;
+  height: 50px;
+  padding-left: 15px;
+  border-style: solid solid none;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: $dashboard-module-header-color;
+}
+
+.Message-header-h3 {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+
+.message-bodyWrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 730px;
+  height: auto;
+  min-height: 150px;
+  margin-bottom: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  border-radius: 0px 0px 5px 5px;
+  background-color: #fff;
+}
+
+.message-resultswrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.results-graphicwrapper {
+  display: block;
+}
+.results-content-textblock1 {
+  margin-bottom: 10px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+.results-graphic-claimmangraphic {
+  width: 156px;
+  height: 123px;
+  background-image: url("../../../../images/results-graphic-claimsGraphic.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+}
+.results-graphic-claimcoingraphic {
+  display: none;
+}
+.results-contentcontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.results-content-textblock1.inactive {
+  display: none;
+}
+.results-content-textblock2 {
+  margin-bottom: 25px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.claimresultscomponent {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.results-content-claimwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+.results-content-claim-textblock1 {
+  margin-bottom: 10px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 9px;
+  line-height: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.results-content-claim-textblock2 {
+  font-family: Graphik, sans-serif;
+  color: $dashboard-numerics-color;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.loading-spinner-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.message-claimbutton {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid none none;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  text-decoration: none;
+  cursor: pointer;
+}
+.message-claimbutton:hover {
+  background-color: rgba(37, 146, 210, 0.15);
+}
+.message-claim-textblock {
+  font-family: Graphik, sans-serif;
+  color: $dashboard-link-color;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.selectedclaims-instructionscontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 25px;
+}
+.selectedclaims-instructions-graphic.no-claims {
+  width: 105px;
+  height: 84px;
+  background-image: url("../../../../images/sign-in-body-graphic.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.selectedclaims-instructions-graphic.no-claims-2 {
+  width: 120px;
+  height: 96px;
+  background-image: url("../../../../images/sign-in-body-graphic.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.selectedclaims-instructions-contentdiv {
+  display: block;
+  padding-top: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.selectedclaims-instructions-content-textheader {
+  margin-bottom: 7.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.selectedclaims-instructions-content-textblock1 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+
+.selectedclaims-instructions-contentdiv.no-claims {
+  padding: 5px 15px 0px 0px;
+}
+
+.selectedclaims-instructions-contentList {
+  padding-left: 20px;
+  padding-top: 5px;
+  margin-bottom: 0px;
+}
+
+.selectedclaims-instructions-content-listItem {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  padding-left: 5px;
+}
+
+@media (max-width: 991px) {
+  .message-headerWrapper {
+  }
+
+  .Message-header-h3 {
+  }
+
+  .message-bodyWrapper {
+  }
+
+  .selectedclaims-instructionscontainer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .selectedclaims-instructions-contentdiv {
+    padding-top: 20px;
+  }
+  .selectedclaims-instructions-content-textheader {
+    margin-bottom: 7.5px;
+    font-size: 14px;
+  }
+  .selectedclaims-instructions-content-textblock1 {
+    margin-bottom: 2.5px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 767px) {
+  .messagecontainer {
+  }
+
+  .message-headerWrapper {
+    width: 450px;
+  }
+
+  .Message-header-h3 {
+  }
+
+  .message-bodyWrapper {
+    width: 450px;
+  }
+
+  .message-resultswrapper {
+    display: block;
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .results-graphicwrapper {
+    position: relative;
+    left: 350px;
+    top: 10px;
+    display: inline-block;
+    float: none;
+    clear: none;
+  }
+  .results-content-textblock1 {
+    margin-bottom: 7.5px;
+    font-size: 16px;
+  }
+  .results-graphic-claimmangraphic {
+    display: none;
+  }
+
+  .results-graphic-claimcoingraphic {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 52px;
+    height: 42px;
+    background-image: url("../../../../images/results-graphic-claimsCoinGraphic.svg");
+    background-position: 0px 0px;
+    background-size: cover;
+  }
+  .results-contentcontainer {
+    margin-top: -50px;
+  }
+  .results-content-textblock2 {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .results-content-claimwrapper {
+    width: 95%;
+  }
+  .results-content-claim-textblock1 {
+    margin-bottom: 5px;
+  }
+  .results-content-claim-textblock2 {
+    font-size: 18px;
+  }
+  .message-claimbutton {
+    height: 45px;
+  }
+  .message-claim-textblock {
+    font-size: 13px;
+  }
+  .selectedclaims-instructionscontainer {
+    padding-bottom: 15px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .selectedclaims-instructions-contentdiv {
+    padding-left: 0px;
+  }
+  .selectedclaims-instructions-content-textheader {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .selectedclaims-instructions-content-textblock1 {
+    text-align: center;
+    padding: 0px 10px;
+  }
+
+  .selectedclaims-instructions-content-textheader.no-claims {
+    margin-bottom: 7.5px;
+    text-align: start;
+    line-heihgt: 19px;
+  }
+
+  .selectedclaims-instructions-content-textblock1.no-claims {
+    padding: 0px;
+    text-align: start;
+  }
+
+  .selectedclaims-instructions-graphic.no-claims-2 {
+    width: 120px;
+    height: 96px;
+    background-image: url("../../../../images/sign-in-body-graphic.svg");
+    background-position: 0px 0px;
+    background-size: cover;
+    margin: 0px 0px 15px;
+  }
+
+  .selectedclaims-instructionscontainer.no-claims {
+    padding: 20px 15px;
+  }
+
+  .selectedclaims-instructions-contentdiv.no-claims {
+    padding: 0px;
+  }
+
+  .selectedclaims-instructions-content-listItem {
+    line-height: 18px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 479px) {
+  .messagecontainer {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .message-headerWrapper {
+    width: auto;
+  }
+
+  .Message-header-h3 {
+  }
+
+  .message-bodyWrapper {
+    width: auto;
+    margin-bottom: 30px;
+  }
+
+  .message-resultswrapper {
+    display: block;
+    padding: 25px 0px 0px;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .results-graphicwrapper {
+    position: static;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .results-content-textblock1 {
+    display: none;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .results-graphic-claimmangraphic {
+    display: block;
+  }
+  .results-graphic-claimcoingraphic {
+    display: none;
+  }
+  .results-contentcontainer {
+    margin-top: 0px;
+    padding-top: 20px;
+  }
+  .results-content-textblock1.inactive {
+    display: block;
+  }
+  .results-content-textblock2 {
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .results-content-textblock-nospan {
+    display: none;
+  }
+  .results-content-claimwrapper {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .results-content-claimdiv {
+    margin-right: 0px;
+  }
+  .results-content-claim-textblock1 {
+    margin-bottom: 2.5px;
+    font-size: 8px;
+    line-height: 15px;
+    text-align: left;
+  }
+  .results-content-claim-textblock2 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    text-align: left;
+  }
+  .results-content-claimdiv.average {
+    display: none;
+  }
+  .selectedclaims-instructions-graphic {
+    width: 130px;
+    height: 92px;
+  }
+  .selectedclaims-instructions-content-textheader {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .selectedclaims-instructions-content-textblock1 {
+    margin-bottom: 5px;
+    font-size: 11px;
+    line-height: 19px;
+  }
+
+  .selectedclaims-instructions-content-listItem {
+    line-height: 17px;
+    margin-bottom: 5px;
+    font-size: 11px;
+    padding-left: 15px;
+  }
+}

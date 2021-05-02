@@ -1,0 +1,130 @@
+@import "src/variables";
+.formData-textHeader {
+  font-family: "Graphik", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.formData-textBlock {
+  font-family: "Graphik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.formData-textBlock.end {
+  margin-bottom: 15px;
+}
+
+.formData-textLink {
+  color: $dashboard-link-color;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.formData-resultsBlock {
+  display: inline-block;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background: #f6f7f9;
+  font-family: "Graphik", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.phone-text {
+  font-weight: 600;
+  background: rgba(136, 148, 141, 0.2);
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  margin-bottom: 20px;
+  min-width: 200px;
+  font-family: "Graphik", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.phone-form form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone-form .error {
+  border: 2px solid rgba(204, 64, 64, 0.75);
+  min-width: 200px;
+}
+
+@media (max-width: 991px) {
+  .formData-textHeader {
+  }
+
+  .formData-textBlock {
+  }
+
+  .formData-textLink {
+  }
+
+  .formData-resultsBlock {
+  }
+}
+
+@media (max-width: 767px) {
+  .formData-textHeader {
+  }
+
+  .formData-textBlock {
+  }
+
+  .formData-textLink {
+  }
+
+  .formData-resultsBlock {
+  }
+
+  .phone-form form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .phone-form form input {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  .error-message {
+    width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  .formData-textHeader {
+  }
+
+  .formData-textBlock {
+  }
+
+  .formData-textLink {
+  }
+
+  .formData-resultsBlock {
+  }
+}

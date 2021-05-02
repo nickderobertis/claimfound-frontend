@@ -1,0 +1,33 @@
+
+<div class="profilebodynavigationcomponent">
+  <div class="profile-body-navwrapper">
+    <div class="profilenavigationitemcomponent">
+      <div class="profile-nav-selectdiv" (click)="onNavSectionClick(navSectionConstants.personalInfo)">
+        <div class="profile-nav-select-selector {{getNavSectionSelectedClass(navSectionConstants.personalInfo)}}"></div>
+        <div class="profile-nav-select-namesicon {{getNavSectionClass(navSectionConstants.personalInfo)}}"></div>
+        <div class="profile-nav-select-textblock {{getNavSectionClass(navSectionConstants.personalInfo)}}">Personal <span class="profile-nav-select-textblock-span">Info</span></div>
+      </div>
+    </div>
+    <div class="profilenavigationitemcomponent">
+      <div class="profile-nav-selectdiv" (click)="onNavSectionClick(navSectionConstants.familyMembers)">
+        <div class="profile-nav-select-selector {{getNavSectionSelectedClass(navSectionConstants.familyMembers)}}"></div>
+        <div class="profile-nav-select-familyicon {{getNavSectionClass(navSectionConstants.familyMembers)}}"></div>
+        <div class="profile-nav-select-textblock {{getNavSectionClass(navSectionConstants.familyMembers)}}">Family <span class="profile-nav-select-textblock-span">Members</span></div>
+      </div>
+    </div>
+    <div class="profilenavigationitemcomponent">
+      <div class="profile-nav-selectdiv" (click)="onNavSectionClick(navSectionConstants.phoneNumbers)">
+        <div class="profile-nav-select-selector {{getNavSectionSelectedClass(navSectionConstants.phoneNumbers)}}"></div>
+        <div class="profile-nav-select-phoneicon {{getNavSectionClass(navSectionConstants.phoneNumbers)}}"></div>
+        <div class="profile-nav-select-textblock {{getNavSectionClass(navSectionConstants.phoneNumbers)}}">Phone <span class="profile-nav-select-textblock-span">Numbers</span></div>
+      </div>
+    </div>
+    <div class="profilenavigationitemcomponent">
+      <div class="profile-nav-selectdiv" (click)="onNavSectionClick(navSectionConstants.address)">
+        <div class="profile-nav-select-selector {{getNavSectionSelectedClass(navSectionConstants.address)}}"></div>
+        <div class="profile-nav-select-addressicon {{getNavSectionClass(navSectionConstants.address)}}"></div>
+        <div class="profile-nav-select-textblock {{getNavSectionClass(navSectionConstants.address)}}">Address</div>
+      </div>
+    </div>
+  </div>
+</div>

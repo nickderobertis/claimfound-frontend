@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<div class="success-container" id="submit-sucesss-page-container">
+  <div class="success-wrapper">
+    <div class="success-div-wrapper">
+      <div class="success-div-top">
+        <div class="banner-div">
+          <img src="/images/congrats-banner-left.svg" class="congrats-banner" />
+          <img
+            src="/images/congrats-banner-right.svg"
+            class="congrats-banner"
+          />
+          <img
+            src="/images/congrats-banner-mobile.svg"
+            class="congrats-banner-mobile"
+          />
+        </div>
+        <h3 class="success-h3">
+          Congratulations, {{ name.capitalizedFirstName }}
+        </h3>
+        <div class="success-textblock-1">
+          You filed your claim with the Florida Unclaimed Property Division.
+        </div>
+      </div>
+
+      <!--TODO: hook up success stats-->
+      <!--<div class="success-stats-container">-->
+      <!--<div class="success-stats-wrapper">-->
+      <!--<div class="success-stats-header">Submission Overview</div>-->
+      <!--<div class="success-stats-body">-->
+      <!--<div class="success-stats-div">-->
+      <!--<div class="success-stats-textblock-1">States Submitted</div>-->
+      <!--<div class="success-stats-textblock-2">FL, VA, CA</div>-->
+      <!--</div>-->
+      <!--<div class="success-stats-div">-->
+      <!--<div class="success-stats-textblock-1">Value of Claims</div>-->
+      <!--<div class="success-stats-textblock-2">$425.25</div>-->
+      <!--</div>-->
+      <!--<div class="success-stats-div last">-->
+      <!--<div class="success-stats-textblock-1">Number of Claims</div>-->
+      <!--<div class="success-stats-textblock-2">2</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+
+      <div class="success-bottom-wrapper">
+        <div class="success-bottom-div">
+          <div class="success-header-textblock">What You Need To Know</div>
+          <ul class="success-listWrapper">
+            <li class="success-textblock-2">
+              You will be contacted about your claim by either email or mail
+              from the unclaimed property department.
+            </li>
+            <li class="success-textblock-2">
+              The unclaimed property department may request further information,
+              should the documentation you provided for your claim not be
+              sufficient to prove you are the rightful owner.
+            </li>
+            <li class="success-textblock-2">
+              This process may take a while because most unclaimed property
+              departments are severely backlogged. For example, the Florida
+              Unclaimed Property department does not typically review a new
+              claim for up to 45 – 60 days from when it was received.
+            </li>
+            <li class="success-textblock-2" id="bottom-textblock">
+              If you have any questions regarding the claim process or your
+              account in the meantime, please email
+              <a
+                class="success-textblock-2"
+                id="email-link"
+                href="mailto:support@claimfound.com"
+                >support@claimfound.com</a
+              >
+              or chat with us below.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a class="success-button" routerLink="/dashboard"
+      >Back to My Claims &nbsp;&gt;</a
+    >
+  </div>
+</div>

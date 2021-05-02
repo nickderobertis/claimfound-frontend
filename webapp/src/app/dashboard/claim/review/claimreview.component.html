@@ -1,0 +1,19 @@
+<div class="review-container">
+    <div class="claims-review-header">🏷 Claim Information</div>
+    <div class="claims-body-container final-review">
+        <div class="claims-wrapper final-review w-clearfix">
+            <cf-claim-table [model]="model.claims"></cf-claim-table>
+        </div>
+
+    </div>
+
+    <div class="documents-review-header">📑 Uploaded Documents</div>
+    <div class="documents-review-body">
+        <file-view-list class="docs-review-container" [model]="model.docFileViewModels"></file-view-list>
+    <div>
+
+    <div class="documents-review-header">✒️ Signed Claim Forms</div>
+    <div class="documents-review-body">
+        <file-view-list class="docs-review-container" [model]="model.formFileViewModels"></file-view-list>
+    </div>
+</div>

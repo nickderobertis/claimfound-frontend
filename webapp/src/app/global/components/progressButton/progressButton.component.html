@@ -1,0 +1,42 @@
+<!--add loading when button clicked-->
+<div class="progress-button" [ngClass]="model.triggered ? 'loading' : ''" >
+	<!-- diasble button click when clicked so loading can run-->
+	<button
+    (click)="onClick($event)"
+    [attr.disabled] = "model.currentlyDisabled ? 'disabled' : null"
+    [style.border-color]=model.backgroundCircleColor
+    [@submitStateChange]="{value: model.submitState, params: {origWidth: model.width, origHeight: model.height, circleWidth: model.circleSize}}"
+    (@submitStateChange.done)="onFinishSubmitAnimation($event)"
+    [style.width]="model.width + '%'"
+    [style.height]="model.height + 'px'"
+    [style.fontSize]="model.textSize + 'px'"
+    [ngClass]="{'disabled': model.currentlyDisabled}"
+  ><span>{{ model.submitText }}</span></button>
+
+	<!-- svg circle for progress indication -->
+	<svg class="progress-circle" [style.width]=model.circleSize [style.height]=model.circleSize #progressCircle>
+		<circle
+      [style.cx]=model.circlePathOffset
+      [style.cy]=model.circlePathOffset
+      [style.r]=model.circleRadius
+      [style.stroke]=model.drawCircleColor
+      [style.strokeDasharray]="model.circleDashArraySize + ', ' + model.circleDashArraySize"
+      [@drawCircle]="{value: model.circleState, params: {dashOffset: model.circleDashArraySize}}"
+      (@drawCircle.done)="onFinishDrawCircle($event)"
+    />
+	</svg>
+
+		<!-- checkmark to show on success -->
+		<svg class="checkmark" [style.width]=model.circleSize [style.height]=model.circleSize [@drawCheck]="model.checkVisible" viewBox="0 0 60 60">
+      <path d="m31.5,46.5l15.3,-23.2"/>
+      <path d="m31.5,46.5l-8.5,-7.1"/>
+		</svg>
+
+		<!-- cross to show on error -->
+		<svg class="cross" [style.width]=model.circleSize [style.height]=model.circleSize [@drawX]="model.xVisible" viewBox="0 0 60 60">
+			<path d="m35,35l-9.3,-9.3"/>
+			<path d="m35,35l9.3,9.3"/>
+			<path d="m35,35l-9.3,9.3"/>
+			<path d="m35,35l9.3,-9.3"/>
+		</svg>
+	</div>

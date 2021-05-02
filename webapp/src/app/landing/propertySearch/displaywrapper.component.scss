@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 27, 2017, 4:30:46 PM
+    Author     : christofferprompovitch
+*/
+
+.hero-results-box-a-results-div {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 28%;
+  height: 90px;
+  border-right: 1px solid hsla(216, 2%, 54%, 0.8);
+}
+
+.hero-results-box-a-results-div.state {
+  width: 16%;
+}
+
+.hero-results-box-a-results-div.end {
+  border-right: none;
+}
+
+@media (max-width: 991px) {
+  .hero-results-box-a-results-div {
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-results-box-a-results-div {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid hsla(216, 2%, 54%, 0.8);
+  }
+
+  .hero-results-box-a-results-div.state {
+    width: 100%;
+  }
+
+  .hero-results-box-a-results-div.end {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .hero-results-box-a-results-div {
+  }
+}

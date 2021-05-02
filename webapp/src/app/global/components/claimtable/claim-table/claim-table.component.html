@@ -1,0 +1,22 @@
+
+<div class="selectclaims-table-headercontainer">
+  <div class="selectclaims-table-headerwrapper">
+    <div class="selectclaims-table-headerdiv amount">
+      <div class="selectclaims-table-header-textblock">AMOUNT</div>
+    </div>
+    <div class="selectclaims-table-headerdiv name">
+      <div class="selectclaims-table-header-textblock">NAME</div>
+    </div>
+    <div class="selectclaims-table-headerdiv state">
+      <div class="selectclaims-table-header-textblock">STATE</div>
+    </div>
+    <div class="selectclaims-table-headerdiv address">
+      <div class="selectclaims-table-header-textblock">ADDRESS</div>
+    </div>
+    <div class="selectclaims-table-headerdiv reporting-company">
+      <div class="selectclaims-table-header-textblock"><span
+        class="selectedclaims-table-header-textblock-span">REPORTING</span><span> COMPANY</span></div>
+    </div>
+  </div>
+</div>
+<cf-claim-table-row *ngFor="let detail of model;" [model]="detail"></cf-claim-table-row>

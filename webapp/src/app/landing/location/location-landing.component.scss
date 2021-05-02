@@ -1,0 +1,153 @@
+.map-component-wrapper {
+  padding: 10%;
+}
+
+.locationpagecomponent {
+}
+
+.locationoverviewcomponent {
+}
+
+.locationmapcomponent {
+}
+
+.locationtablecontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 75px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.locationtablewrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1306px;
+  padding-right: 30px;
+  padding-left: 30px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.locationtablecomponent {
+}
+
+.map-page-spinner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  margin-bottom: 300px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .locationpagecomponent {
+  }
+
+  .locationoverviewcomponent {
+  }
+
+  .locationmapcomponent {
+  }
+
+  .locationtablecontainer {
+  }
+
+  .locationtablewrapper {
+  }
+
+  .locationtablecomponent {
+  }
+}
+
+@media (max-width: 991px) {
+  .locationpagecomponent {
+  }
+
+  .locationoverviewcomponent {
+  }
+
+  .locationmapcomponent {
+  }
+
+  .locationtablecontainer {
+  }
+
+  .locationtablewrapper {
+    width: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .locationtablecomponent {
+  }
+}
+
+@media (max-width: 767px) {
+  .locationpagecomponent {
+  }
+
+  .locationoverviewcomponent {
+  }
+
+  .locationmapcomponent {
+  }
+
+  .locationtablecontainer {
+  }
+
+  .locationtablewrapper {
+  }
+
+  .locationtablecomponent {
+  }
+}
+
+@media (max-width: 479px) {
+  .locationpagecomponent {
+  }
+
+  .locationoverviewcomponent {
+  }
+
+  .locationmapcomponent {
+  }
+
+  .locationtablecontainer {
+  }
+
+  .locationtablewrapper {
+  }
+
+  .locationtablecomponent {
+  }
+}

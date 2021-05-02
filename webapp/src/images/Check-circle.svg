@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Check-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 11 0 11 10 0 10"></polygon>
+    </defs>
+    <g id="---▶︎--Claim-Forms" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ClaimForm-Redesign---Multiple-Views" transform="translate(-2513.000000, -345.000000)">
+            <g id="E-sign:-State-3---Desktop/Tablet" transform="translate(1901.000000, 246.000000)">
+                <g id="Body">
+                    <g id="Step-1:-review-claim-form" transform="translate(15.000000, 89.000000)">
+                        <g id="Completed-Task" transform="translate(597.000000, 10.000000)">
+                            <g id="Check-circle">
+                                <circle id="Oval-2" fill="#24D2AA" cx="8.75" cy="8.75" r="8.75"></circle>
+                                <g id="checkmark" transform="translate(3.000000, 4.000000)">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="Clip-2"></g>
+                                    <polyline id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)" points="4.35325 10 0 5.796339 1.51490625 4.07213894 4.1243125 6.59123667 9.26921875 0 11 1.48457769 4.35325 10"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

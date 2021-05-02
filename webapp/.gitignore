@@ -1,0 +1,64 @@
+env.js
+.idea
+documentation
+frontend.packages.ts
+src/app/global/error-response-types.ts
+src/app/global/utils/landing-links.ts
+src/app/global/env.ts
+constants/
+src/app/global/utils/landing-links.ts
+setup-config.ini
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+
+# dependencies
+/node_modules
+
+# profiling files
+chrome-profiler-events.json
+speed-measure-plugin.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+nbproject
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Generated files
+src/app/global/org-settings.ts
+svelte-app/src/org-settings.ts
+svelte-app/index.html
+orgdist

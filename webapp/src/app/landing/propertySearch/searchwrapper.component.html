@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<div class="hero-results-box-c-message-wrapper error" *ngIf="errorMessage">
+  <div class="hero-results-box-c-message-div"></div>
+  <div class="hero-results-box-c-message-textblock-1 error">Error:</div>
+  <div class="hero-results-box-c-message-textblock-2 error">
+    {{ errorMessage }}
+  </div>
+</div>
+<div *ngIf="supportedStatesLoaded" class="hero-search-box-wrapper">
+  <form class="hero-search-box-name">
+    <cf-search-div
+      class="hero-search-box-div-name"
+      *ngFor="let field of fields; let i = index"
+      [field]="field"
+      [editable]="swm.editable[i]"
+      [placeHolder]="swm.placeHolders[i]"
+      [searchModel]="swm.searchModel"
+      [inputId]="inputIds[i]"
+    >
+    </cf-search-div>
+    <cf-namesearch-dropdown
+      tabindex="1"
+      role="button"
+      [model]="swm.searchingForDropDownModel"
+      (selectionsChanged)="onRelationshipSelect($event)"
+      idPrefix="relationship"
+      class="hero-search-box-div-dropdown"
+    ></cf-namesearch-dropdown>
+
+    <cf-namesearch-dropdown
+      tabindex="1"
+      role="button"
+      [model]="swm.stateDropDownModel"
+      (selectionsChanged)="setSelectedStates($event)"
+      idPrefix="state"
+      class="hero-search-box-div-dropdown state"
+    ></cf-namesearch-dropdown>
+  </form>
+
+  <!-- <div *ngIf="enabled"> -->
+  <div
+    class="hero-search-box-button"
+    (click)="submitSearch($event)"
+    *ngIf="isClickable"
+  >
+    Search
+  </div>
+  <div class="hero-search-box-button inactive" *ngIf="!isClickable">Search</div>
+  <!-- </div> -->
+  <div class="hero-signup-buttonWrapper">
+    <div class="hero-signup-button-textblock1">OR</div>
+    <div class="hero-signup-button" (click)="showSignUpModal($event)">
+      Sign Up Now
+    </div>
+  </div>
+</div>
+
+<div *ngIf="supportedStatesLoading">
+  <cf-loading-spinner size="40"></cf-loading-spinner>
+</div>

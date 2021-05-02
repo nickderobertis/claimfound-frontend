@@ -1,0 +1,20 @@
+<div class="submittedclaimscontainer">
+
+  <div class="submittedclaimsheadercomponent">
+      <div class="submittedclaims-headerwrapper">
+      <div class="submittedclaims-headerwrapper-textblock1">Florida Claim Submission</div>
+      <div class="submittedclaims-headerwrapper-textblock2">{{ model.date }}</div>
+      </div>
+  </div>
+
+  <div class="submittedclaims-bodywrapper">
+      <div class="submittedclaims-messagewrapper">
+          <div class="messagewrapper-contentdiv-textheader">You processed <span class="textblock-span">{{ model.numClaims }}</span> claim(s) worth <span class="textblock-span">{{ model.totalValueClaims | currency:'USD':'symbol' }}</span> through ClaimFound on <span class="textheader-span">{{ model.date | date:'longDate' }}.</span></div>
+          <div class="messagewrapper-textblock2" *ngIf="model.userFees > 0">You purchased our address verification service and we charged you <span class="textblock-span3">{{ model.userFees | currency:'USD':'symbol' }}</span> by taking this amount out of your claims.</div>
+          <div class="messagewrapper-contentdiv-textblock">If there are no errors with your claim package, it will be delivered to the Florida Unclaimed Property Division to be processed. If we find an error with your claim, a Claim Support Specialist will reach out.</div>
+          <div class="messagewrapper-textblock2">If you have any questions about your claim, please chat with us or contact <span class="textblock-span2">support@claimfound.com</span></div>
+      </div>
+      <cf-state-submission *ngFor="let mod of model.stateSubmissions;" [model]="mod"></cf-state-submission>
+  </div>
+</div>
+

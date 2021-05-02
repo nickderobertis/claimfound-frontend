@@ -1,0 +1,568 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Dec 20, 2016, 11:55:50 AM
+    Author     : christofferprompovitch
+*/
+@import "src/variables";
+.navbar-custom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: $dashboard_border_line_color;
+  background-color: $dashboard_bck_color;
+}
+
+.navbar-logo-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: $dashboard_img_padding_right;
+  padding-left: $dashboad_img_padding_left;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: $dashboard_border_line_color;
+}
+
+.logo-full-icon {
+  cursor: pointer;
+  width: 171px;
+  content: $dashboard_img_url;
+}
+
+.logo-half-icon {
+  display: none;
+}
+
+.navbar-menu-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.navbar-menu-links-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.navbar-menu-links-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40px;
+  padding-right: 5px;
+  padding-left: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  outline: none;
+}
+
+.navbar-menu-links-div.help {
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-left: $dashboard_border_line_color;
+  cursor: pointer;
+}
+
+.navbar-menu-links-div.help:hover {
+  background-color: $dashboard_bck_color_on_hover;
+}
+
+.help-icon {
+  cursor: pointer;
+}
+
+.navbar-selected-div {
+  width: 90px;
+  height: 5px;
+  margin-bottom: 20px;
+  background-color: rgba(36, 90, 170, 0.8);
+}
+
+.navbar-selected-div.not-selected {
+  height: 5px;
+  margin-bottom: 22.5px;
+  background-color: transparent;
+}
+
+.navbar-selected-div.profile {
+  width: 65px;
+  height: 5px;
+  margin-bottom: 22.5px;
+}
+
+.navbar-selected-div.profile.not-selected {
+  background-color: transparent;
+}
+
+.navbar-menu-links-textlink {
+  margin-left: 0px;
+  font-family: $dashboard_menu_links_font_family;
+  color: $dashboard_menu_links_text_color;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-menu-links-textlink:hover {
+  color: $dashboard_menu_links_text_color_on_hover;
+}
+
+.navbar-menu-links-textlink.active {
+  color: $dashboard_menu_links_text_color_on_hover;
+  font-weight: 700;
+}
+
+.navbar-menu-dropdown-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 185px;
+  height: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  border-left: $dashboard_border_line_color;
+}
+
+.navbar-menu-dropdown-wrapper:hover .navbar-menu-dropdown-drop {
+  display: block;
+}
+
+.navbar-menu-dropdown-div {
+  position: static;
+  top: 35px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: none;
+}
+
+.navbar-menu-dropdown-textblock {
+  margin-right: 15px;
+  font-family: Graphik, sans-serif;
+  color: #888a8d;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.dropdown-arrow-icon {
+}
+
+.navbar-menu-dropdown-drop {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  z-index: 1;
+  display: none;
+  width: 185px;
+  border-style: none solid solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  background-color: #fff;
+}
+
+.dropdown-drop-div {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  border-bottom: 1px solid hsla(216, 2%, 54%, 0.5);
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-drop-div:hover {
+  background-color: rgba(36, 90, 170, 0.1);
+}
+
+.dropdown-drop-div.dashboard {
+  display: none;
+  padding-left: 20px;
+}
+
+.dropdown-drop-div.profile {
+  display: none;
+}
+
+.dropdown-drop-div.account {
+}
+
+.dropdown-drop-div.help {
+  display: none;
+}
+
+.dropdown-drop-div.logout {
+  border-bottom-style: none;
+}
+
+.dropdown-drop-textblock {
+  font-family: Graphik, sans-serif;
+  color: #888a8d;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.dropdown-drop-textblock:hover {
+  color: rgba(36, 90, 170, 0.8);
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+  }
+
+  .navbar-logo-div {
+  }
+
+  .logo-full-icon {
+    display: none;
+  }
+
+  .logo-half-icon {
+    display: block;
+    cursor: pointer;
+    content: $dashboard_half_img_url;
+  }
+
+  .navbar-menu-container {
+  }
+
+  .navbar-menu-links-wrapper {
+  }
+
+  .navbar-menu-links-div {
+    margin-left: 30px;
+  }
+  .navbar-menu-links-div.help {
+    margin-left: 30px;
+  }
+
+  .navbar-selected-div {
+  }
+
+  .navbar-selected-div.not-selected {
+  }
+
+  .navbar-selected-div.profile {
+  }
+
+  .navbar-selected-div.profile.not-selected {
+  }
+
+  .navbar-menu-links-textlink {
+  }
+
+  .navbar-menu-links-textlink.active {
+  }
+
+  .navbar-menu-dropdown-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .navbar-menu-dropdown-div {
+  }
+
+  .navbar-menu-dropdown-textblock {
+  }
+
+  .dropdown-arrow-icon {
+  }
+
+  .navbar-menu-dropdown-drop {
+  }
+
+  .dropdown-drop-div {
+    padding-left: 20px;
+  }
+
+  .dropdown-drop-div:hover {
+  }
+
+  .dropdown-drop-div.dashboard {
+  }
+
+  .dropdown-drop-div.profile {
+  }
+
+  .dropdown-drop-div.account {
+  }
+
+  .dropdown-drop-div.help {
+  }
+
+  .dropdown-drop-div.logout {
+  }
+
+  .dropdown-drop-textblock {
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+  }
+
+  .navbar-logo-div {
+  }
+
+  .logo-full-icon {
+  }
+
+  .logo-half-icon {
+  }
+
+  .navbar-menu-container {
+  }
+
+  .navbar-menu-links-wrapper {
+    display: none;
+  }
+
+  .navbar-menu-links-div {
+  }
+  .navbar-menu-links-div.help {
+  }
+
+  .navbar-selected-div {
+  }
+
+  .navbar-selected-div.not-selected {
+  }
+
+  .navbar-selected-div.profile {
+  }
+
+  .navbar-selected-div.profile.not-selected {
+  }
+
+  .navbar-menu-links-textlink {
+  }
+
+  .navbar-menu-links-textlink.active {
+  }
+
+  .navbar-menu-dropdown-wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .navbar-menu-dropdown-div {
+  }
+
+  .navbar-menu-dropdown-textblock {
+  }
+
+  .dropdown-arrow-icon {
+  }
+
+  .navbar-menu-dropdown-drop {
+  }
+
+  .dropdown-drop-div {
+  }
+
+  .dropdown-drop-div:hover {
+  }
+
+  .dropdown-drop-div.dashboard {
+    display: block;
+  }
+
+  .dropdown-drop-div.profile {
+    display: block;
+  }
+
+  .dropdown-drop-div.account {
+  }
+
+  .dropdown-drop-div.help {
+    display: block;
+  }
+
+  .dropdown-drop-div.logout {
+  }
+
+  .dropdown-drop-textblock {
+  }
+}
+
+@media (max-width: 479px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar-logo-div {
+  }
+
+  .logo-full-icon {
+  }
+
+  .logo-half-icon {
+  }
+
+  .navbar-menu-container {
+  }
+
+  .navbar-menu-links-wrapper {
+  }
+
+  .navbar-menu-links-div {
+  }
+  .navbar-menu-links-div.help {
+  }
+
+  .navbar-selected-div {
+  }
+
+  .navbar-selected-div.not-selected {
+  }
+
+  .navbar-selected-div.profile {
+  }
+
+  .navbar-selected-div.profile.not-selected {
+  }
+
+  .navbar-menu-links-textlink {
+  }
+
+  .navbar-menu-links-textlink.active {
+  }
+
+  .navbar-menu-dropdown-wrapper {
+    width: 160px;
+    padding-right: 20px;
+  }
+
+  .navbar-menu-dropdown-div {
+  }
+
+  .navbar-menu-dropdown-textblock {
+    font-size: 14px;
+  }
+
+  .dropdown-arrow-icon {
+  }
+
+  .navbar-menu-dropdown-drop {
+    top: 70px;
+    width: 159px;
+  }
+
+  .dropdown-drop-div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .dropdown-drop-div:hover {
+  }
+
+  .dropdown-drop-div.dashboard {
+  }
+
+  .dropdown-drop-div.profile {
+  }
+
+  .dropdown-drop-div.account {
+  }
+
+  .dropdown-drop-div.help {
+  }
+
+  .dropdown-drop-div.logout {
+  }
+
+  .dropdown-drop-textblock {
+    font-size: 12px;
+  }
+}

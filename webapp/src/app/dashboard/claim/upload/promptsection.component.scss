@@ -1,0 +1,225 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Feb 27, 2017, 12:30:51 PM
+    Author     : christofferprompovitch
+*/
+@import "src/variables";
+.document-prompt-container {
+  display: block;
+  width: 728px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.document-prompt-header {
+  height: 50px;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 15px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: $dashboard-module-header-color;
+}
+
+.document-prompt-header-h2 {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  line-height: 50px;
+}
+
+.document-prompt-number-div {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-style: none solid solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+}
+
+.document-prompt-number-div-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.document-prompt-div-textblock1 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.document-prompt-div-textblock2 {
+  display: block;
+  margin-right: 0px;
+  float: none;
+  clear: none;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.document-prompt-div-textblock2:hover {
+  color: rgba(36, 90, 170, 0.8);
+}
+
+.document-prompt-div-textblock2.a {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.document-prompt-div-textblock3 {
+  display: block;
+  float: none;
+  clear: none;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.document-prompt-div-textblock3:hover {
+  color: rgba(36, 90, 170, 0.8);
+}
+
+@media (max-width: 991px) {
+  .document-prompt-container {
+  }
+
+  .document-prompt-header {
+  }
+
+  .document-prompt-header-h2 {
+  }
+
+  .document-prompt-number-div {
+  }
+
+  .document-prompt-number-div-wrapper {
+  }
+
+  .document-prompt-div-textblock1 {
+  }
+
+  .document-prompt-div-textblock2 {
+  }
+
+  .document-prompt-div-textblock2.a {
+  }
+
+  .document-prompt-div-textblock3 {
+  }
+}
+
+@media (max-width: 767px) {
+  .document-prompt-container {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+
+  .document-prompt-header {
+    width: 450px;
+    height: 45px;
+  }
+
+  .document-prompt-header-h2 {
+    line-height: 45px;
+  }
+
+  .document-prompt-number-div {
+  }
+
+  .document-prompt-number-div-wrapper {
+  }
+
+  .document-prompt-div-textblock1 {
+  }
+
+  .document-prompt-div-textblock2 {
+  }
+
+  .document-prompt-div-textblock2.a {
+  }
+
+  .document-prompt-div-textblock3 {
+  }
+}
+
+@media (max-width: 479px) {
+  .document-prompt-container {
+    display: block;
+    width: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .document-prompt-header {
+    width: auto;
+  }
+
+  .document-prompt-header-h2 {
+    font-size: 12px;
+  }
+
+  .document-prompt-number-div {
+  }
+
+  .document-prompt-number-div-wrapper {
+  }
+
+  .document-prompt-div-textblock1 {
+  }
+
+  .document-prompt-div-textblock2 {
+  }
+
+  .document-prompt-div-textblock2.a {
+  }
+
+  .document-prompt-div-textblock3 {
+  }
+}

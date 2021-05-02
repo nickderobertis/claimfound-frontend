@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+
+<div class="completed-documents-body">
+    <cf-upload-box-row
+        class="completed-documents-body-wrapper"
+        *ngFor="let doc of model; let i = index"
+        [model]="doc"
+        [num]="i"
+        (deleteEvent)="emitDeleteEvent($event)">
+    </cf-upload-box-row>
+</div>
+
+

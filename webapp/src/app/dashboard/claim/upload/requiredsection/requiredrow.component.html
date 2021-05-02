@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<div id="documents-status-body-textblock" class="documents-status-body-textblock id">
+    {{ claimId }}
+</div>
+
+<div class="documents-status-body-textblock company">
+    {{ reportingCompany }}
+</div>
+
+<div class="documents-status-body-div-2">
+    <div class="documents-status-body-textblock docs">
+        {{ requiredDocuments | titlecase }}
+    </div>
+</div>
+
+<div id="doc-upload-status" class="documents-status-body-textblock status {{ statusClass }}" >
+    <div *ngIf="!model.documentUploadInProgress">
+        {{ statusText }}
+    </div>
+    <div id="display-status-spinner" *ngIf="model.documentUploadInProgress" >
+        <cf-loading-spinner [size]="20" style="padding-left: 12px;">
+        </cf-loading-spinner>
+    </div>
+</div>

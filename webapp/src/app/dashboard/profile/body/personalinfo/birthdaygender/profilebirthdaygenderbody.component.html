@@ -1,0 +1,164 @@
+<div class="profile-body-contentcontainer">
+  <div class="profilemessagecomponent">
+    <div class="profile-body-content-messagediv">
+      <div class="profile-body-content-message-textblock1">
+        We need additional information to file your claims.
+      </div>
+      <div class="profile-body-content-message-textblock2">
+        To verify your identity and to fill out your state claim forms, we need
+        to know your birthday and gender.
+      </div>
+    </div>
+  </div>
+  <div [hidden]="loading">
+    <cf-profile-entry-component
+      [model]="profileEntryModel"
+      [title]="'Personal Information'"
+      (deleteEvent)="onDeleteEvent($event)"
+    ></cf-profile-entry-component>
+    <div class="profileinputcomponent">
+      <div class="profile-inputcontainer">
+        <div *ngIf="!showInput" class="profileinputaddcomponent">
+          <div
+            class="profile-input-add-button w-button"
+            (click)="onAddButtonClick()"
+            id="profile-add-birthday-gender-button"
+          >
+            {{ openInputButtonText }}
+          </div>
+        </div>
+        <div *ngIf="showInput" class="profile-inputwrapper">
+          <div class="profileinputrowcomponent">
+            <div class="profile-input-rowwrapper birthday">
+              <div class="profile-input-row-exitdiv">
+                <img
+                  src="images/exit-icon-red.svg"
+                  (click)="closeInput()"
+                  width="18"
+                  alt=""
+                  class="profile-input-row-exiticon"
+                />
+              </div>
+              <cf-error-bar
+                [form]="inputForm"
+                [showErrors]="showError"
+                [backendErrorKeysToFrontendFormMap]="
+                  backendErrorKeysToFrontendFormMap
+                "
+                id="profileInputErrorBar"
+              ></cf-error-bar>
+              <!--<div class="profile-input-row-errordiv">
+              <div class="profile-input-row-error-textdiv">
+                
+              </div>-->
+              <!--<div class="profile-input-row-error-highlightdiv"></div>
+                <div class="profile-input-row-error-textdiv">
+                  <div
+                    *ngIf="fieldIsInvalid(formConstants.month)"
+                    class="profile-input-row-error-textblock"
+                  >
+                    Month field: Please re-type your answer.
+                  </div>
+                  <div
+                    *ngIf="fieldIsInvalid(formConstants.day)"
+                    class="profile-input-row-error-textblock"
+                  >
+                    Day field: Please re-type your answer.
+                  </div>
+                  <div
+                    *ngIf="fieldIsInvalid(formConstants.year)"
+                    class="profile-input-row-error-textblock"
+                  >
+                    Year field: Please re-type your answer.
+                  </div>
+                  <div
+                    *ngIf="displayNoGenderSelected"
+                    class="profile-input-row-error-textblock"
+                  >
+                    Gender field: Please select your answer.
+                  </div>
+                  <div
+                    *ngIf="displayBirthdayOutOfRange"
+                    class="profile-input-row-error-textblock"
+                  >
+                    Birthday is outside valid range.
+                  </div>
+                  <div
+                    *ngIf="fieldIsInvalid(baseFormConstants.unSavedInputs)"
+                    class="profile-input-row-error-textblock"
+                  >
+                    Please save your entry to continue.
+                  </div>
+                </div>-->
+              <!--</div>-->
+              <div>
+                <div
+                  [formGroup]="inputForm"
+                  class="profile-input-row-fieldwrapper"
+                >
+                  <div class="profile-input-row-field-birthday-textblock">
+                    Birthday
+                  </div>
+                  <div class="profile-input-row-fieldwrapper-spacer birthday">
+                    <div class="profile-input-row-fielddiv birthday">
+                      <input
+                        id="month"
+                        type="number"
+                        class="profile-input-row-field-inputfield {{
+                          textBoxErrorClass(formConstants.month)
+                        }}"
+                        placeholder="Month (dd)"
+                        formControlName="{{ formConstants.month }}"
+                      />
+                    </div>
+                    <div class="profile-input-row-fielddiv birthday">
+                      <input
+                        id="day"
+                        type="number"
+                        class="profile-input-row-field-inputfield {{
+                          textBoxErrorClass(formConstants.day)
+                        }}"
+                        placeholder="Day (dd)"
+                        formControlName="{{ formConstants.day }}"
+                      />
+                    </div>
+                    <div class="profile-input-row-fielddiv birthday">
+                      <input
+                        id="year"
+                        type="number"
+                        class="profile-input-row-field-inputfield {{
+                          textBoxErrorClass(formConstants.year)
+                        }}"
+                        placeholder="Year (yyyy)"
+                        formControlName="{{ formConstants.year }}"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-input-row-questionwrapper birthday">
+                <div class="profile-input-row-field-birthday-textblock">
+                  Gender
+                </div>
+                <cf-radio-button [model]="radioOptions"></cf-radio-button>
+              </div>
+              <div
+                class="profile-input-row-field-savebutton birthday w-button"
+                (click)="onSaveButtonClick()"
+                id="profile-save-button"
+              >
+                Save
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <cf-profile-step-component
+      [model]="prevNextButtonsModel"
+    ></cf-profile-step-component>
+  </div>
+  <div *ngIf="loading" class="loading-spinner-div">
+    <cf-loading-spinner></cf-loading-spinner>
+  </div>
+</div>

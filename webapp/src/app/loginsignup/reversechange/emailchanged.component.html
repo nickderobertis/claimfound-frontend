@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<div class="sign-in-section">
+  <cf-loading-spinner [size]="50" *ngIf="loading"></cf-loading-spinner>
+
+  <div class="sign-in-container w-container" *ngIf="!loading">
+    <div *ngIf="valid">
+      <div class="sign-in-header">
+        <h1 class="sign-in---h1">Email Change Successful</h1>
+      </div>
+      <div class="sign-in-body">
+        <div class="verified-email-textblock">
+          Congratulations, you have successfully reset your email back to
+          {{ oldEmail }}. {{ newEmail }} is no longer associated with the
+          account
+        </div>
+        <div class="verified-email-textblock-2">
+          Please log in to your account with your new email. If you are
+          unsuccessful, please send an email to support@claimfound.com
+        </div>
+        <div class="verified-email-button" routerLink="/login">Login</div>
+      </div>
+    </div>
+
+    <div *ngIf="!valid">
+      <div class="sign-in-header">
+        <h1 class="sign-in---h1">Verification Error</h1>
+      </div>
+      <div class="sign-in-body">
+        <div class="verified-email-textblock">
+          Oh no, it looks like something went wrong.
+        </div>
+        <div class="verified-email-textblock-2">
+          You should still try to log into your account. If you are unable to,
+          please send an email to support@claimfound.com
+        </div>
+        <div class="verified-email-button" routerLink="/login">Login</div>
+      </div>
+    </div>
+  </div>
+</div>

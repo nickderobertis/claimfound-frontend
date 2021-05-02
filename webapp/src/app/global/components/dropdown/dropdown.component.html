@@ -1,0 +1,12 @@
+
+<div class="profile-input-row-fieldwrapper">
+    <div tabindex="0" role="button" class="select-input-dropdownwrapper" (click)="onClick($event)" (keydown)="onKeyDown($event)">
+        <div class="select-input-dropdowndiv">
+            <div class="select-input-dropdown-textblock">{{placeHolderText}}</div>
+            <div class="select-input-dropdown-icon w-icon-dropdown-toggle {{disabledClass}}"></div>
+        </div>
+        <div *ngIf="showItems" #dropdownel class="select-input-dropdownlist {{scrollableClass}}">
+            <cf-dropdown-item *ngFor="let item of model.items; let i = index;" [item]=item [itemIndex]="i" (itemSelected)="onSelectionChange($event)"></cf-dropdown-item>
+        </div>
+    </div>
+</div>

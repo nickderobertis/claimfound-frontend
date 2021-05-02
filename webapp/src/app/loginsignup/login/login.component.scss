@@ -1,0 +1,713 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Dec 16, 2016, 9:57:50 PM
+    Author     : christofferprompovitch
+*/
+
+.sign-in-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 75px);
+  padding: 125px 0px 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+}
+
+.sign-in-container {
+  display: block;
+  height: auto;
+  width: 450px;
+  max-width: 450px;
+  margin-top: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #fff;
+}
+
+.sign-in-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  padding-left: 15px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid hsla(216, 2%, 54%, 0.5);
+  background-color: #e4e7e9;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.sign-in---h1 {
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sign-in-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  background-color: #fff;
+}
+
+.sign-in-form {
+  padding: 30px;
+}
+
+.sign-in-form-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.sign-in-field {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 0px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  border-radius: 5px;
+  border: solid 1px rgba(136, 138, 141, 0.5);
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-size: 12px;
+  outline: none;
+  letter-spacing: 0.5px;
+}
+
+.sign-in-field:focus {
+  border: solid 1.5px rgba(36, 90, 170, 0.8);
+}
+
+input {
+  padding: 0px 10px;
+}
+
+.sign-in-button-div {
+  margin-top: 5px;
+  padding: 0px;
+  text-align: center;
+}
+
+.sign-in-button {
+  width: 100%;
+  height: 50px;
+  padding: 9px 15px;
+  float: right;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.2);
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  outline: none;
+}
+
+.sign-in-button:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.sign-in-link {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 3px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.sign-in-link:hover {
+  color: rgba(36, 90, 170, 0.8);
+}
+
+.text-link {
+  color: rgba(89, 124, 175, 0.8);
+  padding-left: 5%;
+}
+
+.text-link:hover {
+  color: rgba(36, 90, 170, 0.8);
+}
+
+.error-message-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 125px 0px 0px;
+  margin-bottom: -90px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background-color: #f9e6e5;
+}
+
+.error-message-div-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 7.5px;
+  height: 40px;
+  margin-right: 0px;
+  margin-top: -60px;
+  margin-left: 190px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  border: 1px none #000;
+  background-color: rgba(204, 64, 64, 0.75);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.error-message-textblock {
+  font-family: Graphik, sans-serif;
+  font-size: 12px;
+  margin-right: 15px;
+  margin-top: -60px;
+  margin-left: 0px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 1px;
+  background-color: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 5px solid red;
+  border-radius: 5px;
+}
+
+.error-message {
+  border: hsla(216, 2%, 54%, 0.5) 1px solid;
+  border-radius: 5px;
+  border-left: 5px solid rgba(204, 64, 64, 0.75);
+  background: white;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  font-family: Graphik, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.75px;
+  background-color: #f9e6e5;
+}
+
+.error-message p {
+  padding: 1em 0;
+  margin: 0;
+  font-family: "Graphik", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.passwordtoggle {
+  width: 25px;
+  height: 16px;
+  background-image: url("/images/no-eye.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.passwordtoggle.toggled {
+  background-image: url(/images/eye.svg);
+}
+
+.password-form-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: stretch;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-right: 10px;
+  padding-left: 1px;
+  border-radius: 5px;
+  border: solid 1px rgba(136, 138, 141, 0.5);
+}
+
+.password-form-wrapper:focus-within {
+  border: solid 1.5px rgba(36, 90, 170, 0.8);
+}
+
+.password-field {
+  width: 90%;
+  height: 49px;
+  margin-bottom: 0px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-size: 12px;
+  outline: none;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 10px;
+}
+
+/*---------------------------EXTERNAL LOGIN SECTION-----------------------------
+------------------------------------------------------------------------------*/
+.external-login {
+  display: block;
+  margin-top: 20px;
+  border-top: solid 1px #ccd1d4;
+}
+
+.external-login-buttondiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding-left: 5px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.external-login-buttondiv.facebook {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  background-color: #3c579e;
+  text-decoration: none;
+  margin-right: 0px;
+  padding-left: 15px;
+}
+
+.external-login-buttondiv.facebook.inactive {
+  display: none;
+}
+
+.external-login-buttondiv.google {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #eb4335 #4285f4 #34a853 #fbbc05;
+  padding-left: 12.5px;
+  margin-bottom: 0px;
+}
+
+.external-login-buttondiv.google.inactive {
+  display: none;
+}
+
+.facebook-icon {
+  margin-right: 70px;
+  margin-bottom: 0px;
+}
+
+.google-icon {
+  margin-right: 62.5px;
+}
+
+.buttondiv-textblock {
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-right: 4px;
+}
+
+.buttondiv-textblock.google {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*---------------------------SHORT SCREEN FIXES---------------------
+------------------------------------------------------------------------------*/
+.sign-in-section {
+  min-height: 85vh;
+  min-height: -webkit-calc(85vh - 18px);
+  min-height: -moz-calc(85vh - 18px);
+  min-height: calc(85vh - 18px);
+}
+
+@media (max-height: 876px) {
+  .sign-in-section {
+    min-height: 80vh;
+  }
+}
+
+@media (max-height: 750px) {
+  .sign-in-section {
+    min-height: 80vh;
+    min-height: calc(80vh - 18px);
+    min-height: -webkit-calc(80vh - 18px);
+    min-height: -moz-calc(80vh - 18px);
+  }
+}
+
+@media (max-width: 991px) {
+  .sign-in-section {
+  }
+
+  .sign-in-container {
+  }
+
+  .sign-in-header {
+  }
+
+  .sign-in---h1 {
+  }
+
+  .sign-in-body {
+  }
+
+  /*no "SIGN IN FORM" AT THIS VIEWPOINT*/
+
+  .sign-in-form-div {
+  }
+
+  .sign-in-field {
+  }
+
+  .sign-in-button-div {
+  }
+
+  .sign-in-button {
+  }
+
+  .sign-in-link {
+  }
+
+  .error-message-div {
+  }
+
+  .error-message-div-block {
+  }
+
+  .error-message-textblock {
+  }
+  /*---------------------------FORGOTTEN PASSWORD SECTION-------------------------
+------------------------------------------------------------------------------*/
+
+  .sign-in-header.fp {
+    height: 45px;
+    border-bottom: 1px solid hsla(216, 2%, 54%, 0.4);
+    background-color: hsla(216, 2%, 54%, 0.1);
+  }
+
+  .forgot-password-form-div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  /*---------------------------FORGOTTEN PASSWORD SECTION END---------------------
+------------------------------------------------------------------------------*/
+
+  /*---------------------------SHORT SCREEN FIXES---------------------
+  ------------------------------------------------------------------------------*/
+  .sign-in-section {
+    min-height: 80vh;
+    min-height: -webkit-calc(80vh - 30px);
+    min-height: -moz-calc(80vh - 30px);
+    min-height: calc(80vh - 30px);
+  }
+
+  @media (max-height: 728px) {
+    .sign-in-section {
+      min-height: 75vh;
+      min-height: -webkit-calc(75vh - 30px);
+      min-height: -moz-calc(75vh - 30px);
+      min-height: calc(75vh - 30px);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .sign-in-container {
+  }
+
+  .sign-in-container.fp {
+  }
+
+  .sign-in-header {
+  }
+
+  .sign-in---h1 {
+  }
+
+  .sign-in-body {
+  }
+
+  /*-----NO "SIGN-IN-FORM" AT THIS VIEW POINT -----*/
+
+  .sign-in-form-div {
+  }
+
+  .sign-in-form-div.alt {
+  }
+
+  .sign-in-field {
+  }
+
+  .sign-in-button-div {
+  }
+
+  .sign-in-button-div.fp1 {
+  }
+
+  .sign-in-button {
+  }
+
+  .sign-in-link {
+  }
+
+  .error-message-div {
+    margin-bottom: -50px;
+  }
+
+  .error-message-div-block {
+  }
+
+  .error-message-textblock {
+  }
+  /*---------------------------FORGOTTEN PASSWORD SECTION-------------------------
+------------------------------------------------------------------------------*/
+
+  .forgot-password-form-div {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .forgot-password-text-div {
+    margin-bottom: 10px;
+  }
+
+  /*---------------------------FORGOTTEN PASSWORD SECTION END---------------------
+------------------------------------------------------------------------------*/
+}
+
+@media (max-width: 479px) {
+  .sign-in-section {
+    padding: 60px 20px;
+  }
+
+  .sign-in-container {
+    width: 350px;
+  }
+  .sign-in-container.fp {
+    height: auto;
+  }
+
+  .sign-in-header {
+  }
+
+  .sign-in---h1 {
+  }
+
+  .sign-in-body {
+  }
+
+  .sign-in-form {
+    padding: 20px;
+  }
+
+  /*-----NO "SIGN-IN-FORM" AT THIS VIEW ---------*/
+
+  .sign-in-form-div {
+  }
+
+  .sign-in-form-div.button {
+  }
+
+  .sign-in-form-div.alt {
+  }
+
+  .sign-in-field {
+  }
+
+  input {
+  }
+
+  .sign-in-button-div {
+    text-align: center;
+  }
+
+  .sign-in-button-div.fp1 {
+  }
+
+  .sign-in-button {
+  }
+
+  .sign-in-link {
+    font-size: 12px;
+  }
+
+  .error-message-div-block {
+  }
+
+  .error-message-div-block {
+  }
+
+  .error-message-textblock {
+    font-size: 10px;
+  }
+
+  /*---------------------------FORGOTTEN PASSWORD SECTION-------------------------
+------------------------------------------------------------------------------*/
+
+  @media (max-width: 479px) {
+    .forgot-password-form-div {
+      margin-top: 0px;
+      margin-bottom: 5px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+
+    /*---------------------------FORGOTTEN PASSWORD SECTION END---------------------
+------------------------------------------------------------------------------*/
+  }
+}
+
+@media (max-width: 479px) {
+  .external-login {
+    display: inline-block;
+    width: 100%;
+  }
+  .external-login-buttondiv {
+    width: auto;
+  }
+
+  .external-login-buttondiv.facebook {
+    margin-right: unset;
+  }
+
+  .facebook-icon {
+    margin-right: 45px;
+  }
+  .buttondiv-textblock {
+    font-size: 11px;
+  }
+  .google-icon {
+    margin-right: 36px;
+  }
+}
+
+/*---------------------------EXTERNAL LOGIN SECTION END-------------------------
+------------------------------------------------------------------------------*/
+
+.is-invalid {
+  border: 2px solid red;
+}

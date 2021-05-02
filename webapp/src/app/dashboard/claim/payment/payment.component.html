@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<div *ngIf="!loading">
+  <div class="welcome-container">
+    <div class="welcome-wrapper">
+      <div class="welcome-div">
+        <div class="welcome-message-wrapper">
+          <div class="welcome-message-textblock-1">
+            Please review your claim package and then submit.
+          </div>
+          <div class="welcome-message-textblock-2">
+            Review the documents you uploaded and your state claim forms to make
+            sure they match with your claim information.
+          </div>
+          <a
+            href="https://help.claimfound.com/en/articles/4128973-final-review-page"
+            target="_blank"
+            class="welcome-message-textlink"
+            ><span style="text-decoration: underline;"
+              >Need help with this step, read our instructions guide!</span
+            ></a
+          >
+        </div>
+        <img
+          src="/images/review-documents-graphic-new.svg"
+          class="upload-documents-graphic"
+        />
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!model.statusSubmit">
+    <app-requirement-modal></app-requirement-modal>
+  </div>
+  <cf-payment-review-claims
+    class="check-out-container"
+    [model]="model"
+  ></cf-payment-review-claims>
+  <cf-payment-checkout
+    class="claim-total-container"
+    [totalAmount]="model.amount"
+    [userFees]="model.userFees"
+  ></cf-payment-checkout>
+</div>
+<cf-profile-completion-modal></cf-profile-completion-modal>
+<div *ngIf="!loading">
+  <cf-dashboard-step
+    [currentPage]="pageName"
+    [isSubmissionAllowed]="model.statusSubmit"
+    (processClaimsButtonClick)="submitClaims()"
+  ></cf-dashboard-step>
+</div>

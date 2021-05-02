@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Mon Apr 25 2016 22:47:03 GMT+0000 (UTC) -->
+
+<div class="error-message-div" *ngIf="message">
+    <div class="error-message-textblock">Sorry, something went wrong. Please try again or contact support.</div>
+</div>
+
+<div class="sign-in-section">
+  <div class="sign-in-container w-container">
+    <div class="sign-in-header">          
+      <h1 class="sign-in---h1">Sign In</h1>
+    </div>
+    <div class="sign-in-body w-form">
+        <div class="sign-in-form">
+              <cf-login-form (errorMessageEvent)="receiveErrorMessage($event)"></cf-login-form>
+        </div>
+    </div>
+  </div>
+</div>

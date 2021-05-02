@@ -1,0 +1,104 @@
+<div class="profile-body-contentcontainer">
+  <div class="profilemessagecomponent">
+    <div class="profile-body-content-messagediv">
+      <div class="profile-body-content-message-textblock1">
+        {{ headerText }}
+      </div>
+      <div class="profile-body-content-message-textblock2">{{ subText }}</div>
+    </div>
+  </div>
+  <div>
+    <div class="profilequestioncontainer">
+      <div class="profile-question-textheader">
+        ClaimFound Profile Assistance
+      </div>
+      <div class="profilequestionwrappercomponent">
+        <div
+          *ngIf="showSaveAndQuestions && !loading"
+          class="profile-questionwrapper"
+        >
+          <div class="profile-question-textblock2">{{ subTextTwo }}</div>
+          <div class="profile-question-headerwrapper"></div>
+          <div *ngFor="let item of model.questions">
+            <div class="profile-question-itemwrapper">
+              <div class="profile-question-itemdiv">
+                <input
+                  type="checkbox"
+                  [(ngModel)]="item.answer"
+                  class="profile-question-item-checkbox"
+                  [attr.disabled]="item.disabled ? '' : null"
+                />
+                <div class="profile-question-itemphone-textblock number">
+                  {{ getFormattedQuestion(item.question) }}
+                </div>
+              </div>
+              <div
+                *ngIf="!onSmallScreen || item.answer"
+                class="profile-question-itemdiv"
+              >
+                <input
+                  type="checkbox"
+                  [(ngModel)]="item.isCurrent"
+                  class="profile-question-item-checkbox"
+                  [attr.disabled]="!item.answer ? '' : null"
+                />
+                <div class="profile-question-itemphone-textblock">Current</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="loading" class="loading-spinner-div">
+          <cf-loading-spinner></cf-loading-spinner>
+        </div>
+        <div
+          *ngIf="showLoadMore && !noMoreQuestions"
+          class="profile-question-load-textblock"
+          (click)="onLoadMoreClick()"
+        >
+          Load More Matches (+)
+        </div>
+        <div *ngIf="noMoreQuestions" class="profile-question-textblock2">
+          We don't have any more matches for you.
+        </div>
+      </div>
+    </div>
+    <div *ngIf="showSaveAndQuestions" class="profilequestion-nomatchwrapper">
+      <div class="profilequestion-nomatchdiv">
+        <input
+          type="checkbox"
+          [(ngModel)]="noMatchesCheckBox"
+          class="profile-question-item-checkbox"
+          (click)="onNoAssociationCheckBoxClick(noMatchesCheckBox)"
+        />
+        <div class="profile-question-nomatch-textblock">
+          {{ notAssociatedText }}
+        </div>
+      </div>
+      <div *ngIf="!userHasViewedThisPage" class="profilequestion-nomatchdiv">
+        <input
+          id="refuseAnswerCheckBox"
+          type="checkbox"
+          [(ngModel)]="refuseAnswerCheckBox"
+          class="profile-question-item-checkbox"
+          (click)="onNotAnsweringCheckBoxClick(refuseAnswerCheckBox)"
+        />
+        <div class="profile-question-nomatch-textblock">
+          I prefer not to answer.
+        </div>
+      </div>
+      <div
+        class="profile-input-row-field-savebutton {{
+          saveButtonClass
+        }} w-button"
+        id="profile-save-button"
+        (click)="onSaveButtonClick()"
+      >
+        Save
+      </div>
+    </div>
+    <div class="profile-question-separator-bar"></div>
+    <cf-profile-step-component
+      [model]="prevNextButtonsModel"
+    ></cf-profile-step-component>
+  </div>
+</div>

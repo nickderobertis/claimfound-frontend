@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<div class="lpp-banner-section">
+    <div class="lpp-banner-container">
+        <div class="lpp-banner-wrapper">
+            <h1 class="lpp-banner-header-h1">Acknowledgements</h1>
+        </div>
+    </div>
+</div>
+
+<div class="lpp-nav-bar">
+    <div class="lpp-nav-bar-div">
+        <div class="lpp-nav-bar-textblock" routerLink="{{ links.footer.privacy.url }}">Privacy &amp; Security</div>
+        <div class="lpp-nav-bar-selected-div"></div>
+    </div>
+    <div class="lpp-nav-bar-div">
+        <div class="lpp-nav-bar-textblock" routerLink="{{ links.footer.tos.url }}">Terms of Service</div>
+        <div class="lpp-nav-bar-selected-div"></div>
+    </div>
+    <div class="lpp-nav-bar-div">
+        <div class="lpp-nav-bar-textblock selected" routerLink="{{ links.footer.acknowledgements.url }}">Acknowledgements</div>
+        <div class="lpp-nav-bar-selected-div selected"></div>
+    </div>
+</div>
+
+<div class="lpp-section">
+    <div class="lpp-wrapper">
+        <div class="ack-header-div">
+            <div class="ack-header-textblock">A lot of work went into building the Claimfound platform. Without help from brilliant developers across the world, we would not be able to help you get all of your money back. Claimfound would like to thank the following developers for their software packages: </div>
+        </div>
+        <div class="ack-body-wrapper">
+            <div class="ack-body-div-left">
+                <div class="ack-body-header-textblock">Front-end Software Packages</div>
+                <div class="ack-body-list-wrapper" id="frontendPackages">
+                    <div class="ack-body-list-div" *ngFor="let frontendPackage of frontendPackages">
+                        <div class="ack-body-list-textblock">{{ frontendPackage }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ack-body-div-right">
+                <div class="ack-body-header-textblock">Back-end Software Packages</div>
+                <div class="ack-body-list-wrapper" id="backendPackages">
+                    <div class="ack-body-list-div" *ngFor="let serverPackage of serverPackages">
+                        <div class="ack-body-list-textblock">{{ serverPackage }}</div>
+                    </div>
+                    <div *ngIf="serverError">
+                        <div class="ack-body-list-textblock">{{serverError}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

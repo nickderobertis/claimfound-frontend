@@ -1,0 +1,113 @@
+.statuscontainer-rowwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+.rowwrapper-contentdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.rowwrapper-contentdiv.one {
+  padding-right: 0px;
+}
+
+.rowwrapper-contentdiv.two {
+  padding-right: 5px;
+}
+
+.rowwrapper-contentdiv.three {
+  padding-right: 5px;
+}
+.rowwrapper-contentdiv-textblock1 {
+  margin-right: 2.5px;
+  margin-left: -25px;
+  font-family: Graphik, sans-serif;
+  color: hsla(165.12396694214874, 61.42%, 61.37%, 1);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.rowwrapper-contentdiv-textblock1.alt {
+  color: #245aaa;
+}
+
+.rowwrapper-contentdiv-textblock2 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+.rowwrapper-contentdiv-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .statuscontainer-rowwrapper {
+    margin-top: 10px;
+  }
+  .rowwrapper-contentdiv.one {
+    display: none;
+    width: 25%;
+    padding-left: 0px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .rowwrapper-contentdiv.two {
+    display: none;
+  }
+  .rowwrapper-contentdiv.three {
+    display: none;
+  }
+
+  .rowwrapper-contentdiv-textblock1 {
+    margin-left: -10px;
+  }
+
+  .rowwrapper-contentdiv-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding-left: 15px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .rowwrapper-contentdiv-textblock1 {
+  }
+  .rowwrapper-contentdiv-textblock1.alt {
+  }
+  .rowwrapper-contentdiv-textblock2 {
+    font-weight: 500;
+  }
+  .rowwrapper-contentdiv-mobile {
+    padding-left: 15px;
+  }
+}

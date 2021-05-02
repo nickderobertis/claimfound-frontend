@@ -1,0 +1,256 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 9, 2017, 1:54:53 PM
+    Author     : christofferprompovitch
+*/
+
+.sign-in-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: -webkit-calc(100vh - 75px);
+  min-height: -moz-calc(100vh - 75px);
+  min-height: calc(100vh - 75px);
+  padding: 125px 0px 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background-color: #f5f5f5;
+}
+
+.sign-in-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: solid 1px hsla(216, 2%, 54%, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 30px;
+  width: 730px;
+}
+
+.sign-in-content-wrapper {
+  width: 55%;
+  padding-top: 10px;
+}
+
+.sign-in-content-textHeader {
+  font-family: Graphik, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.verify-email-link {
+  display: inline-block;
+  font-size: 14px;
+  font-family: Grap5ik, sans-serif;
+  color: rgba(36, 90, 170, 1);
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  background-color: #f6f7f9;
+  height: 40px;
+  padding: 12.5px 15px 0px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.sign-in-content-textBlock1 {
+  font-family: Graphik, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.sign-in-content-textBlock2 {
+  font-family: Graphik, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+
+.sign-in-graphic {
+  width: 231px;
+  height: 190px;
+  background-image: url("../../images/email-verification-graphic.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/*---------------------------SHORT SCREEN FIXES---------------------
+------------------------------------------------------------------------------*/
+
+@media (max-width: 991px) {
+  .sign-in-section {
+    padding: 100px 0px 75px;
+    border-style: none;
+    border-bottom-width: 0px;
+    border-bottom-color: #fff;
+    background-color: hsla(216, 2%, 54%, 0.05);
+  }
+
+  .sign-in-content-wrapper {
+  }
+
+  .sign-in-content-textHeader {
+  }
+
+  .verify-email-link {
+  }
+
+  .sign-in-content-textBlock1 {
+  }
+
+  .sign-in-content-textBlock2 {
+  }
+
+  .sign-in-graphic {
+  }
+
+  /*---------------------------SHORT SCREEN FIXES---------------------
+  ------------------------------------------------------------------------------*/
+}
+
+@media (max-width: 767px) {
+  .sign-in-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 450px;
+  }
+
+  .sign-in-content-wrapper {
+    width: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-end;
+    -ms-flex-line-pack: end;
+    align-content: flex-end;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .sign-in-content-textHeader {
+  }
+
+  .verify-email-link {
+  }
+
+  .sign-in-content-textBlock1 {
+    margin-bottom: 7.5px;
+  }
+
+  .sign-in-content-textBlock2 {
+    text-align: center;
+  }
+
+  .sign-in-graphic {
+    margin-bottom: 15px;
+    width: 250px;
+    height: 206px;
+  }
+}
+
+@media (max-width: 479px) {
+  .sign-in-section {
+    height: 550px;
+    padding: 60px 20px 20px;
+    background-color: hsla(216, 2%, 54%, 0.05);
+  }
+
+  .sign-in-container {
+    width: auto;
+    padding: 30px 15px 20px;
+  }
+
+  .sign-in-content-wrapper {
+  }
+
+  .sign-in-content-textHeader {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .verify-email-link {
+  }
+
+  .sign-in-content-textBlock1 {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .sign-in-content-textBlock2 {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+  .sign-in-graphic {
+    width: 230px;
+    height: 189px;
+  }
+}

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<div class="loading-spinner-div" *ngIf="loading">
+  <cf-loading-spinner *ngIf="loading"></cf-loading-spinner>
+</div>
+
+<cf-deceased-claims-widget *ngIf=displayDeceasedRelativeClaimsWidget [model]="model.deceasedTotalsModel"></cf-deceased-claims-widget>
+
+<cf-family-claims-widget *ngIf="!loading" [model]="model.familyTotalsModel"></cf-family-claims-widget>
+
+

@@ -1,0 +1,39 @@
+<div class="deceased-relative-modal" (click)="closeIfClickedOutside($event)">
+    <div #deceasedRelativeModalContainer class="deceased-relative-modal-container">
+      <div class="deceased-relative-modal-exit-div" (click)="closeClaimsAddedModal()">
+        <img src="/images/documents-exit-icon.svg" width="20" height="20" alt=""
+          class="deceased-relative-modal-exit-icon"></div>
+      <div class="deceased-relative-modal-header-div"><img src="/images/claimfound-check-graphic.png" width="50" alt=""
+          class="claimfound-check-graphic">
+        <div class="deceased-relative-modal-header-textblock">We just added this claim to your dashboard.</div>
+      </div>
+      <div class="deceased-relative-modal-data-wrapper">
+        <div class="deceased-relative-modal-data-div">
+          <div class="deceased-relative-modal-data-textblock-1">Name</div>
+          <div class="deceased-relative-modal-data-textblock-2">{{model.name.capitalizedFirstAndLastName}}</div>
+        </div>
+        <div class="deceased-relative-modal-data-div">
+          <div class="deceased-relative-modal-data-textblock-1">Relationship</div>
+          <div class="deceased-relative-modal-data-textblock-2">{{model.relationship}}</div>
+        </div>
+        <div class="deceased-relative-modal-data-div">
+          <div class="deceased-relative-modal-data-textblock-1">Total Number of Claims</div>
+          <div class="deceased-relative-modal-data-textblock-3">{{model.claimTotals.numberOfClaims}}</div>
+        </div>
+        <div class="deceased-relative-modal-data-div">
+          <div class="deceased-relative-modal-data-textblock-1">Total Value of Claims</div>
+          <div class="deceased-relative-modal-data-textblock-3">{{model.claimTotals.formattedTotalValue}}</div>
+        </div>
+      </div>
+      <div class="deceased-relative-modal-message-wrapper">
+        <div class="deceased-relative-modal-message-textblock">Claims for deceased individuals require special attention
+          because they deal with the wills and estate planning.</div>
+        <div class="deceased-relative-modal-message-textblock">Not to worry, we’ve worked out the logistics so you can
+          easily figure out how to process these claims.</div>
+        <div class="deceased-relative-modal-message-button-div">
+          <div class="deceased-relative-modal-message-button" routerLink="/dashboard/deceasedclaims">View Deceased
+            Claims</div>
+        </div>
+      </div>
+    </div>
+</div>

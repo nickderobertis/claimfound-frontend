@@ -1,0 +1,15 @@
+<div>
+	<p class="formData-textHeader">🏠 Address</p>
+  <p class="formData-textBlock">The address listed below will be used for your claim form and will be the location the unclaimed property department mails your check.</p>
+	<p class="formData-textBlock end">If you want your check to be mailed elsewhere, you can change your primary address by <a class="formData-textLink" (click)="onClickProfileLink()">updating your profile</a>.</p>
+	<div class="formData-resultsBlock">{{getAddressAsOneLine}}</div>
+	<!--<div *ngIf="showError && anyFieldInvalid(formConstants)" class="error-message">Address: please re-enter your address.</div>-->
+	<!--<div class="address-form">-->
+		<!--<form [formGroup]="fillAndSignForm">-->
+			<!--<input type="text" name="street" class="street {{textBoxErrorClass(formConstants.streetAddress)}}" placeholder="Street Address" formControlName="{{formConstants.streetAddress}}">-->
+			<!--<input type="text" name="city" class="city {{textBoxErrorClass(formConstants.city)}}" placeholder="City" formControlName="{{formConstants.city}}">-->
+			<!--<input type="text" name="state" class="state {{textBoxErrorClass(formConstants.state)}}" placeholder="State" formControlName="{{formConstants.state}}" maxlength="2">-->
+			<!--<input type="text" name="zipcode" class="zipcode {{textBoxErrorClass(formConstants.zipCode)}}" placeholder="Zip Code" formControlName="{{formConstants.zipCode}}">			-->
+		<!--</form>-->
+	<!--</div>-->
+</div>

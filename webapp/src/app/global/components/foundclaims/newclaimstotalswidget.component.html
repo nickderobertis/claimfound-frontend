@@ -1,0 +1,112 @@
+<div
+  class="messagecontainer"
+  *ngIf="(hasItems || hasNewOrPreviouslyViewedClaims) && !loading"
+>
+  <div class="message-headerWrapper">
+    <p class="Message-header-h3">Claims To Review</p>
+  </div>
+  <div class="message-bodyWrapper">
+    <div *ngIf="!loading && hasItems" class="message-resultswrapper">
+      <div class="results-graphicwrapper">
+        <div class="results-content-textblock1 inactive">
+          Congratulations, {{ name | titlecase }}
+        </div>
+        <div class="results-graphic-claimmangraphic"></div>
+        <div class="results-graphic-claimcoingraphic"></div>
+      </div>
+      <div class="results-contentcontainer">
+        <div class="results-content-textblock1">
+          Congratulations, {{ name | titlecase }}
+          <span style="font-size: 22px; margin-left: 5px;">🎉</span>
+        </div>
+        <div class="results-content-textblock2">
+          We found some {{hasClaimsInProcessText}}
+          <span class="results-content-textblock-nospan">unclaimed</span> money
+          in your name!
+        </div>
+        <div class="claimresultscomponent">
+          <div class="results-content-claimwrapper">
+            <div class="results-content-claimdiv">
+              <div class="results-content-claim-textblock1">CLAIMS</div>
+              <div class="results-content-claim-textblock2">
+                {{ model.numberOfClaims }}
+              </div>
+            </div>
+            <div class="results-content-claimdiv">
+              <div class="results-content-claim-textblock1">TOTAL VALUE</div>
+              <div class="results-content-claim-textblock2">
+                {{ model.formattedTotalValue }}
+              </div>
+            </div>
+            <div class="results-content-claimdiv">
+              <div class="results-content-claim-textblock1">AVERAGE VALUE</div>
+              <div class="results-content-claim-textblock2">
+                {{ model.formattedAverageValue }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="selectedclaimsinstructionscomponent"
+      *ngIf="!loading && !hasItems"
+    >
+      <div class="selectedclaims-instructionscontainer">
+        <div class="selectedclaims-instructions-contentdiv">
+          <div class="selectedclaims-instructions-content-textheader">
+            You Don't Have Any New Claims To Review.
+          </div>
+          <div class="selectedclaims-instructions-content-textblock1">
+            Would you like to review old claims or remove any claims currently
+            in process?
+          </div>
+        </div>
+        <div class="selectedclaims-instructions-graphic no-claims"></div>
+      </div>
+    </div>
+    <div
+      *ngIf="!loading && showSelectClaimsLink"
+      class="message-claimbutton"
+      (click)="onViewClaimsClick()"
+    >
+      <div class="message-claim-textblock">Review & Select Claims &gt;</div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="messagecontainer"
+  *ngIf="!hasItems && !hasNewOrPreviouslyViewedClaims && !loading"
+>
+  <div class="message-headerWrapper">
+    <p class="Message-header-h3">Claims To Review</p>
+  </div>
+  <div class="message-bodyWrapper">
+    <div class="selectedclaims-instructionscontainer no-claims">
+      <div class="selectedclaims-instructions-contentdiv no-claims">
+        <div class="selectedclaims-instructions-content-textheader no-claims">
+          We haven't found any unclaimed money in your name yet.
+        </div>
+        <div class="selectedclaims-instructions-content-textblock1 no-claims">
+          Fill out your profile below to improve your chances of finding money:
+        </div>
+        <ol class="selectedclaims-instructions-contentList">
+          <li class="selectedclaims-instructions-content-listItem">
+            Add all variations of your name.
+          </li>
+          <li class="selectedclaims-instructions-content-listItem">
+            Add all family members because you might be able to claim their
+            money.
+          </li>
+        </ol>
+      </div>
+      <div class="selectedclaims-instructions-graphic no-claims-2"></div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="loading" class="loading-spinner-div">
+  <cf-loading-spinner></cf-loading-spinner>
+</div>

@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Mar 19, 2017, 5:57:06 PM
+    Author     : admin
+*/
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 200; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-container {
+  position: absolute;
+  top: 25%;
+  left: 37.5%;
+  width: 300px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+}
+
+.modal-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  height: 200px;
+  padding-top: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-width: 5px;
+  border-color: rgba(36, 96, 170);
+  border-radius: 2px;
+  background-color: #edeeee;
+}
+
+.modal-body-textblock {
+  font-family: Lato, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 45px;
+  text-align: center;
+  margin: 10px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140px;
+  height: 60px;
+  margin-left: 20px;
+  padding: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(36, 90, 170, 0.8);
+
+  border-radius: 2px;
+  background-color: transparent;
+  font-family: Lato, sans-serif;
+  color: rgba(36, 90, 170, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  .modal-body {
+    width: 450px;
+  }
+}
+
+@media (max-width: 479px) {
+  .modal-body {
+    width: 325px;
+  }
+
+  .modal-container {
+    left: 47.5%;
+  }
+}

@@ -1,0 +1,21 @@
+
+<div *ngIf="show" class="claimsbar">
+    <div class="claimsbar-container">
+        <div class="claimsbar-div" (click)="navLinkClicked($event, stepConstants.MYCLAIMS);">
+            <a class="claimsbar-textblock {{ myClaimsLinkClass }}">{{ stepConstants.pageNames.MYCLAIMS }}</a>
+            <div class="claimbar-selected-div {{ myClaimsDivClass }}"></div>
+        </div>
+        <div class="claimsbar-div" (click)="navLinkClicked($event, stepConstants.DOCS);">
+            <a class="claimsbar-textblock {{ uploadLinkClass }}">{{ stepConstants.pageNames.DOCS }}</a>
+            <div class="claimbar-selected-div upload {{ uploadLinkDiv }}"></div>
+        </div>
+        <div class="claimsbar-div" (click)="navLinkClicked($event, stepConstants.FORMS);">
+            <a class="claimsbar-textblock {{ eSignLinkClass }}">{{ stepConstants.pageNames.FORMS }}</a>
+            <div class="claimbar-selected-div e-sign {{ eSignDivClass }}"></div>
+        </div>
+        <div class="claimsbar-div end" (click)="navLinkClicked($event, stepConstants.REVIEW);">
+            <a class="claimsbar-textblock {{ reviewLinkClass }}">{{ stepConstants.pageNames.REVIEW }}</a>
+            <div class="claimbar-selected-div review {{ reviewDivClass }}"></div>
+        </div>
+    </div>
+</div>

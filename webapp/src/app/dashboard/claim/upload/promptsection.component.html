@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<div id="document-prompt-container" class="document-prompt-container">
+    <div class="document-prompt-header">
+        <h2 class="document-prompt-header-h2">Upload Documents</h2>
+    </div>
+    <cf-prompt-box
+        [model]="currentDoc"
+        [docsBeingUploaded]="docsBeingUploaded"
+        (uploadEvent)=onUpload($event)
+        (selectEvent)=selectDoc($event)
+        (updateEvent)=onUpdate()
+    ></cf-prompt-box>
+    <div class="document-prompt-number-div">
+        <div class="document-prompt-div-textblock1">Document {{currentDocNumber + 1}} of {{numDocs}}</div>
+        <div class="document-prompt-number-div-wrapper">
+            <div class="document-prompt-div-textblock2" (click)="decrementDocument()">&lt; Previous&nbsp;</div>
+            <div class="a document-prompt-div-textblock2">|&nbsp;</div>
+            <div class="document-prompt-div-textblock3" (click)="incrementDocument()">Next &gt;</div>
+        </div>
+    </div>
+</div>

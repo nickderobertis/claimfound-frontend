@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<div class="navigation-container">
+  <div class="navigation-wrapper">
+    <div class="back-button" routerLink="/dashboard">&#60; Back to My Claims</div>
+  </div>
+</div>
+
+        <div class="family-claims-container">
+          <div class="general-message-container">
+            <div class="general-message-wrapper-right">
+              <div class="general-message-textheader">ClaimFound can’t process your deceased claims with its platform.</div>
+              <div class="general-message-textblock-1">Many claims need to be handled by an attorney because the will of the deceased individual must be modified and then certified by the court system before you can claim the unclaimed property with the Florida Treasury. </div>
+            </div>
+            <div class="general-message-wrapper-left">
+              <img src="/images/tomb-stone-graphic.svg" alt="" class="lawyers-claim-graphic" width="85">
+            </div>
+          </div>
+          <cf-deceased-claims-totals-widget></cf-deceased-claims-totals-widget>
+          <div class="widget-container">
+            <div class="panel-header">
+              <div class="panel-header-textblock">Option #1 - LegalFound</div>
+            </div>
+            <div class="panel-body">
+              <div class="legal-overview-container">
+                <div class="legal-overview-wrapper-left">
+                  <div class="legal-overview-wrapper-left-div-1"><img src="/images/legalfound.png" alt="" class="legal-overview-wrapper-left-div-1-logo-1" width="138">
+                    <div class="legal-overview-wrapper-left-div-1-button" id="go-to-legalfound" (click)="legalFoundLinkClick()">Go To LegalFound &gt;</div>
+                  </div>
+                  <div class="legal-overview-wrapper-left-div-2">
+                    <div class="legal-overview-wrapper-left-div-2-textblock">LegalFound is a lawyer directory specifically designed to help you process unclaimed property for deceased individuals.</div>
+                  </div>
+                </div>
+                <div class="legal-overview-wrapper-right">
+                  <div class="legal-overview-wrapper-right-textblock-1">Effort Required</div>
+                  <div class="legal-overview-wrapper-right-textblock-2">Easiest<br>(~15 Minutes)</div>
+                </div>
+              </div>
+              <div class="legalfound-overview-container">
+                <div class="legalfound-overview-header-textblock">We&#x27;ve created a special lawyer directory to help you find the right attorney. </div>
+                <div class="legalfound-overview-process-wrapper">
+                  <div class="legalfound-overview-process-div">
+                    <div class="legalfound-overview-process-div-header-textblock step1">Step 1</div>
+                    <img src="/images/openbook.png" width="75" alt="" class="legalfound-step-1-graphic step1">
+                    <div class="legalfound-overview-process-div-textblock-1">Learn about the process</div>
+                    <div class="legalfound-overview-process-div-textblock-2">LegalFound provides you with the exact information you need  so you can find the right attorney to help you.</div>
+                  </div>
+                  <div class="legalfound-overview-process-div">
+                    <div class="legalfound-overview-process-div-header-textblock step2">Step 2</div>
+                    <img src="/images/lawyer-directory-graphic.png" width="87" alt="" class="legalfound-step-1-graphic">
+                    <div class="legalfound-overview-process-div-textblock-1">Review local attorneys</div>
+                    <div class="legalfound-overview-process-div-textblock-2">We’ve sourced and vetted local attorneys who specialize in processing deceased unclaimed property.</div>
+                  </div>
+                  <div class="legalfound-overview-process-div">
+                    <div class="legalfound-overview-process-div-header-textblock step3">Step 3</div>
+                    <img src="/images/lawyer-chat-graphic.svg" width="80" alt="" class="legalfound-step-1-graphic step3">
+                    <div class="legalfound-overview-process-div-textblock-1">Free Consultation</div>
+                    <div class="legalfound-overview-process-div-textblock-2">Contact an attorney for a free consultation to see if they can help you process your unclaimed property.</div>
+                  </div>
+                </div>
+                <div class="legalfound-overview-link-div" (click)="legalFoundLinkClick()">
+                  <div class="legalfound-overview-link-textlink">Find a local attorney on LegalFound &gt;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="widget-container">
+            <div class="panel-header">
+              <div class="panel-header-textblock">Option #2 - Contact Florida Bar</div>
+            </div>
+            <div class="panel-body">
+              <div class="legal-overview-container">
+                <div class="legal-overview-wrapper-left">
+                  <div class="legal-overview-wrapper-left-div-1">
+                    <div class="legal-overview-wrapper-left-div-1-spacer-1"><img src="/images/florida-bar-logo.png" alt="" class="florida-bar-logo" width="53">
+                      <div class="legal-overview-wrapper-left-div-1-logo-textblock">The Florida Bar</div>
+                    </div>
+                    <div class="legal-overview-wrapper-left-div-1-spacer-2">
+                      <div class="legal-overview-wrapper-left-div-1-contact-textblock">Contact Information</div>
+                      <div class="legal-overview-wrapper-left-div-1-contact-div">
+                        <div class="legal-overview-wrapper-left-div-1-contact-textblock-1" (click)="floridaBarLinkClick()">Florida Bar Website</div>
+                        <div class="legal-overview-wrapper-left-div-1-textblock-2">(800) 450-6789</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="legal-overview-wrapper-left-div-2">
+                    <div class="legal-overview-wrapper-left-div-2-textblock">The Florida Bar can help you locate an attorney that may be able to help you process unclaimed property for deceased individuals.</div>
+                  </div>
+                </div>
+                <div class="legal-overview-wrapper-right">
+                  <div class="legal-overview-wrapper-right-textblock-1">Effort Required</div>
+                  <div class="legal-overview-wrapper-right-textblock-2 moderate">Moderate<br>(2+ Hours)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="widget-container">
+            <div class="panel-header">
+              <div class="panel-header-textblock">Option #3 - Individual Research</div>
+            </div>
+            <div class="panel-body">
+              <div class="legal-overview-container">
+                <div class="legal-overview-wrapper-left">
+                  <div class="legal-overview-wrapper-left-div-1">
+                    <div class="legal-overview-wrapper-left-div-1-spacer-1"><img src="/images/nolo-logo.png" alt="" class="nolo-logo" width="110">
+                      <div class="legal-overview-wrapper-left-div-1-logo-textblock">Nolo.com</div>
+                    </div>
+                    <div class="legal-overview-wrapper-left-div-1-spacer-2">
+                      <div class="legal-overview-wrapper-left-div-1-nolo-textblock" (click)="noloLinkClick()">Visit Nolo&#x27;s Website</div>
+                    </div>
+                  </div>
+                  <div class="legal-overview-wrapper-left-div-2">
+                    <div class="legal-overview-wrapper-left-div-2-textblock">There are many online resources that can help you learn about wills and probate. Nolo.com is a great resource to learn more.</div>
+                  </div>
+                </div>
+                <div class="legal-overview-wrapper-right">
+                  <div class="legal-overview-wrapper-right-textblock-1">Effort Required</div>
+                  <div class="legal-overview-wrapper-right-textblock-2 hardest">Hard<br>(10+ Hours)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>

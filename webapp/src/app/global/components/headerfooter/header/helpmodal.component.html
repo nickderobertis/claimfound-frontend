@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<div class="support-modal" (click)="onCloseModal($event)">
+  <div #supportModalContainer class="support-modal-container">
+    <div class="support-modal-header">
+      <h2 class="support-modal-header-h2">Questions? We're here to help.</h2>
+      <div #supportModalHeaderClose class="support-modal-header-close">
+        <a href="#">
+          <img src="/images/documents-exit-icon.svg" width="15" />
+        </a>
+      </div>
+    </div>
+    <div class="support-modal-body">
+      <div class="support-modal-body-wrapper">
+        <img
+          class="support-modal-body-image"
+          src="/images/support-modal-email-icon.svg"
+        />
+        <div class="support-modal-body-textblock-1">EMAIL</div>
+        <div class="support-modal-body-textblock-2">
+          We typically respond to emails within one day
+        </div>
+        <div class="support-modal-body-textblock-2">support@claimfound.com</div>
+        <div class="support-modal-body-button">
+          <a
+            class="support-modal-body-button-textblock"
+            href="mailto:support@claimfound.com"
+          >
+            Send Us a Message</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

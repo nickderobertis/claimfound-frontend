@@ -1,0 +1,160 @@
+@import "src/variables";
+.notselectedclaimscontainer {
+  display: block;
+  width: 900px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid rgba(136, 138, 141, 0.25);
+}
+
+.notselectedclaimswrapper {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.notselectedclaimsinstructionscomponent.inactive {
+  display: block;
+}
+
+.notselectedclaims-instructions-contentwrapper {
+  padding: 25px 30px 25px 20px;
+}
+.notselectedclaims-instructions-contentgraphic {
+  width: 50px;
+  height: 66px;
+  background-image: url("../../../../../../../images/notSelectedClaims-instructions-graphic.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+.notselectedclaims-instructions-contentdiv {
+  display: block;
+  padding: 10px 0px;
+  background-color: #f5f6f9;
+  border-radius: 5px;
+}
+
+.notselectedclaims-instructions-content-textheader {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.notselectedclaims-instructions-content-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.notselectedclaims-instructionscontainer {
+  display: block;
+  border-top: 1px solid rgba(136, 138, 141, 0.5);
+}
+
+.notselectedclaims-instructions-buttondiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid rgba(136, 138, 141, 0.5);
+  cursor: pointer;
+}
+
+.notselectedclaims-instructions-buttondiv:hover {
+  background-color: rgba(37, 146, 210, 0.15);
+}
+
+.notselectedclaims-instructions-button-textblock {
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: Graphik, sans-serif;
+  color: $dashboard-link-color;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .notselectedclaimscontainer {
+    width: 450px;
+  }
+  .notselectedclaims-instructions-contentwrapper {
+    width: 100%;
+  }
+  .notselectedclaims-instructions-contentgraphic {
+    width: 45px;
+    height: 60px;
+  }
+  .notselectedclaims-instructions-content-textheader {
+    font-size: 13px;
+  }
+  .notselectedclaims-instructionscontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .notselectedclaims-instructions-buttondiv {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top: 1px solid rgba(136, 138, 141, 0.5);
+    border-left-style: none;
+  }
+
+  .notselectedclaimscontainer {
+    width: auto;
+  }
+  .notselectedclaims-instructions-contentwrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .notselectedclaims-instructions-contentgraphic {
+    margin-bottom: 10px;
+  }
+  .notselectedclaims-instructions-content-textheader {
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .notselectedclaims-instructions-content-textblock {
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 30px;
+    text-align: center;
+  }
+}

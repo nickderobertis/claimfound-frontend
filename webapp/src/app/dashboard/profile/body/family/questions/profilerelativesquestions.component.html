@@ -1,0 +1,104 @@
+<div class="profile-body-contentcontainer">
+  <div class="profilemessagecomponent">
+    <div class="profile-body-content-messagediv">
+      <div class="profile-body-content-message-textblock1">
+        We can help find money for you and your family.
+      </div>
+      <div class="profile-body-content-message-textblock2">
+        You can claim your family member’s unclaimed property if they are
+        deceased. If they’re alive we’ll send you an alert if they have any
+        money.
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="profilequestioncontainer">
+      <div class="profile-question-textheader">
+        ClaimFound Profile Assistance
+      </div>
+      <div class="profilequestionwrappercomponent">
+        <div
+          *ngIf="showSaveAndQuestions && !loading"
+          class="profile-questionwrapper"
+        >
+          <div class="profile-question-textblock2">
+            Do you have a relationship with any of the following people?
+          </div>
+          <div class="profile-question-headerwrapper">
+            <div class="profile-question-headerdiv name">
+              <div class="profile-question-header-textblock">Name</div>
+            </div>
+            <div class="profile-question-headerdiv relationship">
+              <div class="profile-question-header-textblock">Relationship</div>
+            </div>
+            <div class="profile-question-headerdiv deceased">
+              <div class="profile-question-header-textblock">Deceased?</div>
+            </div>
+            <div class="profile-question-headerdiv will">
+              <div class="profile-question-header-textblock">Heir/Will?</div>
+            </div>
+          </div>
+          <div *ngFor="let item of model.associates">
+            <cf-profile-relatives-questions-row-component
+              [model]="item"
+              [categories]="model.categories"
+            ></cf-profile-relatives-questions-row-component>
+          </div>
+        </div>
+
+        <div *ngIf="loading" class="loading-spinner-div">
+          <cf-loading-spinner></cf-loading-spinner>
+        </div>
+
+        <div
+          *ngIf="showLoadMore && !noMoreQuestions"
+          class="profile-question-load-textblock"
+          (click)="onLoadMoreClick()"
+        >
+          Load More Matches (+)
+        </div>
+        <div *ngIf="noMoreQuestions" class="profile-question-textblock2">
+          We don't have any more matches for you.
+        </div>
+      </div>
+    </div>
+    <div *ngIf="showSaveAndQuestions" class="profilequestion-nomatchwrapper">
+      <div class="profilequestion-nomatchdiv">
+        <input
+          type="checkbox"
+          [(ngModel)]="noMatchesCheckBox"
+          class="profile-question-item-checkbox"
+          (click)="onNoAssociationCheckBoxClick(noMatchesCheckBox)"
+        />
+        <div class="profile-question-nomatch-textblock">
+          I&#x27;m not associated with anyone listed above.
+        </div>
+      </div>
+      <div *ngIf="!userHasViewedThisPage" class="profilequestion-nomatchdiv">
+        <input
+          id="refuseAnswerCheckBox"
+          type="checkbox"
+          [(ngModel)]="refuseAnswerCheckBox"
+          class="profile-question-item-checkbox"
+          (click)="onNotAnsweringCheckBoxClick(refuseAnswerCheckBox)"
+        />
+        <div class="profile-question-nomatch-textblock">
+          I prefer not to answer.
+        </div>
+      </div>
+      <div
+        class="profile-input-row-field-savebutton {{
+          saveButtonClass
+        }} w-button"
+        id="profile-save-button"
+        (click)="onSaveButtonClick()"
+      >
+        Save
+      </div>
+    </div>
+    <div class="profile-question-separator-bar"></div>
+    <cf-profile-step-component
+      [model]="prevNextButtonsModel"
+    ></cf-profile-step-component>
+  </div>
+</div>

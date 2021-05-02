@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="23px" viewBox="0 0 34 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>No-eye</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="---▶︎--Style-Guide-/-Symbols-/-Icons-/-Graphics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-154.000000, -166.000000)">
+            <g id="No-eye" transform="translate(171.000000, 177.500000) scale(1, -1) translate(-171.000000, -177.500000) translate(154.000000, 166.000000)">
+                <ellipse id="Oval-13" stroke="#3F408E" cx="17" cy="13" rx="16" ry="9"></ellipse>
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="13" width="34" height="10"></rect>
+                <path d="M7.5,5.5 L5.5,2.5" id="Line" stroke="#3F408E" stroke-linecap="square"></path>
+                <path d="M29.5,5.5 L27.5,2.5" id="Line" stroke="#3F408E" stroke-linecap="square" transform="translate(28.500000, 4.000000) scale(-1, 1) translate(-28.500000, -4.000000) "></path>
+                <path d="M13,4 L12,1" id="Line" stroke="#3F408E" stroke-linecap="square"></path>
+                <path d="M24,4 L23,1" id="Line" stroke="#3F408E" stroke-linecap="square" transform="translate(23.500000, 2.500000) scale(-1, 1) translate(-23.500000, -2.500000) "></path>
+                <path d="M17.5,3.5 L17.5,0.5" id="Line" stroke="#3F408E" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

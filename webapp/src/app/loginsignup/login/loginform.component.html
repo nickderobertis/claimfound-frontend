@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<cf-signup></cf-signup>
+<cf-error-bar [form]="emailForm"
+    [backendErrorKeysToFrontendFormMap]="backendErrorKeysToFrontendFormMap"
+    id="loginFormErrorBar">
+</cf-error-bar>
+ <div class="signupmodal-input-formcontainer w-form">
+        <form id="emailForm" class="signupmodal-input-formwrapper"
+            [formGroup]="emailForm">
+            <div class="signupinputareacomponent">
+
+
+                <app-login-input-field *ngFor="let formFieldAttr of formFieldAttr" [formFieldAttr]="formFieldAttr"
+                    [emailForm]="emailForm"></app-login-input-field>
+            </div>
+          <div class="sign-in-button-div w-clearfix">
+
+
+      <button
+        id="sign-in-submit-button"
+        type="submit"
+        class="sign-in-button w-button"
+        [disabled]="!emailForm.valid"
+        (click)="loginUser()"
+      >
+
+        Sign In
+      </button>
+
+      <a class="sign-in-link" routerLink="/login/forgot"
+        >Forgot Your Password? |</a
+      >
+      <a class="sign-in-link" id="sign-in-link" (click)="showSignUpModal($event)"
+        >Don't have an account?</a
+      >
+    </div>
+
+
+        </form>
+  </div>
+
+<div class="external-login">
+    <div
+      class="buttondiv-textblock"
+      cfExternalLogin
+      [operation]="'signIn'"
+      [provider]="'Facebook'"
+      (errorMessageEvent)="receiveError($event)"
+    >
+      <a href="#" class="external-login-buttondiv facebook w-inline-block">
+        <img
+          src="images/facebook-icon.png"
+          width="17"
+          height="27"
+          alt=""
+          class="facebook-icon"
+        />
+        Continue With Facebook
+      </a>
+    </div>
+
+    <div
+      class="buttondiv-textblock google"
+      cfExternalLogin
+      [operation]="'signIn'"
+      [provider]="'Google'"
+      (errorMessageEvent)="receiveError($event)"
+    >
+      <a href="#" class="external-login-buttondiv google w-inline-block">
+        <img
+          src="images/google-icon.png"
+          width="27"
+          height="27"
+          alt=""
+          class="google-icon"
+        />
+        Continue With Google
+      </a>
+    </div>
+
+
+  </div>
+
+
+<!--<form id="email-form" name="email-form" (ngSubmit)="loginUser()" #loginForm="ngForm">
+          <div class="sign-in-form-div">
+            <label class="sign-in---label" for="Email-2">Email</label>
+            <input class="sign-in-field w-input" data-name="Email" id="Email-2" maxlength="256" name="Email" required="required" type="email" [(ngModel)]="model.email">
+          </div>
+          <div class="sign-in-form-div">
+            <label class="sign-in---label" for="Password">Password</label>
+            <input class="sign-in-field w-input" data-name="Password" id="Password" maxlength="256" name="Password" required="required" type="password" [(ngModel)]="model.password">
+          </div>
+          <div class="sign-in-button-div w-clearfix">
+              <a class="sign-in-link" [routerLink]="['/login/forgot']">Forgot Your Password?</a>
+            <input class="sign-in-button w-button" data-wait="Please wait..." type="submit" value="Sign In  &gt;" [disabled]="!loginForm.form.valid">
+          </div>
+        </form>-->
+
+<!--<form data-name="Email Form" id="email-form" name="email-form">
+          <div class="sign-in-form-div">
+            <label class="sign-in---label" for="Email-2">Email</label>
+            <input class="sign-in-field w-input" data-name="Email" id="Email-2" maxlength="256" name="Email" required="required" type="email">
+          </div>
+          <div class="sign-in-form-div">
+            <label class="sign-in---label" for="Password">Password</label>
+            <input class="sign-in-field w-input" data-name="Password" id="Password" maxlength="256" name="Password" required="required" type="password">
+          </div>
+          <div class="sign-in-button-div w-clearfix"><a class="sign-in-link" href="#">Forgot Your Password?</a>
+            <input class="sign-in-button w-button" data-wait="Please wait..." type="submit" value="Sign In  &gt;">
+          </div>
+        </form>-->
+
+<!--<form id="email-form" (ngSubmit)="loginUser()" #loginForm="ngForm">
+          <div class="sign-in-form-div">
+            <label class="sign-in---label" for="Email-2" name="email" required>Email</label>
+            <input class="sign-in-field w-input" id="Email-2" [(ngModel)]="model.email">
+          </div>
+          <div class="sign-in-form-div">
+            <label class="sign-in---label" for="Password" name="password" required>Password</label>
+            <input class="sign-in-field w-input" id="Password" [(ngModel)]="model.password">
+          </div>
+          <div class="sign-in-button-div w-clearfix">
+              <a class="sign-in-link" [routerLink]="['/login/forgot']">Forgot Your Password?</a>
+              <button type="submit" class="sign-in-button w-button" [disabled]="!loginForm.form.valid">Sign In</button>
+          </div>
+</form>-->

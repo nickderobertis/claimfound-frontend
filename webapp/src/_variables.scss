@@ -1,0 +1,85 @@
+// start of landing page header compontent variables
+//all the variables can be can be found in /frontend/webapp/src/app/landing/landingheader.component.scss
+$landing_logo_url: url("/images/claimfound_logo_new.png");
+$header_container_color: #fff;
+// $header_container_bck_color: white;
+$header_font_family: "Graphik", sans-serif;
+$header_font_color: #3b62b0;
+$landing_header_container_scroll_color: #fff;
+$sign_up_button_bck_color: #3b62b0;
+$sign_up_button_color: #ffffff;
+$sign_up_button_color_on_hover_border: 2px solid #3b62b0;
+$sign_up_button_color_on_hover: #3b62b0;
+$sign_in_button_color: #3b62b0;
+$sign_in_button_border: 2px solid #3b62b0;
+$sign_in_button_color_on_hover: #ffffff;
+$sign_in_button_bck_color_on_hover: #3b62b0;
+//end of landing page header component variables
+
+//----------------------------------------------------------
+
+//start of dashboard header varaibles
+
+//can be found in /frontend/webapp/src/app/dashboard/header/dashboardheader.comonent.sccss
+$dashboard_bck_color: #fff;
+$dashboard_border_line_color: 1px solid hsla(216, 2%, 54%, 0.5);
+$dashboard_bck_color_on_hover: rgba(
+  36,
+  90,
+  170,
+  0.1
+); //.navbar-menu-links-div.help:hover
+$dashboard_menu_links_text_color: #888a8d;
+$dashboard_menu_links_font_family: Graphik, sans-serif;
+$dashboard_menu_links_text_color_on_hover: rgba(
+  36,
+  90,
+  170,
+  0.8
+); //.navbar-menu-links-textlink:hover, .navbar-menu-links-textlink.active
+$dashboard-module-header-color: #e4e7e9;
+$dashboard-link-color: #00adee;
+$dashboard-numerics-color: #24d2aa;
+$dashboard_img_url: url("/images/FF_claimFound_LO.png");
+$dashboard_half_img_url: url("/images/FF_claimFound_magnifyGlass.png");
+$dashboard_img_padding_right: 15px;
+$dashboad_img_padding_left: 10px;
+//end of dash board header variables
+
+//claimbar
+//can be found in /frontend/webapp/src/app/dashboard/claimsbar/claimsbar.component.scss
+$claim_bar_back_color: rgba(60, 85, 123, 1);
+$claimbar_textblock_color: #fff;
+$claimbar_textblock_color_onhover: #4fdaba;
+$claimbar_textblock_color_onselect: #4fdaba;
+$claimbar_selected_div_color: #4fd8af;
+$claimsbar_textblock_no_show: #888a8d;
+//end of claimbar
+
+//cf -buttons
+$button-bck-color: rgba(36, 90, 170, 0.8);
+$button-color: #fff;
+$button-font-size: 12px;
+$button-font-wt: 500;
+$button-letter-spacing: 0.5px;
+//end of cf buttons
+
+//subheader of modules that contains name address company etc
+$subheader-color: rgba(36, 90, 170, 0.15);
+
+$instructions-text-header-color: #245aaa;
+$instructions-text-block-color: rgba(0, 0, 0, 0.9);
+
+//claimfound logo
+
+$logo-sign-color: #24d2aa;
+$logo-spin-color: #315c99;
+$logo-spin-frame-color: #f6f7f9;
+
+$profile-navigator-text-color-selected: rgba(36, 90, 170, 0.8);
+$profile-navigator-text-color: rgba(0, 0, 0, 0.8);
+
+$select-claims-button-color: rgba(36, 90, 170, 0.8);
+
+$cf-spinner: none;
+$default-spinner: block;

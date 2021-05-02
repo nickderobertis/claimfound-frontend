@@ -1,0 +1,49 @@
+<div class="signupmodal-inputwrapper">
+    <div class="signupmodal-input-headerdiv">
+        <div class="signupmodal-input-header-textblock">
+            Sign up with
+            <a href="#" class="signupmodal-input-header-textblock-span"
+                cfExternalLogin
+                [operation]="'signIn'"
+                [provider]="'Facebook'"
+                (errorMessageEvent)="receiveError($event)"
+            >Facebook</a>
+            or
+            <a href="#" class="signupmodal-input-header-textblock-span"
+                cfExternalLogin
+                [operation]="'signIn'"
+                [provider]="'Google'"
+                (errorMessageEvent)="receiveError($event)"
+            >Google</a>
+        </div>
+    </div>
+    <div class="signupmodal-input-formcontainer w-form">
+        <form id="emailForm" class="signupmodal-input-formwrapper"
+            [formGroup]="emailForm">
+            <div class="signupinputareacomponent">
+                <cf-error-bar id="emailSignUpErrorBar"
+                    [backendErrorKeysToFrontendFormMap]="backendErrorKeysToFrontendFormMap"
+                    [form]="emailForm"
+                    [showErrors]="showErrors"
+                ></cf-error-bar>
+                <cf-sign-up-input-field *ngFor="let formFieldAttr of formFieldsAttr" [formFieldAttr]="formFieldAttr"
+                    [emailForm]="emailForm"></cf-sign-up-input-field>
+            </div>
+            <!--<cf-progress-button 
+                (submitEvent)="onProgressSubmit()" 
+                (finishAnimationEvent)="onAnimationFinish()"
+                [model]="progressButtonModel" 
+                #progressButton
+            ></cf-progress-button>-->
+            <cf-simple-progress-button [model]="progressButtonModel" (submitEvent)="onProgressSubmit()" id='sign-in-submit-button'></cf-simple-progress-button>
+            <div class="bodywrapper-textblock">
+                By clicking Sign In, you agree to our
+                <a routerLink="/tos" class="bodywrapper-textblock-linkspan" (click)="closeSignUpModal($event)">Terms of
+                    Service</a>
+                and have read and acknowledge our
+                <a routerLink="/privacy" class="bodywrapper-textblock-linkspan"
+                    (click)="closeSignUpModal($event)">Privacy Policy</a>.
+            </div>
+        </form>
+    </div>
+</div>

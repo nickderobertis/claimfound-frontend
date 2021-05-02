@@ -1,0 +1,28 @@
+<div
+    #signupModalBackground
+    class="modal-background"
+    [ngStyle]="{'display': showSignUpModal ? 'flex' : 'none' }"
+    (mousedown)="closeIfClickedOnBackground($event)"
+>
+    <div *ngIf="showSignUpModal" class="signupmodalcomponent">
+        <div class="signupmodalcontainer">
+            <div class="signupmodal-headerdiv">
+              <div class="headerdiv-exitdiv" (click)="closeModal($event)">
+                <div class="exit-icon"></div>
+              </div>
+              <div class="signupmodal-headertextblock">Sign Up With ClaimFound</div>
+              <div class="signupmodal-headertextblock mobile">To Find Your Lost Money</div>
+              <div class="signupmodal-headergraphic"></div>
+            </div>
+            <div class="signupmodal-bodywrapper">
+                <cf-sign-up-chooser *ngIf="!emailSignUp" (chooseEmailSignUp)="showEmailSignUp($event)"></cf-sign-up-chooser>
+                <cf-sign-up-input-area [model]="model" [ngStyle]="emailSignupDisplayStyles"></cf-sign-up-input-area>
+                <div class="bodywrapper-footerdiv">
+                    <a routerLink="/login" class="bodydiv-textlink" (click)="closeModal($event)">
+                        Already have a ClaimFound account - <span class="textlink-bluespan">Log In</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

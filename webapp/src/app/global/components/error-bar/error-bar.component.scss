@@ -1,0 +1,46 @@
+.signupmodal-input-form-errorwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: fit-content;
+  margin-bottom: 25px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  border-radius: 5px;
+  background-color: rgba(223, 128, 127, 0.1);
+}
+
+.error-entry-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 7.5px 0px;
+}
+
+.signupmodal-input-form-error-noticediv {
+  width: 7px;
+  margin-right: 10px;
+  border-radius: 4px 0px 0px 4px;
+  background-color: #df807f;
+}
+
+.signupmodal-input-form-error-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 5px;
+}

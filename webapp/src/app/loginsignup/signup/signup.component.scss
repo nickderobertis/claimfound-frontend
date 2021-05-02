@@ -1,0 +1,285 @@
+.modal-background {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding-top: 3.75vh;
+  padding-bottom: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.signupmodalcontainer {
+  width: 450px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.signupmodal-headerdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 115px;
+  padding-left: 15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(136, 138, 141, 0.5);
+  border-radius: 5px 5px 0px 0px;
+  background-color: #3f408e;
+  position: relative;
+  background-image: url("/images/email-modal-background-banner-mobile-graphic.png");
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signupmodal-headertextblock {
+  display: none;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+
+.signupmodal-headertextblock.mobile {
+  display: none;
+}
+
+.signupmodal-bodywrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 30px 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.bodywrapper-footerdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: 1px solid rgba(136, 138, 141, 0.5);
+}
+
+.bodydiv-textlink {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.textlink-bluespan {
+  color: #245aaa;
+}
+
+.textlink-bluespan:hover {
+  color: rgba(36, 90, 170, 0.8);
+}
+
+.signupmodal-headergraphic {
+  display: none;
+}
+
+.headerdiv-exitdiv {
+  display: none;
+  position: absolute;
+  right: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.exit-icon {
+  width: 22px;
+  height: 19px;
+  margin-right: 5px;
+  background-image: url("/images/exit-icon-red.svg");
+  background-size: cover;
+}
+
+.signupmodalchoosercomponent.inactive {
+  display: none;
+}
+
+.signupmodal-headergraphic {
+  display: block;
+  width: 131px;
+  height: 60px;
+  margin-top: 80px;
+  margin-left: 155px;
+  background-image: url("/images/signup-jewls-graphic.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 479px) {
+  .modal-background {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    z-index: 105; /* To display on top of landing headers */
+    height: 100%;
+    width: 100%;
+  }
+  .signupmodalcontainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: 105vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: scroll;
+  }
+  .signupmodal-headerdiv {
+    width: 100%;
+    height: 300px;
+    padding-left: 0px;
+    padding-top: 85px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    border-bottom-style: none;
+    background-color: #fff;
+    background-image: url("/images/email-modal-background-banner-mobile.svg");
+    background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .signupmodal-headertextblock {
+    display: block;
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 42px;
+  }
+  .signupmodal-headertextblock.mobile {
+    display: block;
+  }
+  .signupmodal-bodywrapper {
+    max-width: 320px;
+    padding-top: 35px;
+    padding-right: 0px;
+    padding-left: 0px;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .bodywrapper-footerdiv {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 320px;
+    padding-left: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .bodydiv-textlink {
+    font-size: 13px;
+  }
+  .headerdiv-exitdiv {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 10px;
+    margin-top: -60px;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .exit-icon {
+    width: 25px;
+    height: 25px;
+    background-image: url("/images/exit-icon.svg");
+    background-position: 0px 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .signupmodal-headergraphic {
+    display: block;
+    width: 171px;
+    height: 80px;
+    margin-top: 33px;
+    background-image: url("/images/signup-jewls-graphic.svg");
+    background-position: 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+  }
+}

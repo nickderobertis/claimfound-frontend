@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+    
+    <h3 class="hero-results-box-a-results-textblock-1">{{name}}</h3>
+    <div class="hero-results-box-a-results-textblock-2" *ngIf="isState" >{{stateName}}</div>
+    <div class="hero-results-box-a-results-textblock-2" *ngIf="!currency" >{{number | number}}</div>
+    <div class="hero-results-box-a-results-textblock-2" *ngIf="currency" >{{number | currency:'USD':'symbol':'1.0-0' }}</div>

@@ -1,0 +1,190 @@
+@import "src/variables";
+.selectclaims-headerdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  padding-left: 15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(136, 138, 141, 0.5);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: $dashboard-module-header-color;
+}
+.selectclaims-header-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.selectclaims-instructions-contentwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 35px 10px;
+}
+.selectclaims-instructions-content-graphic {
+  width: 88px;
+  height: 158px;
+  background-image: url("../../../../../images/selectedClaims-instructionsGraphic.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+}
+.selectclaims-instructions-contentdiv {
+  padding-left: 0px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.selectclaims-instructions-content-textheader {
+  margin-bottom: 15px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.selectclaims-instructions-content-listdiv {
+  padding-left: 22px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  list-style-type: decimal;
+}
+.selectclaims-instructions-content-list-textblock {
+  margin-bottom: 15px;
+  padding-left: 5px;
+  font-size: 12px;
+  line-height: 22px;
+}
+.selectclaims-instructions-content-list-textblock-span {
+  color: rgba(36, 90, 170, 1);
+  font-weight: 600;
+}
+.selectclaims-instructions-viewdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid rgba(136, 138, 141, 0.5);
+  cursor: pointer;
+}
+.selectclaims-instructions-viewdiv:hover {
+  background-color: rgba(37, 146, 210, 0.15);
+}
+.selectclaims-instructions-view-textblock {
+  font-family: Graphik, sans-serif;
+  color: $dashboard-link-color;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+}
+.selectclaimscontainer {
+  width: 900px;
+  margin-bottom: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #fff;
+}
+@media (max-width: 991px) {
+  .selectclaims-instructions-contentwrapper {
+    padding: 25px 25px 15px;
+  }
+  .selectclaims-instructions-content-textheader {
+    margin-bottom: 15px;
+  }
+  .selectclaims-instructions-content-list-textblock {
+    margin-bottom: 15px;
+  }
+  .selectclaimscontainer {
+    width: 730px;
+  }
+}
+@media (max-width: 767px) {
+  .selectclaims-instructions-contentwrapper {
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .selectclaims-instructions-content-graphic {
+    width: 75px;
+    height: 138px;
+    background-image: url("../../../../../images/selectedClaims-instructionsGraphicAlt.svg");
+  }
+  .selectclaims-instructions-contentdiv {
+    padding-left: 0px;
+  }
+  .selectclaims-instructions-content-textheader {
+    font-size: 13px;
+  }
+  .selectclaims-instructions-content-listdiv {
+    padding-right: 5px;
+  }
+  .selectclaims-instructions-content-list-textblock {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .selectclaimscontainer {
+    width: 450px;
+  }
+}
+@media (max-width: 479px) {
+  .selectclaims-header-textblock {
+    font-size: 14px;
+  }
+
+  .selectclaims-instructions-contentwrapper {
+    padding-right: 20px;
+    padding-left: 15px;
+    padding-top: 25px;
+  }
+  .selectclaims-instructions-content-graphic {
+    position: static;
+    display: none;
+  }
+
+  .selectclaims-instructions-content-listdiv {
+    padding-left: 20px;
+  }
+
+  .selectclaims-instructions-content-textheader {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .selectclaims-instructions-content-list-textblock {
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+  .selectclaimscontainer {
+    width: auto;
+    margin-bottom: 30px;
+  }
+}

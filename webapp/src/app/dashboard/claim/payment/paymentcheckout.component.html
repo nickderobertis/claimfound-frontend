@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+
+<div class="total-claims-wrapper">
+  <div class="payment-datawrapper">
+    <div class="payment-datadiv">
+      <div class="payment-data-textblock1">Total Value of Claims: </div>
+      <div class="payment-data-textblock2">{{ totalAmount | currency:'USD':'symbol'}}</div>
+    </div>
+    <div class="payment-datadiv" *ngIf="userFees">
+      <div class="payment-data-textblock1">Address Verification Fee:</div>
+      <div class="payment-data-textblock2 fee">-{{ userFees | currency:'USD':'symbol'}}</div>
+    </div>
+    <div class="payment-datadiv" *ngIf="userFees">
+      <div class="payment-data-textblock1">Net Value of Claims:</div>
+      <div class="payment-data-textblock2">{{ totalAmount - userFees | currency:'USD':'symbol'}}</div>
+    </div>
+  </div>
+</div>

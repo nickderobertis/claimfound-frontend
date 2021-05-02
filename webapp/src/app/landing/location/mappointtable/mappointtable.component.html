@@ -1,0 +1,137 @@
+<div #thisonlyexistsforscrolling></div>
+<div *ngIf="model" class="locationmaptablecontainer">
+  <cf-referral-email-modal></cf-referral-email-modal>
+  <div class="locationmaptablewrapper">
+    <div class="locationmaptable-contentcontainer">
+      <div class="locationmaptable-contentwrapper">
+        <div class="locationmaptable-contentdiv">
+          <div class="locationmaptable-content-textblock1">
+            Claims Located At:
+          </div>
+          <div class="locationmaptable-content-textblock2">
+            {{ model.address | titlecase }}
+          </div>
+        </div>
+        <button
+          class="locationmaptable-content-button w-button"
+          (click)="onSignUpButtonClick()"
+        >
+          Claim Money
+        </button>
+      </div>
+      <div
+        *ngIf="showTopTenOnlyMessage"
+        class="locationmaptable-content-textblock3"
+      >
+        There are
+        <strong class="locationmaptable-span1"
+          >{{ model.totalClaims }} claims</strong
+        >
+        worth
+        <strong class="locationmaptable-span2">${{ model.totalValue }}</strong>
+        located at this address. We’ve only displayed the top ten most valuable
+        claims below, but if you have lived here before and don’t see your name
+        below, sign up to view all the claims at this address.
+      </div>
+    </div>
+    <div class="locationmaptablecomponent">
+      <div class="locationmaptable-headerwrapper">
+        <div class="locationmaptable-header-datadiv">
+          <div class="locationmaptable-header-textblock name">NAME</div>
+          <div class="locationmaptable-header-textblock reporting-company">
+            REPORTING COMPANY
+          </div>
+          <div class="locationmaptable-header-textblock claim-type">
+            CLAIM TYPE
+          </div>
+          <div class="locationmaptable-header-textblock reported-date">
+            REPORTED
+          </div>
+          <div class="locationmaptable-header-textblock value">CLAIM VALUE</div>
+        </div>
+        <div class="locationmaptable-header-sharediv">
+          <div class="locationmaptable-header-textblock share">
+            SHARE THIS CLAIM
+          </div>
+        </div>
+      </div>
+      <div
+        *ngFor="let item of model.topClaims; let i = index"
+        class="locationmaptablerowcomponent"
+      >
+        <div class="locationmaptable-rowwrapper">
+          <div class="locationmaptable-row-datadiv">
+            <div class="locationmaptable-row-textblock name">
+              {{ item.name | titlecase }}
+            </div>
+            <div class="locationmaptable-row-textblock reporting-company">
+              {{ item.reportingCompany | titlecase }}
+            </div>
+            <div class="locationmaptable-row-textblock claim-type">
+              {{ item.propertyType | titlecase }}
+            </div>
+            <div class="locationmaptable-row-textblock reported-date">
+              {{ item.reportedDate }}
+            </div>
+            <div class="locationmaptable-row-textblock value">
+              {{ item.amount }}
+            </div>
+          </div>
+          <div class="locationmaptable-row-sharewrapper">
+            <div
+              class="locationmaptable-row-sharediv"
+              (click)="openEmailReferralModal(item)"
+            >
+              <img
+                src="../../../../images/gmail.png"
+                width="24"
+                height="20"
+                alt=""
+                class="email-icon"
+              />
+              <div class="locationmaptable-row-share-textblock">EMAIL</div>
+            </div>
+            <div
+              class="locationmaptable-row-sharediv"
+              (click)="openFacebookShareWindow(item)"
+            >
+              <img
+                src="../../../../images/facebook.png"
+                width="21"
+                height="21"
+                alt=""
+                class="facebook-icon"
+              />
+              <div class="locationmaptable-row-share-textblock">FACEBOOK</div>
+            </div>
+            <div
+              class="locationmaptable-row-sharediv"
+              (click)="copyReferralLinkClick(item, i)"
+            >
+              <img
+                src="../../../../images/referral-link-graphic.png"
+                width="38"
+                height="21"
+                alt=""
+                class="copy-icon"
+              />
+              <div
+                class="locationmaptable-row-share-textblock {{
+                  getReferralLinkTextStyle(i)
+                }}"
+              >
+                {{ getReferralLinkText(i) }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="locationmaptable-button w-button"
+      (click)="onSignUpButtonClick()"
+    >
+      Claim Money
+    </button>
+  </div>
+</div>

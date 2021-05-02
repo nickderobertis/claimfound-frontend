@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jan 8, 2017, 10:24:31 PM
+    Author     : christofferprompovitch
+*/
+@import "src/variables";
+.total-claims-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 730px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: 10px 0px;
+}
+
+.payment-datawrapper {
+  width: auto;
+  min-width: 275px;
+  padding: 25px 25px 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(0, 0%, 59.2%, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.payment-datadiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.payment-data-textblock1 {
+  margin-right: 50px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.payment-data-textblock2 {
+  font-family: Graphik, sans-serif;
+  color: $dashboard-numerics-color;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.payment-data-textblock2.fee {
+  color: #df817f;
+}
+
+@media (max-width: 991px) {
+  .total-claims-wrapper {
+  }
+}
+
+@media (max-width: 767px) {
+  .total-claims-wrapper {
+    width: 481px;
+  }
+}
+
+@media (max-width: 479px) {
+  .total-claims-wrapper {
+    width: auto;
+  }
+}

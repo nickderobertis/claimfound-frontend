@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+
+    <div class="completed-documents-body-text-div">
+        <div class="completed-documents-body-textblock-1">{{model.name}} Document {{ labelSeparator }}</div>
+        <div class="completed-documents-body-textblock-2">{{ model.description }}</div>
+    </div>
+    <div class="completed-documents-body-view-wrapper">
+        <div class="completed-documents-body-view-div" (click)="openDocument($event)">
+            <div class="completed-documents-body-view-textblock">View</div>
+        </div>
+    </div>
+
+
+    <!-- View Document Modal -->
+    <div id="docModal" class="doc-modal" *ngIf="modal" (click)="closeDocument($event)">
+        <div class="doc-modal-wrapper">
+            <div class="doc-modal-header">
+                <div class="doc-modal-header-textblock">{{ model.name | titlecase }} Document {{ documentForDisplayText }}</div>
+                <div class="doc-modal-header-close">
+                    <a href="#" (click)="closeDocument($event)">
+                        <img src="/images/documents-exit-icon.svg" width="15">
+                    </a>
+                </div>
+            </div>
+            <!-- Modal content -->
+            <div class="doc-modal-body">
+                <iframe [src]="url" class="modal-iframe"></iframe>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,33 @@
+<div
+    #modalBackground
+    class="modal-background"
+    *ngIf="showModal"
+    (mousedown)="closeIfClickedOnBackground($event)"
+>
+    <div class="signupmodalcontainer">
+        <div class="signupmodal-headerdiv">
+            <div class="headerdiv-exitdiv" (click)="closeModal($event)">
+              <div class="exit-icon"></div>
+            </div>
+            <div class="signupmodal-headertextblock">Sign Up With ClaimFound</div>
+            <div class="signupmodal-headertextblock mobile">To Find Your Lost Money</div>
+            <div class="signupmodal-headergraphic"></div>
+        </div>
+        <div [formGroup]="form" class="signupmodal-bodywrapper">
+            <cf-error-bar [form]="form"
+                  [showErrors]="showError"
+                  [backendErrorKeysToFrontendFormMap]="backendErrorKeysToFrontendFormMap"
+                  id="landingModalErrorBar">
+            </cf-error-bar>
+            <input class="signupmodal-input-form-textfield {{ textBoxErrorClass(formConstants.firstName) }}" placeholder="First Name" formControlName="{{ formConstants.firstName }}">
+            <input class="signupmodal-input-form-textfield {{ textBoxErrorClass(formConstants.lastName) }}" placeholder="Last Name" formControlName="{{ formConstants.lastName }}">
+            <input class="signupmodal-input-form-textfield {{ textBoxErrorClass(formConstants.email) }}" placeholder="email" formControlName="{{ formConstants.email }}">
+            <cf-simple-progress-button [model]="progressButtonModel" (submitEvent)="onProgressSubmit()"></cf-simple-progress-button>
+            <div class="bodywrapper-footerdiv">
+                <a routerLink="/login" class="bodydiv-textlink" (click)="closeModal($event)">
+                    Already have a ClaimFound account - <span class="textlink-bluespan">Log In</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

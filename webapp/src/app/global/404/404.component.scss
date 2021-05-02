@@ -1,0 +1,236 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Mar 4, 2017, 10:03:56 PM
+    Author     : christofferprompovitch
+*/
+
+._404-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 83vh;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: hsla(216, 2%, 54%, 0.05);
+}
+
+._404-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  margin-top: -150px;
+}
+
+._404-icon-div {
+  width: 50%;
+  height: 300px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  background-image: url("/images/404-icon.png");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+._404-message-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+._404-textblock-1 {
+  margin-bottom: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 42px;
+  font-weight: 700;
+}
+
+._404-textblock-2 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+._404-textblock-3 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+._404-textlink-div {
+  display: block;
+}
+
+._404-textlink {
+  display: inline-block;
+  font-family: Graphik, sans-serif;
+  color: rgba(36, 90, 170, 0.8);
+  font-size: 16px;
+  line-height: 34px;
+  font-weight: 400;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  ._404-container {
+    width: 100%;
+  }
+
+  ._404-wrapper {
+    width: auto;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 20px;
+  }
+
+  ._404-icon-div {
+    height: 275px;
+    width: 275px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+  }
+
+  ._404-message-div {
+    padding-left: 15px;
+  }
+
+  ._404-textblock-1 {
+  }
+
+  ._404-textblock-2 {
+  }
+}
+
+@media (max-width: 767px) {
+  ._404-container {
+    width: auto;
+  }
+
+  ._404-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  ._404-icon-div {
+    width: 75%;
+    height: 275px;
+    margin-bottom: 40px;
+    background-position: 50% 50%;
+  }
+
+  ._404-message-div {
+    width: 90%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  ._404-textblock-1 {
+    font-size: 34px;
+  }
+
+  ._404-textblock-2 {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  ._404-container {
+    display: block;
+    width: auto;
+    height: 100vh;
+  }
+
+  ._404-wrapper {
+    padding-top: 75px;
+    margin-top: 0px;
+  }
+
+  ._404-icon-div {
+    width: 75%;
+    height: 225px;
+    margin-bottom: 35px;
+    background-position: 50% 50%;
+  }
+
+  ._404-message-div {
+    width: 90%;
+    padding-left: 0px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  ._404-textblock-1 {
+    font-size: 32px;
+  }
+
+  ._404-textblock-2 {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  ._404-textblock-3 {
+    font-size: 20px;
+  }
+}

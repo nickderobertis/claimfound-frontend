@@ -1,0 +1,26 @@
+<div #modaloutside *ngIf="showModal" class="modal-background message" (click)="clickedOutside($event)">
+  <div class="messagemodalcomponent">
+    <div *ngIf="!isLoading" class="messagemodal-removeclaimcontainer">
+      <div class="messasge-removeclaim-exitdiv">
+        <div class="message-removeclaim-exiticon" (click)="clickedExit()"></div>
+      </div>
+      <div class="message-removeclaim-textblock1">
+        Are You Sure You Want To Do This?
+      </div>
+      <div class="message-removeclaim-graphic"></div>
+      <div class="message-removeclaim-textblock2">
+        We&#x27;re going to discard your state claim form.
+      </div>
+      <div class="message-removeclaim-textblock2">
+        You&#x27;ll have to resign this form if you decide to claim this money
+        in the future.
+      </div>
+      <a (click)="clickedOk()" class="message-removeclaim-button w-button"
+        >Remove Claim</a
+      >
+    </div>
+    <div *ngIf="isLoading">
+      <cf-loading-spinner></cf-loading-spinner>
+    </div>
+  </div>
+</div>

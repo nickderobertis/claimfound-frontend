@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<div class="button-container" *ngIf="enabled">
+  <div class="button-wrapper">
+    <div class="back-button-div">
+      <div
+        class="button-div back"
+        *ngIf="canGoBack"
+        routerLink="{{ previousUrl }}"
+      >
+        <div id="dashboard-step-back-button" class="button-textblock back">
+          &#60; Back
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="button-div {{ nextButtonActiveClass }}"
+      *ngIf="canGoForward"
+      (click)="nextButtonClicked($event)"
+      attr.href="{{ nextUrl }}"
+    >
+      <div
+        id="dashboard-next-step-{{ nextButtonActiveClass }}"
+        class="button-textblock {{ nextButtonActiveClass }}"
+      >
+        Next Step &#62;
+      </div>
+    </div>
+
+    <div
+      class="button-div {{ nextButtonActiveClass }}"
+      *ngIf="!canGoForward && nextUrl"
+    >
+      <div
+        id="dashboard-next-step-{{ nextButtonActiveClass }}"
+        class="button-textblock {{ nextButtonActiveClass }}"
+        *ngIf="!canGoForward"
+      >
+        Next Step &#62;
+      </div>
+    </div>
+
+    <div
+      class="button-div"
+      id="process-claims-button"
+      (click)="processClaims()"
+      *ngIf="processClaimsEnabled"
+    >
+      <div class="button-textblock">Submit &nbsp;&gt;</div>
+    </div>
+
+    <div
+      class="got-navigation-status-hidden-element"
+      id="got-navigation-status-hidden-element"
+      *ngIf="receivedNavigationStatus"
+    ></div>
+  </div>
+</div>

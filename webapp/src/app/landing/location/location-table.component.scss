@@ -1,0 +1,297 @@
+.locationtable-h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.locationtable-textblock {
+  margin-bottom: 30px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.locationtablediv {
+  width: 515px;
+}
+
+.locationtable-tableheaderrow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(136, 138, 141, 0.5);
+}
+
+.loationtable-tablerow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  min-height: 45px;
+  border-style: none solid solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  background-color: #f6f7f9;
+}
+
+.locationtable-tablerow-textblock1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid rgba(136, 138, 141, 0.5);
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.locationtable-tablerow-textblock2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  padding-left: 15px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid rgba(136, 138, 141, 0.5);
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.locationtable-tablerow-textblock3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  padding-left: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 1px solid rgba(136, 138, 141, 0.5);
+  font-family: Graphik, sans-serif;
+  color: #245aaa;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.locationtable-tablerow-textblock4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Graphik, sans-serif;
+  color: #24d2aa;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.locationtable-tableheader-textbock1 {
+  width: 10%;
+  padding-bottom: 2.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.locationtable-tableheader-textbock1.reporting-company {
+  width: 45%;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.locationtable-tableheader-textbock1.claims {
+  width: 20%;
+}
+
+.locationtable-tableheader-textbock1.value {
+  width: 25%;
+}
+
+@media (max-width: 1280px) {
+  .locationtable-h2 {
+  }
+
+  .locationtable-textblock {
+  }
+
+  .locationtablediv {
+    width: 450px;
+  }
+
+  .locationtable-tableheaderrow {
+  }
+
+  .loationtable-tablerow {
+  }
+
+  .locationtable-tablerow-textblock1 {
+  }
+
+  .locationtable-tablerow-textblock2 {
+  }
+
+  .locationtable-tablerow-textblock3 {
+  }
+
+  .locationtable-tablerow-textblock4 {
+  }
+
+  .locationtable-tableheader-textbock1 {
+  }
+
+  .locationtable-tableheader-textbock1.reporting-company {
+  }
+
+  .locationtable-tableheader-textbock1.claims {
+  }
+
+  .locationtable-tableheader-textbock1.value {
+  }
+}
+
+@media (max-width: 991px) {
+  .locationtablewrapper {
+    width: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .locationtable-h2 {
+    text-align: center;
+  }
+  .locationtablediv {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .locationtable-textblock {
+    text-align: center;
+  }
+  .locationtablediv {
+    width: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .locationtable-tablerow-textblock1 {
+    font-size: 12px;
+  }
+  .locationtable-tablerow-textblock3 {
+    font-size: 12px;
+  }
+  .locationtable-tablerow-textblock4 {
+    font-size: 12px;
+  }
+  .locationoverview-info-h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 479px) {
+  .locationtable-h2 {
+    line-height: 26px;
+    text-align: left;
+  }
+
+  .locationtableDiv {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .locationtable-textblock {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: left;
+  }
+  .locationtable-tablerow-textblock2 {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .locationtable-tablerow-textblock3 {
+    font-size: 10px;
+  }
+  .locationtable-tablerow-textblock4 {
+    font-size: 10px;
+  }
+  .locationtable-tableheader-textbock1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .locationtable-tableheader-textbock1.reporting-company {
+    padding-left: 10px;
+  }
+  .locationtable-tableheader-textbock1.claims {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .locationoverview-info-h3 {
+    font-size: 15px;
+  }
+}

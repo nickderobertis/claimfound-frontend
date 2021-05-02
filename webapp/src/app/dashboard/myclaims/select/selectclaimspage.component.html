@@ -1,0 +1,29 @@
+<body>
+  <div class="body">
+    <div class="messagecomponent">
+
+      <cf-select-claims-instructions *ngIf="showInstructions" (sawInstructions)="onSawInstructions()"></cf-select-claims-instructions>
+
+      <cf-searching-message-widget *ngIf="!totalsLoaded && !showInstructions"></cf-searching-message-widget>
+
+      <div [hidden]="!totalsLoaded || showInstructions">
+        <cf-select-claims-totals-widget [hidden]="!hasNewClaims"></cf-select-claims-totals-widget>
+
+        <cf-select-claim-table [hidden]="!hasNewClaims" [tableTitle]="newClaimsTableTitle" [claimCache]="currentClaimsCache"></cf-select-claim-table>
+
+        <cf-remove-claim-table [tableTitle]="selectedTableTitle" [claimCache]="currentClaimsCache"></cf-remove-claim-table>
+
+        <cf-selected-claims-totals-widget></cf-selected-claims-totals-widget>
+
+        <div class="stepcontainer">
+          <div id="step-button" class="step-button" (click)="onGoToDashboardClick($event)">Go to Dashboard &gt;</div>
+        </div>
+
+        <cf-previously-viewed-claims-table [tableTitle]="previouslyViewedTableTitle" [hidden]="!hasPreviouslyViewedClaims" [claimCache]="currentClaimsCache"></cf-previously-viewed-claims-table>
+
+        <remove-claim-modal></remove-claim-modal>
+        
+      </div>
+    </div>
+  </div>
+</body>

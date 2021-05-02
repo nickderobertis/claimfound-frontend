@@ -1,0 +1,78 @@
+<div class="selectclaimscomponent">
+  <div class="selectclaimscontainer">
+    <div class="selectclaims-headerdiv">
+      <div class="selectclaims-header-textblock">{{ tableTitle }}</div>
+    </div>
+    <div *ngIf="loading" class="loading-spinner-div">
+      <cf-loading-spinner></cf-loading-spinner>
+    </div>
+    <div class="selectclaimstablecomponent inactive" *ngIf="!loading">
+      <div
+        *ngIf="isHidden"
+        class="notselectedclaimsinstructionscomponent inactive"
+      >
+        <div class="notselectedclaims-instructionscontainer">
+          <div class="notselectedclaims-instructions-contentwrapper">
+            <div class="notselectedclaims-instructions-contentdiv">
+              <div class="notselectedclaims-instructions-content-textheader">
+                <span style="font-size: 20px; margin-right: 5px;">🔎</span
+                >Review And Select Claims You Viewed Previously
+              </div>
+            </div>
+          </div>
+          <div
+            (click)="stopHiding()"
+            class="notselectedclaims-instructions-buttondiv"
+          >
+            <div class="notselectedclaims-instructions-button-textblock">
+              View Claims
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="selectclaims-tablecontainer" *ngIf="hasItems && !isHidden">
+        <div class="selectclaims-table-headercontainer">
+          <div class="selectclaims-table-headerwrapper">
+            <div class="selectclaims-table-headerdiv amount">
+              <div class="selectclaims-table-header-textblock">AMOUNT</div>
+            </div>
+            <div class="selectclaims-table-headerdiv name">
+              <div class="selectclaims-table-header-textblock">NAME</div>
+            </div>
+            <div class="selectclaims-table-headerdiv state">
+              <div class="selectclaims-table-header-textblock">STATE</div>
+            </div>
+            <div class="selectclaims-table-headerdiv address">
+              <div class="selectclaims-table-header-textblock">ADDRESS</div>
+            </div>
+            <div class="selectclaims-table-headerdiv reporting-company">
+              <div class="selectclaims-table-header-textblock">
+                <span class="selectedclaims-table-header-textblock-span"
+                  >REPORTING</span
+                ><span> COMPANY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <cf-select-claim-table-row
+          *ngFor="let row of claims"
+          [model]="row"
+          (claimSelected)="onClaimSelected($event)"
+          (claimDeselected)="onClaimDeselected($event)"
+        >
+        </cf-select-claim-table-row>
+
+        <cf-page-select
+          *ngIf="numberOfClaims > itemsPerPage"
+          [numberOfItems]="numberOfClaims"
+          [itemName]="pageSelectItemName"
+          [itemsPerPage]="itemsPerPage"
+          [currentPage]="currentPage"
+          (pageSelectedEvent)="pageSelected($event)"
+        >
+        </cf-page-select>
+      </div>
+    </div>
+  </div>
+</div>

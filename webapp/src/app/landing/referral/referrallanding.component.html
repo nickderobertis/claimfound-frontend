@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<div class="referral-section">
+    <div class="referral-content-wrapper">
+        <div class="referral-content-div" *ngIf="!loading">
+            <div class="referral-content-text-div">
+                <div class="referral-content-textblock-1">Its your lucky day {{ displayName }},<br>we found some lost money in your name!</div>
+                <div class="referral-content-results-wrapper">
+                    <div class="referral-content-results-div">
+                        <div class="referral-content-results-textblock-1">Number of Claims</div>
+                        <div class="referral-content-results-textblock-2">{{ model.claimTotals.numberOfClaims | number }}</div>
+                    </div>
+                    <div class="referral-content-results-div">
+                        <div class="referral-content-results-textblock-1">Total Value of Claims</div>
+                        <div class="referral-content-results-textblock-2">{{ model.claimTotals.totalValue | currency:'USD':'symbol':'1.0-0' }}</div>
+                    </div>
+                    <div class="referral-content-results-div">
+                        <div class="referral-content-results-textblock-1">Average Value of Claims</div>
+                        <div class="referral-content-results-textblock-2">{{ model.claimTotals.averageValue | currency:'USD':'symbol':'1.0-0' }}</div>
+                    </div>
+                </div>
+                <cf-email-signup
+                    [name]="model.name"
+                    eventKey="referralGetStarted"
+                ></cf-email-signup>
+                <div class="property-search-textblock-1">OR</div>
+                <div class="property-search-textblock-2" (click)="onToggleDisplaySearch()">See how much money you can find for your friends and family!</div>
+                <cf-property-search [ngStyle]="propertySearchStyles" class="hero-search-div alt"></cf-property-search>
+            </div>
+        </div>
+        <div *ngIf="loading" class="loading-spinner-container">
+            <cf-loading-spinner></cf-loading-spinner>
+        </div>
+    </div>
+    <div class="referral-graphic-wrapper">
+        <div class="referral-graphic-div">
+            <div class="referral-grahpic"></div>
+        </div>
+    </div>
+</div>

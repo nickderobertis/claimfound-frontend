@@ -1,0 +1,44 @@
+{
+  "extends": "../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "app",
+      "camelCase"
+    ],
+    "component-selector": [
+      false,
+      "element",
+      "app",
+      "kebab-case"
+    ],
+    "prefer-const": [
+      false
+    ],
+    "forin": [
+      false
+    ],
+    "quotemark": [
+      false
+    ],
+    "prefer-for-of": [
+      false
+    ],
+    "whitespace": [
+      false
+    ],
+    "variable-name": [
+      false
+    ],
+    "no-inferrable-types": [
+      false
+    ],
+    "member-ordering": [
+      false
+    ],
+    "object-literal-shorthand": [
+      false
+    ]
+  }
+}

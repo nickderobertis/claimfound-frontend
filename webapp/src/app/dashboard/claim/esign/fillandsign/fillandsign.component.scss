@@ -1,0 +1,380 @@
+@import "src/variables";
+.stepContainer {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.step-contentWrapper {
+  width: 75%;
+}
+
+.step-content-textHeader {
+  margin-bottom: 2.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+
+.step-content-textBlock {
+  margin-bottom: 0px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+
+.step-buttonWrapper {
+  width: 25%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.step-button-completeDiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.step-button-complete-textblock {
+  font-family: "Graphik", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-left: 5px;
+}
+
+.completedFormsDiv {
+}
+
+.link-text {
+  margin-top: 15px;
+  font-family: "Graphik", sans-serif;
+  color: #00adee;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link-text.viewed {
+  color: #a6a8aa;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  padding: 0px;
+  border-radius: 5px;
+  background-color: $button-bck-color;
+  font-family: $header_font_family;
+  font-size: $button-font-size;
+  font-weight: $button-font-wt;
+  letter-spacing: $button-letter-spacing;
+  color: $button-color;
+}
+
+button:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+button:active {
+  border: none;
+  outline: none;
+}
+
+button.disabled,
+button.disabled:hover,
+button.disabled:focus {
+  background-color: rgba(136, 148, 141, 0.2);
+  cursor: default;
+  border: 1px solid rgba(136, 148, 141, 0.2);
+  color: #888a8d;
+}
+
+.checked {
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.completed-forms {
+  list-style: none;
+}
+
+.completed {
+  color: rgba(136, 148, 141, 0.5);
+}
+
+.formDataContainer {
+}
+
+.formDataWrapper {
+  padding: 20px 15px;
+  border-bottom: 1px solid rgba(136, 148, 141, 0.5);
+}
+
+.formDataWrapper.address {
+  padding: 0px 15px 25px;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.loading-spinner-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.complete-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  float: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .stepContainer {
+  }
+
+  .step-contentWrapper {
+  }
+
+  .step-content-textHeader {
+  }
+
+  .step-content-textBlock {
+  }
+
+  .step-buttonWrapper {
+  }
+
+  .step-button-completeDiv {
+  }
+
+  .step-button-complete-textblock {
+  }
+
+  .completedFormsDiv {
+  }
+
+  .link-text {
+  }
+
+  .link-text.viewed {
+  }
+
+  .formDataContainer {
+  }
+
+  .formDataWrapper {
+  }
+}
+
+@media (max-width: 767px) {
+  .stepContainer {
+  }
+
+  .step-contentWrapper {
+    width: 70%;
+  }
+
+  .step-content-textHeader {
+  }
+
+  .step-content-textBlock {
+    padding-right: 20px;
+  }
+
+  .step-buttonWrapper {
+    width: 30%;
+  }
+
+  .submit-btn {
+    display: block;
+  }
+
+  .submit-btn .btn-global {
+    width: 100%;
+    text-align: center;
+  }
+
+  .step-button-completeDiv {
+  }
+
+  .step-button-complete-textblock {
+  }
+
+  .completedFormsDiv {
+  }
+
+  .link-text {
+  }
+
+  .link-text.viewed {
+  }
+
+  .formDataContainer {
+  }
+
+  .formDataWrapper {
+  }
+}
+
+@media (max-width: 479px) {
+  .stepContainer {
+    display: block;
+  }
+
+  .step-contentWrapper {
+    width: 100%;
+  }
+
+  .step-content-textHeader {
+    margin-bottom: 5px;
+  }
+
+  .step-content-textBlock {
+    padding: 0px;
+  }
+
+  .step-buttonWrapper {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .step-button-completeDiv {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .step-button-complete-textblock {
+  }
+
+  .completedFormsDiv {
+  }
+
+  .link-text {
+    margin-top: 10px;
+  }
+
+  .link-text.viewed {
+  }
+
+  .formDataContainer {
+  }
+
+  .formDataWrapper {
+    padding: 20px 0px;
+  }
+
+  .formDataWrapper.address {
+    padding: 0px 0px 25px;
+  }
+}

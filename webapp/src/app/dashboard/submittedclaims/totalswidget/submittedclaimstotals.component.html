@@ -1,0 +1,18 @@
+<div class="submittedclaimswidgetcomponent" *ngIf="!loading">
+    <div class="submittedclaimscontainer">
+        <div class="submittedclaims-headerwrapper">
+            <div class="submittedclaims-headerwrapper-textblock1">Submitted Claims</div>
+        </div>
+        <div class="submittedclaims-bodywrapper">
+            <div class="submittedclaims-overviewwrapper">
+            <div class="overviewwrapper-contentdiv">
+                <div class="overviewwrapper-contentdiv-textblock1">Claims Processed</div>
+                <div class="overviewwrapper-contentdiv-textblock2">{{ model.totalProcessedClaims }}</div>
+            </div>
+            <div class="overviewwrapper-contentdiv middle">
+                <div class="overviewwrapper-contentdiv-textblock1">Amount Returned</div>
+                <div class="overviewwrapper-contentdiv-textblock2">{{ model.totalValueProcessed | currency:'USD':'symbol':'1.2-2' }}</div>
+            </div><a (click)="onLinkClick()" class="link">{{ linkText }} &gt;</a></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="externalLoginContainer">
+
+	<cf-error-bar id="socialConnectErrorBar"></cf-error-bar>
+
+	<div class="rowContainer" *ngFor="let socialRow of socialModel.socialRows">
+		<div class="row-leftWrapper">
+			<p class="row-left-textHeader">{{socialRow.name}}</p>
+			<p class="row-left-textBlock not-connected" *ngIf="!socialRow.connected">Not Connected</p>
+			<p class="row-left-textBlock connected" *ngIf="socialRow.connected">Connected</p>
+		</div>
+		<div class="row-rightWrapper" *ngIf="!socialRow.connected">
+			<!--<cf-progress-button #progressButton [model]="progressButtonModels[socialRow.name]" cfExternalLogin [operation]="'connect'" [provider]="socialRow.name" (errorMessageEvent)="receiveError($event)">Connect</cf-progress-button>-->
+			<cf-simple-progress-button [model]="progressButtonModels[socialRow.name]" cfExternalLogin [operation]="'connect'" [provider]="socialRow.name" (errorMessageEvent)="receiveError($event)"></cf-simple-progress-button>
+		</div>
+	</div>
+</div>

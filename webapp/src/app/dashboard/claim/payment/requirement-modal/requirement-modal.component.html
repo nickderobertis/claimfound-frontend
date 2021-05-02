@@ -1,0 +1,29 @@
+<div
+  #modaloutside
+  *ngIf="showModal"
+  class="modal-background message"
+  (click)="clickedOutside($event)"
+>
+  <div class="messagemodalcomponent">
+    <div *ngIf="!isLoading" class="messagemodal-removeclaimcontainer">
+      <div class="messasge-removeclaim-exitdiv">
+        <div class="message-removeclaim-exiticon" (click)="clickedExit()"></div>
+      </div>
+      <div class="message-removeclaim-textblock1">
+        It seems like you have not uploaded all the required docs
+      </div>
+      <div class="message-removeclaim-graphic"></div>
+      <div class="message-removeclaim-textblock2">
+        Please head back to the upload section.
+      </div>
+      <a
+        [routerLink]="['/dashboard/claim/documents']"
+        class="message-removeclaim-button w-button"
+        >Go to docs</a
+      >
+    </div>
+    <div *ngIf="isLoading">
+      <cf-loading-spinner></cf-loading-spinner>
+    </div>
+  </div>
+</div>

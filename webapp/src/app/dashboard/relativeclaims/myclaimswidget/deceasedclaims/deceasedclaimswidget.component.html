@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<div class="widget-container" *ngIf="displayProfileLink">
+    <div class="widget-wrapper">
+        <div class="panel-header">
+            <div class="panel-header-textblock">My Deceased Claims</div>
+        </div>
+        <div class="panel-body">
+            <div class="panel-body-message-container">
+              <div class="panel-body-message-wrapper-right">
+                <div class="panel-body-message-div-header-texblock">Your deceased relatives could have money that belongs to you!</div>
+                <div class="panel-body-message-div-textblock">Answer a few questions to see if you have more unclaimed property</div>
+              </div>
+                <div class="panel-body-message-wrapper-left">
+                  <img src="/images/tomb-stone-graphic.svg" alt="" height="75px;" class="tombstone-graphic">
+                </div>
+            </div>
+            <div class="panel-body-message-button" routerLink="/dashboard/familyclaims">Review Family Claims</div>
+        </div>
+    </div>
+</div>
+<div class="widget-container" *ngIf="displayRelativeTotals">
+    <div class="widget-wrapper">
+        <div class="panel-header">
+        <div class="panel-header-textblock">My Deceased Claims</div>
+        </div>
+        <div class="panel-body">
+        <div class="panel-body-data-container">
+            <div class="panel-body-data-wrapper-left">
+              <div class="panel-body-data-div deceased">
+                <div class="panel-body-data-div-textheader">Deceased Family Members</div>
+                <div class="panel-body-data-div-textblock">{{ model.aggregateClaimsTotalModel.numberOfPeople | number }}</div>
+              </div>
+              <div class="panel-body-data-div middle deceased">
+                  <div class="panel-body-data-div-textheader">Number of Claims</div>
+                  <div class="panel-body-data-div-textblock">{{ model.aggregateClaimsTotalModel.numberOfClaims | number }}</div>
+              </div>
+              <div class="panel-body-data-div deceased">
+                  <div class="panel-body-data-div-textheader">Value of Claims</div>
+                  <div class="panel-body-data-div-textblock">{{ model.aggregateClaimsTotalModel.formattedTotalValue }}</div>
+              </div>
+            </div>
+            <div class="panel-body-data-wrapper-right" routerLink="/dashboard/deceasedclaims">
+                <div class="panel-body-data-div-right-textlink">View Claims</div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

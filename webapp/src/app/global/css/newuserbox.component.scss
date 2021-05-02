@@ -1,0 +1,594 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 19, 2016, 11:17:28 AM
+    Author     : christofferprompovitch
+*/
+
+.profile-form-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.block-wrapper {
+  width: auto;
+  margin-bottom: 25px;
+  border-style: solid solid none solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.block-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid hsla(216, 2%, 54%, 0.5);
+  background-color: hsla(216, 2%, 54%, 0.15);
+}
+
+.create-profile-container {
+  height: 40px;
+}
+
+.create-profile-h1 {
+  display: inline-block;
+  height: 40px;
+  margin-top: -3px;
+  margin-bottom: 0px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.add-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+}
+
+.add-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 25px;
+  padding: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.2);
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.add-div:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.add-textlink {
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.required-textblock {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 25px;
+  margin-left: 10px;
+  padding: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-radius: 5px;
+  background-color: hsla(216, 2%, 54%, 0.25);
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+/*This is where we move over to new user box section*/
+
+.block-wrapper.endblock.bn {
+  border-style: none;
+  background-color: transparent;
+}
+
+.content-form-button {
+  display: block;
+  border-style: none;
+  padding: 12.5px 15px;
+  height: 40px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-form-button:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.sign-in-button-back {
+  padding: 12px 15px;
+  height: 40px;
+  width: 30%;
+  float: left;
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.sign-in-button-back:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.sign-in-button-next {
+  padding: 12px 15px;
+  height: 40px;
+  width: 30%;
+  float: right;
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.sign-in-button-next:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+@media (max-width: 991px) {
+  .profile-form-div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .block-wrapper {
+    width: 576px;
+    margin-bottom: 20px;
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: hsla(216, 2%, 54%, 0.5);
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+  .block-div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid hsla(216, 2%, 54%, 0.5);
+    background-color: hsla(216, 2%, 54%, 0.15);
+  }
+
+  .create-profile-conatainer {
+  }
+
+  .create-profile-h1 {
+    height: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Graphik, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+  }
+
+  .add-container {
+  }
+  .add-div {
+    padding: 1px 7.5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(216, 2%, 54%, 0.5);
+    background-color: rgba(36, 90, 170, 0.8);
+    cursor: pointer;
+  }
+
+  .add-textlink {
+    font-family: Graphik, sans-serif;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .required-textblock {
+    padding: 3px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(216, 2%, 54%, 0.5);
+    background-color: hsla(216, 2%, 54%, 0.2);
+    font-family: Graphik, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  /*This is where we move over to new user box section*/
+
+  .block-wrapper.endblock.bn {
+    border-style: none;
+  }
+
+  .content-form-button {
+  }
+
+  .sign-in-button-back {
+  }
+
+  .sign-in-button-next {
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-form-div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .block-wrapper {
+    width: 450px;
+    margin-bottom: 15px;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: hsla(216, 2%, 54%, 0.5);
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+  .block-div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid hsla(216, 2%, 54%, 0.5);
+    background-color: hsla(216, 2%, 54%, 0.15);
+  }
+
+  .create-profile-container {
+  }
+  .create-profile-h1 {
+    height: 40px;
+    margin-top: -3px;
+    margin-bottom: 0px;
+    font-family: Graphik, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .add-container {
+  }
+  .add-div {
+    padding: 1px 7.5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(216, 2%, 54%, 0.5);
+    background-color: rgba(36, 90, 170, 0.8);
+    cursor: pointer;
+  }
+
+  .add-textlink {
+    font-family: Graphik, sans-serif;
+    color: #fff;
+    font-size: 11px;
+    text-decoration: none;
+  }
+
+  .required-textblock {
+    padding: 2px 7.5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(216, 2%, 54%, 0.5);
+    background-color: hsla(216, 2%, 54%, 0.2);
+    font-family: Graphik, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  /*This is where we move over to new user box section*/
+
+  .block-wrapper.endblock.bn {
+    border-style: none;
+  }
+
+  .content-form-button {
+    display: block;
+    font-family: Graphik, sans-serif;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .sign-in-button-back {
+    width: 30%;
+    float: left;
+    background-color: rgba(36, 90, 170, 0.8);
+    font-family: Graphik, sans-serif;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .sign-in-button-next {
+    width: 30%;
+    float: right;
+    border-radius: 5px;
+    font-family: Graphik, sans-serif;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .profile-form-div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .block-wrapper {
+    width: auto;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 0px;
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: hsla(216, 2%, 54%, 0.5);
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+  .block-div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    padding: 0px 15px 0px 10px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: #000 #000 hsla(216, 2%, 54%, 0.5);
+    background-color: hsla(216, 2%, 54%, 0.15);
+  }
+
+  .create-profile-container {
+  }
+
+  .create-profile-h1 {
+    display: inline-block;
+    height: 40px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    font-family: Graphik, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .add-container {
+  }
+
+  .add-div {
+    padding: 0px 7.5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(216, 2%, 54%, 0.5);
+    background-color: rgba(36, 90, 170, 0.8);
+    cursor: pointer;
+  }
+
+  .add-textlink {
+    font-family: Graphik, sans-serif;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .required-textblock {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 25px;
+    padding: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsla(216, 2%, 54%, 0.5);
+    background-color: hsla(216, 2%, 54%, 0.2);
+    font-family: Graphik, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .block-wrapper.endblock {
+    margin-bottom: 0px;
+  }
+
+  .block-wrapper.endblock.bn {
+    border-style: none;
+  }
+
+  .content-form-button {
+    display: block;
+    font-family: Graphik, sans-serif;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .sign-in-button-back {
+    background-color: rgba(36, 90, 170, 0.8);
+    font-family: Graphik, sans-serif;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .sign-in-button-next {
+    float: right;
+    font-size: 12px;
+    text-align: center;
+  }
+}

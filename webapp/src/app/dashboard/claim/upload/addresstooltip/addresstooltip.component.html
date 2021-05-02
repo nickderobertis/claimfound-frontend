@@ -1,0 +1,18 @@
+
+<div (mouseenter)=onToolTipHover() (mouseleave)=onToolTipExit()>
+
+    <div class="tooltip-textblock-1">Why do I need to upload this document?</div>
+
+    <div *ngIf="!hasInvalidReferences" [hidden]="!showAddressTooltip" class="document-prompt-tooltipWrapper">
+        <div class="document-prompt-tool-textBlock">{{ helpText(0) }}</div>
+        <button class="tooltipbutton" [hidden]="!showButton" (click)="documentVerificationButtonClick(0)">{{ buttonText }}</button>
+    </div>
+
+    <div *ngIf="hasInvalidReferences" [hidden]="!showAddressTooltip" class="document-prompt-tooltipWrapper">
+        <div *ngFor="let address of invalidAddresses; let i = index">
+                <div class="document-prompt-tool-textBlock">{{ helpText(i) }}</div>
+                <button class="tooltipbutton" [hidden]="!showButton" (click)="documentVerificationButtonClick(i)">{{ buttonText }}</button>
+        </div>        
+    </div>
+
+</div>

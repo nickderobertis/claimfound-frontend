@@ -1,0 +1,18 @@
+<div class="deceased-claims-data-wrapper">
+    <div class="deceased-claims-data-div">
+        <div class="deceased-claims-data-div-textheader">Name</div>
+        <div class="deceased-claims-data-div-textblock-1">{{model.name.capitalizedFirstAndLastName}}</div>
+    </div>
+    <div class="deceased-claims-data-div">
+        <div class="deceased-claims-data-div-textheader">Relationship</div>
+        <div class="deceased-claims-data-div-textblock-1">{{ model.relationship }}</div>
+    </div>
+    <div class="deceased-claims-data-div">
+        <div class="deceased-claims-data-div-textheader">Total Claims</div>
+        <div class="deceased-claims-data-div-textblock-2">{{ model.claimTotals.numberOfClaims | number }}</div>
+    </div>
+    <div class="deceased-claims-data-div">
+        <div class="deceased-claims-data-div-textheader">Total Value</div>
+        <div class="deceased-claims-data-div-textblock-2">{{ model.claimTotals.formattedTotalValue }}</div>
+    </div>
+</div>

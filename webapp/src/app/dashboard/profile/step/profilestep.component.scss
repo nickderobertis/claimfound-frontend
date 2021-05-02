@@ -1,0 +1,63 @@
+@import "src/variables";
+.profile-body-content-stepwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 15px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.profile-body-content-step-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90px;
+  height: 40px;
+  padding: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: $button-bck-color;
+  font-family: $header-font_family;
+  color: $button-color;
+  font-size: $button-font-size;
+  font-weight: $button-font-wt;
+  letter-spacing: $button-letter-spacing;
+}
+.profile-body-content-step-button:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.profile-body-content-step-button.incomplete {
+  background-color: rgba(136, 138, 141, 0.25);
+  color: #888a8d;
+  cursor: default;
+}
+.profile-body-content-step-button.disabled {
+  visibility: hidden;
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .profile-body-content-stepwrapper {
+    padding: 20px 15px;
+  }
+}
+@media (max-width: 479px) {
+  .profile-body-content-stepwrapper {
+    padding-top: 20px;
+  }
+  .profile-body-content-step-button {
+    width: 90px;
+  }
+}

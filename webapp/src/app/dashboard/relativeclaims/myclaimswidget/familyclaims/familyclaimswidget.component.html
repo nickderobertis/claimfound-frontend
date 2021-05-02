@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<div class="widget-container" *ngIf="showInProgress">
+  <div class="widget-wrapper">
+    <div class="panel-header">
+      <div class="panel-header-textblock">Family Claims</div>
+    </div>
+    <div class="panel-body">
+      <div class="panel-body-message-container">
+        <div class="panel-body-message-wrapper-left">
+            <div class="panel-body-message-wrapper-right loading">
+              <div class="panel-body-message-div-header-texblock">We&#x27;re checking your family members to see if they have any money!</div>
+              <div class="panel-body-message-div-textblock">We&#x27;ll send you an email when the search is done, or you can check back in a little. </div>
+            </div>
+            <img src="/images/hour-glad-graphic.svg" width="73" height="75" alt="" class="hour-glass-graphic">
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="widget-container" *ngIf="displayProfileLink">
+<div class="widget-wrapper">
+  <div class="panel-header">
+    <div class="panel-header-textblock">Family Claims</div>
+  </div>
+  <div class="panel-body">
+    <div class="panel-body-message-container">
+      <div class="panel-body-message-wrapper-left">
+        <div class="panel-body-message-wrapper-right">
+          <div class="panel-body-message-div-header-texblock">Your family members could have unclaimed money, too!</div>
+          <div class="panel-body-message-div-textblock">Add all of your relatives to find their lost money. If you're the heir to a deceased family member, you could even claim it for yourself.</div>
+        </div>
+        <img src="/images/family-claims-graphic.svg" width="85" alt="" class="family-claims-graphic"></div>
+    </div>
+    <div class="panel-body-message-button" routerLink="/dashboard/profile/relatives">Add Relatives To Profile<br>‍</div>
+  </div>
+</div>
+</div>
+
+<div class="widget-container" *ngIf="noRelativeHasClaims">
+  <div class="widget-wrapper">
+    <div class="panel-header">
+      <div class="panel-header-textblock">Family Claims</div>
+    </div>
+    <div class="panel-body">
+      <div class="panel-body-message-container">
+        <div class="panel-body-message-wrapper-left">
+          <div class="panel-body-message-wrapper-right">
+            <div class="panel-body-message-div-header-texblock">Your family members could have unclaimed money, too!</div>
+            <div class="panel-body-message-div-textblock">Add all of your relatives to find their lost money. If you're the heir to a deceased family member, you could even claim it for yourself.</div>
+          </div>
+           <img src="/images/family-claims-graphic.svg" width="85" alt="" class="family-claims-graphic">
+        </div>
+      </div>
+      <div class="panel-body-message-button" routerLink="/dashboard/profile/relatives">Add Relatives To Profile ><br>‍</div>
+    </div>
+  </div>
+</div>
+
+<div class="widget-container" *ngIf="displayRelativeTotals">
+  <div class="widget-wrapper">
+    <div class="panel-header">
+      <div class="panel-header-textblock">Family Claims</div>
+    </div>
+    <div class="panel-body">
+      <div class="panel-body-data-container">
+        <div class="panel-body-data-wrapper-left">
+          <div class="panel-body-data-div">
+            <div class="panel-body-data-div-textheader">Members of Family</div>
+            <div class="panel-body-data-div-textblock">{{ model.aggregateClaimsTotalModel.numberOfPeople | number }}</div>
+          </div>
+          <div class="panel-body-data-div middle">
+            <div class="panel-body-data-div-textheader">Number of Claims</div>
+            <div class="panel-body-data-div-textblock">{{ model.aggregateClaimsTotalModel.numberOfClaims | number }}</div>
+          </div>
+          <div class="panel-body-data-div">
+            <div class="panel-body-data-div-textheader">Value of Claims</div>
+            <div class="panel-body-data-div-textblock">{{ model.aggregateClaimsTotalModel.formattedTotalValue }}</div>
+          </div>
+        </div>
+        <div class="panel-body-data-wrapper-right" routerLink="/dashboard/familyclaims">
+          <div class="panel-body-data-div-right-textlink">View Claims</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

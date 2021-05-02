@@ -1,0 +1,308 @@
+@import "src/variables";
+.selectedclaimsinstructionscomponent.inactive {
+  display: none;
+}
+.selectedclaims-instructionscontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 30px;
+  border-top: 1px solid rgba(136, 138, 141, 0.5);
+}
+.selectedclaims-instructions-graphic {
+  width: 144px;
+  height: 102px;
+}
+.selectedclaims-instructions-contentdiv {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.selectedclaims-instructions-content-textheader {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 45px;
+  background-color: #f6f7f9;
+  border-radius: 5px;
+  text-align: center;
+}
+.selectedclaims-instructions-content-textblock1 {
+  margin-bottom: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.selectedclaims-instructions-content-textblock-span {
+  color: rgba(36, 90, 170, 0.8);
+  font-weight: 600;
+}
+.selectclaimscontainer {
+  width: 900px;
+  margin-bottom: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #fff;
+}
+.selectclaims-headerdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  padding-left: 15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px none rgba(136, 138, 141, 0.5);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: $dashboard-module-header-color;
+}
+.selectclaims-header-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.selectclaimstablecomponent.inactive {
+  display: block;
+}
+.selectclaims-table-headercontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 37.5px;
+  padding-left: 0px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-top: 1px solid rgba(136, 138, 141, 0.5);
+  border-bottom: 1px none rgba(136, 138, 141, 0.5);
+  background-color: $subheader-color;
+}
+.selectclaims-table-headerwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding-left: 0px;
+}
+.selectclaims-table-headerdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 17.5%;
+  margin-right: 0px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.selectclaims-table-header-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 9px;
+  line-height: 9px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.selectclaims-table-headerdiv.state {
+  width: 8%;
+  padding-top: 2px;
+  padding-left: 2px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.selectclaims-table-headerdiv.reporting-company {
+  width: 26%;
+  padding-top: 2px;
+  padding-left: 14px;
+}
+.selectclaims-table-headerdiv.amount {
+  width: 13.5%;
+  padding-top: 2px;
+  padding-left: 19px;
+}
+.selectclaims-table-headerdiv.name {
+  width: 16.5%;
+}
+.selectclaims-table-headerdiv.address {
+  width: 30.5%;
+  padding-top: 2px;
+  padding-left: 9px;
+}
+.loading-spinner-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .selectedclaims-instructionscontainer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .selectedclaims-instructions-contentdiv {
+  }
+  .selectedclaims-instructions-content-textheader {
+    font-size: 14px;
+  }
+  .selectedclaims-instructions-content-textblock1 {
+    margin-bottom: 2.5px;
+    font-size: 11px;
+  }
+  .selectclaimscontainer {
+    width: 730px;
+  }
+  .selectclaims-table-headercontainer {
+    padding-left: 0px;
+  }
+  .selectclaims-table-headerdiv {
+    width: 18%;
+  }
+  .selectclaims-table-header-textblock {
+    font-size: 8px;
+  }
+  .selectclaims-table-headerdiv.state {
+    padding-left: 4px;
+  }
+  .selectclaims-table-headerdiv.reporting-company {
+    padding-left: 14px;
+  }
+  .selectclaims-table-headerdiv.amount {
+    padding-left: 14px;
+  }
+  .selectclaims-table-headerdiv.address {
+    padding-left: 11px;
+  }
+}
+@media (max-width: 767px) {
+  .selectedclaims-instructionscontainer {
+  }
+  .selectedclaims-instructions-contentdiv {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .selectedclaims-instructions-content-textheader {
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .selectclaimscontainer {
+    width: 450px;
+  }
+  .selectclaims-header-textblock {
+    font-size: 13px;
+  }
+  .selectclaims-table-headercontainer {
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .selectclaims-table-headerwrapper {
+    width: 85%;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .selectclaims-table-headerdiv.state {
+    display: none;
+  }
+  .selectclaims-table-header-textblock {
+    font-size: 9px;
+  }
+  .selectclaims-table-headerdiv.reporting-company {
+    width: 50%;
+    padding-top: 0px;
+    padding-left: 15px;
+  }
+  .selectclaims-table-headerdiv.amount {
+    width: 50%;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    padding-left: 15px;
+  }
+  .selectclaims-table-headerdiv.address {
+    width: 50%;
+    padding-top: 0px;
+    padding-left: 15px;
+  }
+  .selectclaims-table-headerdiv.name {
+    width: 50%;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    padding-left: 15px;
+  }
+  .selectedclaims-table-header-textblock-span {
+    display: none;
+  }
+}
+@media (max-width: 479px) {
+  .selectedclaims-instructions-graphic {
+    width: 130px;
+    height: 92px;
+  }
+  .selectedclaims-instructions-content-textheader {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .selectedclaims-instructions-content-textblock1 {
+    margin-bottom: 5px;
+    font-size: 11px;
+    line-height: 19px;
+  }
+  .selectclaimscontainer {
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .selectclaims-table-headercontainer {
+    display: none;
+  }
+}

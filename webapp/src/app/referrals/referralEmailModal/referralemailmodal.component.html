@@ -1,0 +1,28 @@
+<div 
+    #referralEmailModalBackground 
+    class="modal-background" 
+    [ngStyle]="{'display': showModal ? 'flex' : 'none' }" 
+    (mousedown)="closeIfClickedOnBackground($event)"
+>
+    <div *ngIf="model" class="signupmodalcomponent">
+        <div class="signupmodalcontainer">
+            <div class="signupmodal-bodywrapper">
+                <div *ngIf="!showSpinner" class="deceased-claims-email-container">
+                    <div class="deceased-claims-email-textblock">Tell {{model.name}} about their unclaimed money!</div>
+                    <div class="deceased-claims-emailDiv">
+                        <div class="deceased-claims-email-box">
+                            <input class="deceased-claims-email-box-textblock" type="text" placeholder="Enter Email Address ..." #emailInput>
+                        </div>
+                        <div class="deceased-claims-email-button" (click)="submitReferralEmailClick(emailInput)">Submit &gt;</div>
+                    </div>
+                </div>
+                <div *ngIf="showSpinner" class="loading-spinner-wrapper">
+                    <cf-loading-spinner></cf-loading-spinner>
+                </div>
+                <div class="deceased-claims-email-container sent" *ngIf="showEmailSentMessage">
+                    <div class="deceased-claims-email-textblock sent">Email sent to {{model.name}} at {{lastSentEmailAddress}}.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

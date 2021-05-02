@@ -1,0 +1,47 @@
+<div [hidden]="submitting">
+
+  <div *ngIf="!startTask" class="stepContainer">
+
+    <div class="step-contentWrapper {{textColorClass}}">
+      <p class="step-content-textHeader">Step 2: Additional Information & Signature</p>
+      <p class="step-content-textBlock">Fill out a few requirments and sign your claim form to finalize everything.</p>
+    </div>
+
+    <div class="step-buttonWrapper">
+      <button *ngIf="!stepOneDone && !taskComplete" class="disabled">Start Task</button>
+      <button *ngIf="stepOneDone && !taskComplete" (click)="onStart()">Start Task</button>
+      <div *ngIf="taskComplete" class="step-button-completeDiv">
+        <img src="../../../../../images/Check-circle.svg" height="18">
+        <div class="step-button-complete-textblock">Complete</div>
+      </div>
+    </div>
+
+  </div>
+
+	<div *ngIf="startTask" class="formDataContainer">
+    <div class="formDataWrapper address">
+      <cf-fill-address [model]="model.addressItems" [fillAndSignForm]="fillAndSignForm" [showError]="showErrors"></cf-fill-address>
+    </div>
+    <div class="formDataWrapper">
+      <cf-fill-phone [model]="model.phoneItems" [fillAndSignForm]="fillAndSignForm" [showError]="showErrors"></cf-fill-phone>
+    </div>
+    <div class="formDataWrapper">
+      <cf-fill-ssn [fillAndSignForm]="fillAndSignForm" (dontProvideSSNFlagChange)="onDontProvideSSNFlagChange($event)" [showError]="showErrors"></cf-fill-ssn>
+    </div>
+    <div class="formDataWrapper">
+      <cf-signature-capture [submitEvent]="submitSubjectTwo.asObservable()" (saveEvent)="onSignatureSave($event)"></cf-signature-capture>
+    </div>
+    <div class="formDataWrapper">
+      <cf-signature-capture [titleText]="dateTitleText" [instructionsText]="dateInstructionsText" [errorText]="dateErrorText" [submitEvent]="submitSubject.asObservable()" (saveEvent)="onDateSave($event)"></cf-signature-capture>
+    </div>
+
+    <div class="submit-btn">
+      <button class="{{submitBtnClass}}" (click)="onSubmit()">Submit</button>
+    </div>
+	</div>
+
+</div>
+
+<div class="loading-spinner-div" *ngIf="submitting">
+	<cf-loading-spinner></cf-loading-spinner>
+</div>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<div class="hero-results-box-wrapper loading" *ngIf="loading">
+  <cf-loading-spinner></cf-loading-spinner>
+</div>
+
+<div class="hero-results-box-wrapper" *ngIf="display">
+  <div
+    class="hero-results-box-b-fail"
+    *ngIf="!anyClaims && model.stateListSupported.length > 0"
+  >
+    <div class="hero-results-box-b-fail-textblock">
+      Oh no, we didn't find any money for the name you searched.
+    </div>
+    <div class="hero-results-box-b-message-wrapper">
+      <div class="hero-results-box-b-message-textblock-1">
+        You May Still Have Lost Money!
+      </div>
+      <div class="hero-results-box-b-options-wrapper">
+        <div class="hero-results-box-b-options-div">
+          <div class="hero-results-box-b-options-textblock-1">
+            More Information
+          </div>
+          <img
+            src="/images/more-info.svg"
+            class="hero-results-box-b-options-graphic"
+          />
+          <div class="hero-results-box-b-options-textblock-2">
+            Many claims just need a little more information beyond your name to
+            be matched correctly.
+          </div>
+        </div>
+        <div class="hero-results-box-b-options-div">
+          <div class="hero-results-box-b-options-textblock-1">
+            Family Members
+          </div>
+          <img
+            src="/images/grandparents.svg"
+            class="hero-results-box-b-options-graphic"
+          />
+          <div class="hero-results-box-b-options-textblock-2">
+            You most likely have a deceased family member with lost money that
+            you can claim.
+          </div>
+        </div>
+        <div class="hero-results-box-b-options-div last">
+          <div class="hero-results-box-b-options-textblock-1">
+            $7 Billion Per Year
+          </div>
+          <img
+            src="/images/calendar-graphic.svg"
+            class="hero-results-box-b-options-graphic"
+          />
+          <div class="hero-results-box-b-options-textblock-2">
+            You're bound to have some lost money at some point and we’ll alert
+            you as soon as you do!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngFor="let state_obj of model.stateListSupported">
+    <cf-display-wrapper
+      class="hero-results-box-a-results"
+      *ngIf="anyClaims"
+      [stateName]="state_obj.state"
+      [numberOfClaims]="state_obj.stateNumberOfClaims"
+      [stateListSupported]="model.stateListSupported"
+      [average]="state_obj.stateAverage"
+      [totalValue]="state_obj.stateTotalValue"
+    ></cf-display-wrapper>
+  </div>
+
+  <div
+    class="hero-results-noStateContainer"
+    *ngIf="model.stateListUnsupported.length > 0"
+  >
+    <div class="hero-results-noState-textHeader">
+      Unfortunately, we're only operating in Florida right now.
+    </div>
+    <div class="hero-results-noStateWrapper">
+      <div class="hero-results-noState-textblock1">
+        We are still in the process of launching ClaimFound in
+      </div>
+      <div
+        class="hero-results-noState-textblock2"
+        *ngFor="let state of model.formattedUnsupportedStates"
+      >
+        {{ state }}
+      </div>
+    </div>
+    <div class="hero-results-noState-textblock3">
+      📋 Sign up to<span class="hero-results-noState-text-span">
+        join the waiting list</span
+      >
+      for the states above and receive
+      <span class="hero-results-noState-text-span">free claim monitoring.</span>
+    </div>
+  </div>
+
+  <div
+    class="hero-results-box-a-cta-div-textblock"
+    *ngIf="model.searchingForSelf"
+  >
+    <cf-email-signup
+      [name]="name"
+      [sideText]="signUpText"
+      [btnText]="'Get Started'"
+      [btnColor]="'#22baff'"
+      eventKey="propertySearchGetStarted"
+    ></cf-email-signup>
+  </div>
+
+  <cf-referral-bar
+    *ngIf="showReferralBar"
+    [token]="model.referralToken"
+    [name]="name.anyExistingCapitalizedName"
+    cf-apply-class-to-classes
+    [applyClassesObj]="{
+      'deceased-claims-refer-container': 'property-search',
+      'deceased-claims-refer-div-1': 'property-search',
+      'deceased-claims-refer-div-1-textblock': 'property-search',
+      'the-god-damnit-div': 'property-search',
+      'deceased-claims-email-container': 'property-search',
+      'deceased-claims-email-textblock': 'property-search',
+      'deceased-claims-email-box': 'property-search',
+      'deceased-claims-email-box-textblock': 'property-search',
+      'deceased-claims-email-button': 'property-search'
+    }"
+  ></cf-referral-bar>
+
+  <div class="hero-results-box-c-message-wrapper">
+    <div class="hero-results-box-c-message-div-1"></div>
+    <div class="hero-results-box-c-message-textblock-1 error">
+      {{ tipHeader }}:
+    </div>
+    <div class="hero-results-box-c-message-textblock-2 error">
+      {{ tipBodyText }}
+    </div>
+  </div>
+</div>

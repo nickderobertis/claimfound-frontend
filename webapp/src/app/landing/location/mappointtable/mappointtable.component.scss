@@ -1,0 +1,595 @@
+.locationmaptablecontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.locationmaptablewrapper {
+  display: block;
+  width: 1156px;
+  padding-right: 50px;
+  padding-left: 50px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.locationmaptable-contentcontainer {
+  margin-bottom: 25px;
+}
+
+.locationmaptable-contentwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.locationmaptable-content-textblock1 {
+  margin-bottom: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.locationmaptable-content-textblock2 {
+  font-family: Graphik, sans-serif;
+  color: #245aaa;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+
+.locationmaptable-content-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 175px;
+  height: 50px;
+  padding: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #245aaa;
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.locationmaptable-content-button:hover {
+  background-color: rgba(36, 90, 170, 0.75);
+}
+
+.locationmaptable-content-textblock3 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.locationmaptable-span1 {
+  color: #245aaa;
+  font-weight: 600;
+}
+
+.locationmaptable-span2 {
+  color: #24d2aa;
+  font-weight: 600;
+}
+
+.locationmaptable-headerwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  padding-right: 25px;
+  padding-left: 25px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(136, 138, 141, 0.5);
+  background-color: #f6f7f9;
+}
+
+.locationmaptable-header-textblock {
+  width: 17.5%;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.locationmaptable-header-textblock.name {
+  width: 12.5%;
+}
+
+.locationmaptable-header-textblock.reporting-company {
+  width: 25%;
+}
+
+.locationmaptable-header-textblock.claim-type {
+  width: 25%;
+}
+
+.locationmaptable-header-textblock.reported-date {
+  width: 17.5%;
+}
+
+.locationmaptable-header-textblock.value {
+  width: 15%;
+}
+
+.locationmaptable-header-textblock.share {
+  width: 100%;
+}
+
+.locationmaptable-rowwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  padding-right: 25px;
+  padding-left: 25px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(136, 138, 141, 0.5);
+}
+
+.locationmaptable-rowwrapper:hover {
+  background-color: rgba(36, 90, 170, 0.1);
+}
+
+.locationmaptable-row-textblock {
+  width: 10%;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+}
+
+.locationmaptable-row-textblock.name {
+  width: 12.5%;
+}
+
+.locationmaptable-row-textblock.reporting-company {
+  width: 25%;
+}
+
+.locationmaptable-row-textblock.claim-type {
+  width: 25%;
+}
+
+.locationmaptable-row-textblock.reported-date {
+  width: 17.5%;
+}
+
+.locationmaptable-row-textblock.value {
+  width: 15%;
+  color: #24d2aa;
+  font-size: 12px;
+}
+
+.locationmaptable-row-sharewrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.locationmaptable-row-sharediv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.locationmaptable-row-share-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 8px;
+  line-height: 9px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.locationmaptable-row-share-textblock.copied {
+  font-family: Graphik, sans-serif;
+  color: #24d2aa;
+  font-size: 7px;
+  line-height: 9px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.email-icon {
+  margin-bottom: 5px;
+}
+
+.facebook-icon {
+  margin-bottom: 5px;
+}
+
+.copy-icon {
+  margin-bottom: 5px;
+}
+
+.locationmaptable-row-datadiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.locationmaptable-header-datadiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.locationmaptable-header-sharediv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.locationmaptable-button {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .locationmaptablewrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .locationmaptable-content-button {
+    font-size: 12px;
+  }
+
+  .locationmaptable-content-textblock2 {
+    width: 98%;
+  }
+
+  .locationmaptable-content-textblock3 {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .locationmaptable-headerwrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .locationmaptable-header-textblock {
+    width: 22.5%;
+  }
+  .locationmaptable-header-textblock.reporting-company {
+    width: 35%;
+  }
+  .locationmaptable-header-textblock.claim-type {
+    width: 27.5%;
+  }
+  .locationmaptable-header-textblock.reported-date {
+    display: none;
+  }
+  .locationmaptable-header-textblock.value {
+    width: 22.5%;
+  }
+  .locationmaptable-header-textblock.share {
+    width: 100%;
+  }
+  .locationmaptable-rowwrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .locationmaptable-row-textblock.name {
+    width: 12.5%;
+  }
+  .locationmaptable-row-textblock.reporting-company {
+    width: 35%;
+  }
+  .locationmaptable-row-textblock.claim-type {
+    width: 27.5%;
+  }
+  .locationmaptable-row-textblock.reported-date {
+    display: none;
+  }
+  .locationmaptable-row-textblock.value {
+    width: 22.5%;
+  }
+  .locationmaptable-row-sharewrapper {
+    width: 25%;
+  }
+  .locationmaptable-row-datadiv {
+    width: 75%;
+  }
+  .locationmaptable-header-datadiv {
+    width: 75%;
+  }
+  .locationmaptable-header-sharediv {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  .locationmaptable-contentcontainer {
+    margin-bottom: 15px;
+  }
+  .locationmaptable-contentwrapper {
+    margin-bottom: 10px;
+  }
+  .locationmaptable-content-textblock1 {
+    font-size: 16px;
+  }
+  .locationmaptable-content-textblock2 {
+    font-size: 14px;
+  }
+  .locationmaptable-content-button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .locationmaptable-content-textblock3 {
+    font-size: 11px;
+    line-height: 21px;
+  }
+  .locationmaptable-headerwrapper {
+    height: 0px;
+    background-color: transparent;
+  }
+  .locationmaptable-header-textblock {
+    display: none;
+  }
+  .locationmaptable-rowwrapper {
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .locationmaptable-row-textblock.name {
+    width: 50%;
+    margin-bottom: 7.5px;
+  }
+  .locationmaptable-row-textblock.reporting-company {
+    width: 50%;
+    margin-bottom: 7.5px;
+  }
+  .locationmaptable-row-textblock.claim-type {
+    width: 50%;
+  }
+  .locationmaptable-row-textblock.value {
+    width: 50%;
+  }
+  .locationmaptable-row-sharewrapper {
+    width: 40%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .locationmaptable-row-sharediv {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .locationmaptable-row-datadiv {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .locationmaptablecontainer {
+    margin-bottom: 30px;
+  }
+  .locationmaptablewrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .locationmaptable-contentwrapper {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .locationmaptable-contentdiv {
+  }
+  .locationmaptable-content-button {
+    display: none;
+    width: 100%;
+  }
+  .locationmaptable-rowwrapper {
+    padding: 15px 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .locationmaptable-row-textblock.name {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: left;
+  }
+  .locationmaptable-row-textblock.reporting-company {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: left;
+  }
+  .locationmaptable-row-textblock.claim-type {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: left;
+  }
+  .locationmaptable-row-textblock.value {
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+  }
+  .locationmaptable-row-sharewrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    background-color: #f6f7f9;
+    padding: 10px;
+  }
+  .locationmaptable-row-sharediv {
+    width: auto;
+    margin-right: 30px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .locationmaptable-row-datadiv {
+    width: 100%;
+    margin-bottom: 15px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .locationmaptable-button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #245aaa;
+    font-family: Graphik, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+  }
+  .locationmaptable-button:hover {
+    background-color: rgba(36, 90, 170, 0.75);
+  }
+}

@@ -1,0 +1,570 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Dec 24, 2016, 3:30:31 PM
+    Author     : christofferprompovitch
+*/
+@import "src/variables";
+.pick-claims-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  background-color: #fff;
+}
+
+.pick-claims-wrapper.review {
+}
+
+.pick-claims-amount-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pick-claims-amount-textblock {
+  padding-left: 0px;
+  font-family: Graphik, sans-serif;
+  color: $dashboard-numerics-color;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.pick-claims-amount-select-div {
+  display: none;
+  height: 30px;
+  padding-left: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pick-claims-amount-select-textblock-1 {
+}
+
+.pick-claims-details-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 89%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pick-claims-details-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 11.5%;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.pick-claims-details-div.state {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5%;
+  margin-right: 5px;
+  padding-left: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.pick-claims-details-div.name {
+  width: 14.5%;
+  height: auto;
+  margin-right: 5px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.pick-claims-details-div.address {
+  width: 28.5%;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.pick-claims-details-div.company {
+  width: 25%;
+  margin-right: 5px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.pick-claims-details-textblock-1 {
+  display: inline-block;
+  margin-bottom: 2.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.pick-claims-details-textblock-2 {
+  display: block;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+}
+
+.pick-claims-select-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 11%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-left: 1px solid hsla(216, 2%, 54%, 0.5);
+  cursor: pointer;
+}
+
+.pick-claims-select-wrapper:hover {
+  background-color: rgba(37, 146, 210, 0.15);
+}
+
+.pick-claims-select-textblock {
+  margin-right: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.pick-claims-select-textblock.details {
+  text-decoration: underline;
+  color: $dashboard-link-color;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .pick-claims-wrapper {
+  }
+
+  .pick-claims-wrapper.review {
+  }
+
+  .pick-claims-amount-wrapper {
+  }
+
+  .pick-claims-amount-textblock {
+  }
+
+  .pick-claims-amount-select-div {
+  }
+
+  .pick-claims-amount-select-textblock-1 {
+  }
+
+  .pick-claims-details-wrapper {
+  }
+
+  .pick-claims-details-div {
+  }
+
+  .pick-claims-details-div.state {
+  }
+
+  .pick-claims-details-div.name {
+  }
+
+  .pick-claims-details-div.address {
+  }
+
+  .pick-claims-details-div.company {
+  }
+
+  .pick-claims-details-textblock-1 {
+  }
+
+  .pick-claims-details-textblock-2 {
+  }
+
+  .pick-claims-select-wrapper {
+  }
+
+  .pick-claims-select-textblock {
+  }
+}
+
+@media (max-width: 767px) {
+  .pick-claims-wrapper {
+    width: 480px;
+    height: auto;
+  }
+
+  .pick-claims-wrapper.review {
+    width: auto;
+  }
+
+  .pick-claims-amount-wrapper {
+  }
+
+  .pick-claims-amount-textblock {
+    font-size: 12px;
+  }
+
+  .pick-claims-amount-select-div {
+  }
+
+  .pick-claims-amount-select-textblock-1 {
+  }
+
+  .pick-claims-details-wrapper {
+    width: 85%;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .pick-claims-details-div {
+    width: 20%;
+    padding-top: 5px;
+  }
+
+  .pick-claims-details-div.name {
+    width: 20%;
+    padding-top: 5px;
+  }
+
+  .pick-claims-details-div.address {
+    display: none;
+  }
+
+  .pick-claims-details-div.address.review {
+    width: 35%;
+  }
+
+  .pick-claims-details-div.company {
+    width: 45%;
+  }
+
+  .pick-claims-details-div.company.review {
+    width: 45%;
+    padding-top: 5px;
+  }
+
+  .pick-claims-details-div.state {
+    padding-left: 0px;
+  }
+
+  .pick-claims-details-div.state.review {
+    display: none;
+  }
+
+  .pick-claims-details-textblock-1 {
+    margin-bottom: 2px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .pick-claims-details-textblock-2 {
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .pick-claims-select-wrapper {
+    width: 15%;
+  }
+
+  .pick-claims-select-textblock {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 479px) {
+  .pick-claims-wrapper {
+    width: auto;
+    height: auto;
+    min-width: auto;
+    border-right-style: none;
+    border-width: 1px;
+    border-color: hsla(216, 2%, 54%, 0.5);
+  }
+
+  .pick-claims-wrapper.review {
+    min-width: 0px;
+    width: auto;
+    border-right: 1px solid hsla(216, 2%, 54%, 0.5);
+  }
+
+  .pick-claims-amount-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding-left: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid hsla(216, 2%, 54%, 0.5);
+    border-right-style: none;
+  }
+
+  .pick-claims-amount-textblock {
+  }
+
+  .pick-claims-amount-select-div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    height: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-right: 1px none #000;
+    border-bottom: 1px none hsla(216, 2%, 54%, 0.5);
+    border-left: 1px solid hsla(216, 2%, 54%, 0.5);
+  }
+
+  .pick-claims-amount-select-textblock-1 {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: Graphik, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+
+  .pick-claims-amount-select-textblock-1.details {
+    color: rgba(36, 90, 170, 0.8);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .pick-claims-amount-select-textblock-1.details:hover {
+    color: rgba(36, 90, 170, 0.5);
+  }
+
+  .pick-claims-details-wrapper {
+    width: 85%;
+    padding: 15px 20px 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+  }
+
+  .pick-claims-details-div {
+    width: 50%;
+    margin-bottom: 10px;
+    padding-left: 0px;
+  }
+
+  .pick-claims-details-div.state {
+    width: 50%;
+    height: auto;
+    margin-right: 0px;
+    padding-left: 25px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .pick-claims-details-div.state.review {
+    display: block;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+
+  .pick-claims-details-div.name {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-top: 0px;
+  }
+
+  .pick-claims-details-div.address {
+    width: 100%;
+    height: auto;
+    padding-left: 25px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .pick-claims-details-div.address.review {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+
+  .pick-claims-details-div.company {
+    width: 100%;
+    height: auto;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .pick-claims-details-div.company.review {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .pick-claims-details-textblock-1 {
+    font-size: 11px;
+  }
+
+  .pick-claims-details-textblock-2 {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .pick-claims-select-wrapper {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 20%;
+  }
+}

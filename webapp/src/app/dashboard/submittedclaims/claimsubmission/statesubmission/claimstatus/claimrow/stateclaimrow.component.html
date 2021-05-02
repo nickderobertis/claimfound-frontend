@@ -1,0 +1,13 @@
+<div class="statuscontainer-rowwrapper">
+    <div class="rowwrapper-contentdiv one">
+        <div class="rowwrapper-contentdiv-textblock1" [style.color]="colorArg">{{ model.claimId }}:</div>
+        <div class="rowwrapper-contentdiv-textblock2">{{ getStepDate(1) }}</div>
+    </div>
+    <div class="rowwrapper-contentdiv two" *ngFor="let step of stepsFromIndexOne;">
+        <div class="rowwrapper-contentdiv-textblock2">{{ step }}</div>
+    </div>
+    <div class="rowwrapper-contentdiv-mobile">
+        <div class="rowwrapper-contentdiv-textblock1">{{ model.claimId }}:</div>
+        <div class="rowwrapper-contentdiv-textblock2">{{ getLastStepDate() }}</div>
+    </div>
+</div>

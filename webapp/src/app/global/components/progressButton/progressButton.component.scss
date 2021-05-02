@@ -1,0 +1,109 @@
+.progress-button {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.progress-button button {
+  display: block;
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 5px;
+  background: rgba(36, 90, 170, 0.8);
+  font-size: 18px;
+  font-family: Graphik, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button {
+  width: 100%;
+}
+
+.progress-button button:hover,
+.progress-button button:focus {
+  background: rgba(36, 90, 170, 0.5);
+}
+
+.progress-button button.disabled {
+  background: rgba(170, 185, 210, 0.8);
+  cursor: auto;
+}
+
+.progress-button button.disabled:hover,
+.progress-button button.disabled:focus {
+  background: rgba(170, 185, 210, 0.8);
+  color: #fff;
+}
+
+.progress-button button:focus {
+  outline: none;
+}
+
+.progress-button.loading button {
+  border-radius: 100%;
+  background-color: transparent;
+}
+
+.progress-button svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 50%;
+  margin: auto;
+  pointer-events: none;
+}
+.progress-button svg.progress-circle {
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+  transform: rotate(-90deg) translateY(-50%);
+}
+
+.progress-button svg.checkmark,
+.progress-button svg.cross {
+  -webkit-transform: translate(-55%, -10%);
+  transform: translateY(-55%, -10%);
+}
+
+.progress-button .checkmark svg,
+.progress-button .cross svg,
+.progress-button svg circle {
+  opacity: 0;
+  fill: none;
+}
+
+.progress-button svg.progress-circle path,
+.progress-button svg.progress-circle circle {
+  stroke: rgb(57, 237, 182);
+  stroke-width: 5;
+}
+
+.progress-button svg.checkmark path,
+.progress-button svg.cross path {
+  stroke-linecap: round;
+  stroke-width: 4;
+}
+
+.progress-button svg.checkmark path {
+  stroke: #1ecd97;
+}
+
+.progress-button svg.cross path {
+  stroke: #fb797e;
+}
+
+.loading.progress-button span {
+  -webkit-transition: opacity 0.05s;
+  transition: opacity 0.05s;
+}
+
+.loading.progress-button span {
+  opacity: 0; /* keep it hidden in all states */
+}
+
+.loading.progress-button button:hover {
+  background-color: transparent;
+}

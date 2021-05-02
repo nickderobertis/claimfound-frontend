@@ -1,0 +1,26 @@
+<div class="submittedclaims-statuscontainer">
+    <div class="submittedclaimsstatusheadercomponent">
+    <div class="statuscontainer-headerwrapper">
+        <div class="statusheaderwrappercomponent" *ngFor="let step of claimStepsFromIndexOne; let i = index">
+        <div class="headerwrapper-contentdiv">
+            <div class="headerwrapper-contentdiv-textblock">{{ step.step }}</div>
+            <!--Below doesn't work without disabling view encapsulation-->
+            <div class="headerwrapper-contentdiv-helpicon" [ngbTooltip]="tipContent"  triggers="click hover" [autoClose]="'inside'"></div>
+
+
+            <ng-template #tipContent class="test">
+              <p class="tooltip-header"><span style="font-size: 14px;">💡</span> What does this mean?</p>
+                <p class="tooltip-para">{{step.helpText }}</p>
+            </ng-template>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+    <cf-state-claim-bar *ngFor="let mod of model.status; let i = index;" [widthArg]=getWidthFromCurrentStep(mod) [colorArg]="getColorFromIndex(i)"></cf-state-claim-bar>
+    
+    <div class="submittedclaimsstatusrowcomponent">
+        <cf-state-claim-row *ngFor="let mod of model.status; let i = index;" [model]=mod [colorArg]="getColorFromIndex(i)"></cf-state-claim-row>
+    </div>
+    
+</div>

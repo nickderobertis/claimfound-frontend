@@ -1,0 +1,21 @@
+
+<div class="stepContainer">
+
+  <div class="step-contentWrapper">
+    <p class="step-content-textHeader {{textColorClass}}">Step 1: Review Claim Form</p>
+    <p class="step-content-textBlock {{textColorClass}}">Before you sign your claim form, you must acknowledge that you reviewed it.</p>
+    <div *ngIf="showForms" class="completedFormsDiv">
+      <div class="{{getFormLinkClass(i)}}" *ngFor="let form of incompleteForms; let i = index" (click)="onFormLinkClick(i)">Review FL Claim Forms</div>
+    </div>
+  </div>
+
+  <div class="step-buttonWrapper">
+    <button *ngIf="!showForms && !taskComplete" (click)="onStartTask()">Start Task</button>
+    <div *ngIf="taskComplete" class="step-button-completeDiv">
+      <img src="../../../../../images/Check-circle.svg" height="18">
+      <div class="step-button-complete-textblock">Complete</div>
+    </div>
+  </div>
+
+</div>
+

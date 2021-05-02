@@ -1,0 +1,95 @@
+<div class="footer-section">
+  <div class="footer-wrapper-left">
+    <div class="footer-div-graphic"></div>
+  </div>
+  <div class="footer-wrapper-right">
+    <div class="footer-div first">
+      <img
+        src="/images/Claimfound-logo-white.png"
+        width="150"
+        class="footer-div-logo"
+        routerLink="{{ links.footer.landing.url }}"
+      />
+      <div class="footer-div-address-textblock">
+        {{ address_1 }}<br />{{ address_2 }}
+      </div>
+      <div class="footer-div-textblock-1">{{ year }} All Rights Reserved</div>
+    </div>
+    <div class="footer-div second">
+      <a
+        class="footer-div-textlink"
+        routerLink="{{ links.footer.userStories.url }}"
+      >
+        {{ links.footer.userStories.text }}
+      </a>
+
+      <a class="footer-div-textlink" href="{{ links.footer.help.url }}">
+        {{ links.footer.help.text }}
+      </a>
+
+      <a class="footer-div-textlink" routerLink="{{ links.footer.about.url }}">
+        {{ links.footer.about.text }}
+      </a>
+
+      <a class="footer-div-textlink" href="{{ links.footer.blog.url }}">
+        {{ links.footer.blog.text }}
+      </a>
+    </div>
+    <div class="footer-div third">
+      <a class="footer-div-textlink" routerLink="{{ links.footer.maps.url }}">
+        {{ links.footer.maps.text }}
+      </a>
+
+      <a
+        class="footer-div-textlink"
+        routerLink="{{ links.footer.privacy.url }}"
+      >
+        {{ links.footer.privacy.text }}
+      </a>
+
+      <a class="footer-div-textlink" routerLink="{{ links.footer.tos.url }}">
+        {{ links.footer.tos.text }}
+      </a>
+
+      <a
+        class="footer-div-textlink"
+        routerLink="{{ links.footer.acknowledgements.url }}"
+      >
+        {{ links.footer.acknowledgements.text }}
+      </a>
+    </div>
+    <div class="footer-div last">
+      <a
+        class="footer-button-dashboard"
+        (click)="showSignUpModal($event)"
+        *ngIf="!isLoggedIn"
+      >
+        {{ links.footer.signup.text }}
+      </a>
+
+      <a
+        class="footer-button"
+        routerLink="{{ links.footer.signin.url }}"
+        *ngIf="!isLoggedIn"
+      >
+        {{ links.footer.signin.text }}
+      </a>
+
+      <a
+        class="footer-button-dashboard"
+        routerLink="{{ links.footer.dashboard.url }}"
+        *ngIf="isLoggedIn"
+      >
+        {{ links.footer.dashboard.text }}
+      </a>
+
+      <a
+        class="footer-button"
+        routerLink="{{ links.footer.signout.url }}"
+        *ngIf="isLoggedIn"
+      >
+        {{ links.footer.signout.text }}
+      </a>
+    </div>
+  </div>
+</div>

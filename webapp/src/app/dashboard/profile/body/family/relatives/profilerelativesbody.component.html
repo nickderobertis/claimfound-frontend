@@ -1,0 +1,114 @@
+<div class="profile-body-contentcontainer">
+  <div class="profilemessagecomponent">
+    <div class="profile-body-content-messagediv" id="profile-relatives-message">
+      <div class="profile-body-content-message-textblock1">
+        Your deceased family members could owe you money.
+      </div>
+      <div class="profile-body-content-message-textblock2">
+        We recommend you add your grandparents, parents, and any person whose
+        will you are listed on, or add your entire family to find everyone's
+        money!
+      </div>
+    </div>
+  </div>
+  <div [hidden]="loading">
+    <cf-profile-entry-component
+      [model]="profileEntryModel"
+      [title]="'Family Members'"
+      (deleteEvent)="onDeleteEvent($event)"
+    ></cf-profile-entry-component>
+
+    <div class="profileinputcomponent">
+      <div class="profile-inputcontainer">
+        <div class="profileinputaddcomponent">
+          <div
+            *ngIf="!showInput"
+            class="profile-input-add-button w-button"
+            (click)="onAddButtonClick()"
+            id="profile-add-relative-button"
+          >
+            Add Family
+          </div>
+        </div>
+        <div class="profile-inputwrapper">
+          <div *ngIf="showInput" class="profile-input-rowwrapper">
+            <div class="profile-input-row-exitdiv">
+              <img
+                src="images/exit-icon-red.svg"
+                (click)="closeInput()"
+                width="18"
+                alt=""
+                class="profile-input-row-exiticon"
+              />
+            </div>
+
+            <cf-error-bar [form]="inputForm"
+                  [showErrors]="showError" 
+                  [backendErrorKeysToFrontendFormMap]="backendErrorKeysToFrontendFormMap"
+                  id="profileInputErrorBar">
+            </cf-error-bar>
+
+            <div class="profile-input-row-fieldwrapper">
+              <cf-dropdown
+                [model]="dropDownModel"
+                id="profile-input-relative-relationship"
+              ></cf-dropdown>
+              <div
+                [formGroup]="inputForm"
+                class="profile-input-row-fieldwrapper-spacer"
+              >
+                <div class="profile-input-row-fielddiv">
+                  <input
+                    type="text"
+                    class="profile-input-row-field-inputfield {{
+                      textBoxErrorClass(formConstants.firstName)
+                    }}"
+                    placeholder="First Name"
+                    formControlName="{{ formConstants.firstName }}"
+                    id="profile-input-relative-first-name"
+                  />
+                </div>
+                <div class="profile-input-row-fielddiv">
+                  <input
+                    type="text"
+                    class="profile-input-row-field-inputfield {{
+                      textBoxErrorClass(formConstants.lastName)
+                    }}"
+                    placeholder="Last Name"
+                    formControlName="{{ formConstants.lastName }}"
+                    id="profile-input-relative-last-name"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="profile-input-row-questionwrapper question">
+              <div class="profile-input-row-question-textblock">
+                Is this person deceased?
+              </div>
+              <cf-radio-button prefix='deceased-options' [model]="deceasedRadioOptions"></cf-radio-button>
+            </div>
+            <div class="profile-input-row-questionwrapper question">
+              <div class="profile-input-row-question-textblock">
+                Are you listed on their will?
+              </div>
+              <cf-radio-button prefix='will-options' [model]="willRadioOptions"></cf-radio-button>
+            </div>
+            <div
+              class="profile-input-row-field-savebutton w-button"
+              (click)="onSaveButtonClick()"
+              id="profile-save-button"
+            >
+              Save
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <cf-profile-step-component
+      [model]="prevNextButtonsModel"
+    ></cf-profile-step-component>
+  </div>
+  <div *ngIf="loading" class="loading-spinner-div">
+    <cf-loading-spinner></cf-loading-spinner>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div>
+	<p class="formData-textHeader">{{titleText}}</p>
+	<p class="formData-textBlock end">{{instructionsText}}</p>
+	<div *ngIf="hadNoSigAlerted" class="error-message">{{errorText}}</div>
+	<cf-signaturepad [submitEvent]="submitSubject.asObservable()" [errorText]="errorText" (saveEvent)="onSaveEvent($event)" (hadNoSigEvent)="onNoSignatureEvent()"></cf-signaturepad>
+</div>

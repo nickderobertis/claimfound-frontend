@@ -1,0 +1,211 @@
+@import "src/variables";
+.claimsbar {
+  display: block;
+  height: 50px;
+  background-color: $claim_bar_back_color;
+}
+
+.claimsbar-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 730px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.claimsbar-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.claimsbar-div.end {
+}
+
+.claimsbar-textblock {
+  font-family: Graphik, sans-serif;
+  color: $claimbar_textblock_color;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.claimsbar-textblock:hover {
+  color: $claimbar_textblock_color_onhover;
+}
+
+.claimsbar-textblock.selected {
+  color: $claimbar_textblock_color_onselect;
+  font-weight: 500;
+}
+
+.claimsbar-textblock.no-show {
+  color: $claimsbar_textblock_no_show;
+  cursor: auto;
+}
+
+.claimbar-selected-div {
+  width: 90px;
+  height: 5px;
+  margin-top: 10px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  background-color: $claimbar_selected_div_color;
+}
+
+.claimbar-selected-div.not-selected {
+  background-color: transparent;
+}
+
+.claimbar-selected-div.upload {
+  width: 150px;
+}
+
+.claimbar-selected-div.upload.not-selected {
+  background-color: transparent;
+}
+
+.claimbar-selected-div.e-sign {
+  width: 65px;
+}
+
+.claimbar-selected-div.e-sign.not-selected {
+  background-color: transparent;
+}
+
+.claimbar-selected-div.review {
+  width: 105px;
+}
+
+.claimbar-selected-div.review.not-selected {
+  background-color: transparent;
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  .claimsbar {
+  }
+
+  .claimsbar-container {
+    width: 481px;
+  }
+  .claimsbar-div.end {
+  }
+
+  .claimsbar-textblock {
+    font-size: 12px;
+  }
+
+  .claimsbar-textblock.selected {
+  }
+
+  .claimsbar-textblock.no-show {
+  }
+
+  .claimbar-selected-div {
+    width: 60px;
+  }
+
+  .claimbar-selected-div.not-selected {
+  }
+
+  .claimbar-selected-div.upload {
+    width: 110px;
+  }
+
+  .claimbar-selected-div.upload.not-selected {
+  }
+
+  .claimbar-selected-div.e-sign {
+    width: 45px;
+  }
+
+  .claimbar-selected-div.e-sign.not-selected {
+  }
+
+  .claimbar-selected-div.review {
+    width: 75px;
+  }
+
+  .claimbar-selected-div.review.not-selected {
+  }
+}
+
+@media (max-width: 479px) {
+  .claimsbar {
+  }
+
+  .claimsbar-container {
+    padding: 0px 15px;
+    width: auto;
+  }
+
+  .claimsbar-div {
+  }
+
+  .claimsbar-textblock {
+    font-size: 10px;
+  }
+
+  .claimsbar-textblock.selected {
+  }
+
+  .claimsbar-textblock.no-show {
+  }
+
+  .claimbar-selected-div {
+    width: 55px;
+    margin-top: 12.5px;
+  }
+
+  .claimbar-selected-div.not-selected {
+  }
+
+  .claimbar-selected-div.upload {
+    width: 95px;
+  }
+
+  .claimbar-selected-div.upload.not-selected {
+    width: 100px;
+  }
+
+  .claimbar-selected-div.e-sign {
+    width: 35px;
+  }
+
+  .claimbar-selected-div.e-sign.not-selected {
+  }
+
+  .claimbar-selected-div.review {
+    width: 65px;
+  }
+
+  .claimbar-selected-div.review.not-selected {
+  }
+}

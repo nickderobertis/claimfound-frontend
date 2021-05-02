@@ -1,0 +1,264 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 25, 2016, 4:38:38 PM
+    Author     : christofferprompovitch
+*/
+
+.document-upload-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.welcome-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -webkit-box-orient: vertical;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.welcome-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  width: 730px;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-radius: 5px;
+}
+
+.welcome-div {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 30px 25px;
+}
+
+.upload-documents-graphic {
+  width: 75px;
+  height: 75px;
+  margin-left: 20px;
+}
+
+.welcome-message-wrapper {
+  display: block;
+  padding-right: 30px;
+}
+
+.welcome-message-textblock-1 {
+  margin-bottom: 10px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+
+.welcome-message-textblock-2 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.welcome-message-textlink {
+  font-family: Graphik, sans-serif;
+  color: #00adee;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: #f6f7f9;
+  border-radius: 5px;
+  padding: 10px 12.5px;
+}
+
+@media (max-width: 991px) {
+  .document-upload-container {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  .welcome-container {
+  }
+
+  .welcome-wrapper {
+  }
+
+  .welcome-div {
+  }
+
+  .upload-documents-graphic {
+  }
+
+  .welcome-message-wrapper {
+  }
+
+  .welcome-message-textblock-1 {
+  }
+
+  .welcome-message-textblock-2 {
+  }
+
+  .welcome-message-textlink {
+  }
+}
+
+@media (max-width: 767px) {
+  .document-upload-container {
+    width: 481px;
+  }
+
+  .welcome-wrapper {
+    width: 450px;
+  }
+
+  .welcome-div {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .upload-documents-graphic {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .welcome-message-wrapper {
+    padding-right: 0px;
+  }
+
+  .welcome-message-textblock-1 {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .welcome-message-textblock-2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .welcome-message-textlink {
+  }
+}
+
+@media (max-width: 479px) {
+  .document-upload-container {
+    display: block;
+    width: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .welcome-container {
+  }
+
+  .welcome-wrapper {
+    width: auto;
+  }
+
+  .welcome-div {
+    padding: 30px 15px;
+  }
+
+  .upload-documents-graphic {
+  }
+
+  .welcome-message-wrapper {
+  }
+
+  .welcome-message-textblock-1 {
+    line-height: 22px;
+  }
+
+  .welcome-message-textblock-2 {
+    margin-bottom: 15px;
+  }
+
+  .welcome-message-textlink {
+    display: inline-block;
+    text-align: center;
+  }
+}

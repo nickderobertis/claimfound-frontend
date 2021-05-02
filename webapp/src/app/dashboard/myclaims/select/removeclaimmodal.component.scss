@@ -1,0 +1,187 @@
+.modal-background {
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+  position: static;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.messagemodal-removeclaimcontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  padding: 15px 15px 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.messasge-removeclaim-exitdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 25px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.message-removeclaim-exiticon {
+  width: 20px;
+  height: 17px;
+  background-image: url("../../../../images/exit-icon-red.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.message-removeclaim-textblock1 {
+  margin-bottom: 25px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.message-removeclaim-graphic {
+  width: 243px;
+  height: 186px;
+  margin-bottom: 20px;
+  background-image: url("../../../../images/Remove_Claims_Graphic-2.png");
+  background-position: 0px 0px;
+  background-size: 242px;
+  background-repeat: no-repeat;
+}
+
+.message-removeclaim-textblock2 {
+  margin-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.message-removeclaim-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  height: 40px;
+  margin-top: 15px;
+  padding: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(223, 128, 127, 0.2);
+  font-family: Graphik, sans-serif;
+  color: #df807f;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.message-removeclaim-button:hover {
+  background-color: rgba(223, 128, 127, 0.5);
+}
+
+@media (max-width: 479px) {
+  .body {
+    padding: 30px 20px;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .modal-background {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .modal-background.message {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .messagemodalcomponent {
+    margin-top: 250px;
+  }
+  .messagemodal-removeclaimcontainer {
+    width: auto;
+  }
+  .messasge-removeclaim-exitdiv {
+    margin-bottom: 20px;
+  }
+  .message-removeclaim-textblock1 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .message-removeclaim-textblock2 {
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 12px;
+  }
+}

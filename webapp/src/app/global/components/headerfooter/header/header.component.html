@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<cf-help-modal
+  #modal
+  *ngIf="modal"
+  (click)="closeDocument($event)"
+></cf-help-modal>
+<div class="header w-section">
+  <div class="header-columns w-row">
+    <div class="logo-column w-col w-col-6">
+      <a
+        class="logo-div w-inline-block"
+        routerLink="/"
+        id="landing-header-home-link"
+      >
+        <img
+          class="logo-icon mobile"
+          height="60"
+          src="/images/FF_claimFound_LO.png"
+          width="170"
+        />
+      </a>
+    </div>
+    <div class="support-column w-clearfix w-col w-col-6">
+      <div class="support-div w-clearfix pointer" (click)="openDocument($event)">
+        <img
+          class="support-icon tablet"
+          src="/images/Life Preserver_SVG.svg"
+          width="30"
+        />
+        <div class="header-text">Support</div>
+      </div>
+    </div>
+  </div>
+</div>

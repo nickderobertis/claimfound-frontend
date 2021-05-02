@@ -1,0 +1,19 @@
+<div class="widget-container">
+    <div class="panel-header">
+        <div class="panel-header-textblock">Deceased Claims</div>
+    </div>
+    <div class="panel-body">
+        <div  *ngFor="let relative of model.relativeClaims;">
+            <div *ngIf="relative.relativeClaimsQuestions.deceased">
+                <cf-deceased-claims-totals-row [model]="relative"></cf-deceased-claims-totals-row>
+            </div>
+        </div>
+        <div *ngIf=loading>
+            <div class="landing-spinner-container">
+                <svg class="landing-page-spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                  <circle class="landing-page-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+               </svg>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<router-outlet></router-outlet>
+<!-- whatever the route is, change which templates go here -->
+<!-- <cf-error-modal (expandEvent)="setExpand($event)" ></cf-error-modal> -->
+<!-- <cf-error-modal *ngIf = "dispModal" (clickEvent) = hideModal()></cf-error-modal> -->
+<cf-error-modal *ngIf = "dispModal" (clickEvent) = hideModal() [message]="errorMessage" [buttonText]="errorButtonText" [url]="errorRedirectUrl"></cf-error-modal>
+<!-- show this component here, on every page! -->

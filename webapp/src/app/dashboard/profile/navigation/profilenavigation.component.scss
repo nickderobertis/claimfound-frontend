@@ -1,0 +1,331 @@
+@import "src/variables";
+.profile-body-navwrapper {
+  display: block;
+  width: 75px;
+  height: 100%;
+  padding-top: 35px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.profile-body-navwrapper:hover {
+  width: 185px;
+}
+
+.profilenavigationitemcomponent.claim {
+  display: none;
+}
+.profile-nav-selectdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 35px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.profile-nav-select-selector {
+  width: 3px;
+  height: 42px;
+  margin-right: 0px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: transparent;
+}
+.profile-nav-select-namesicon {
+  width: 33px;
+  height: 47px;
+  margin-right: 14px;
+  margin-left: 15px;
+  background-image: url("../../../../images/id-card-Gray.png");
+  background-position: 0px 0px;
+  background-size: 100% 100%;
+}
+.profile-nav-select-namesicon.active {
+  background-image: url("../../../../images/id-card-V2-black.svg");
+  cursor: pointer;
+}
+.profile-nav-select-namesicon.selected {
+  background-image: url("../../../../images/id-card-v2.svg");
+}
+.profile-nav-select-textblock {
+  display: none;
+  font-family: Graphik, sans-serif;
+  color: $profile-navigator-text-color;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.profile-body-navwrapper:hover .profile-nav-select-textblock {
+  display: block;
+  font-family: Graphik, sans-serif;
+  color: $profile-navigator-text-color;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.profile-body-navwrapper:hover .profile-nav-select-textblock.selected {
+  color: $profile-navigator-text-color-selected;
+  position: relative;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.profile-body-navwrapper:hover .profile-nav-select-textblock.inactive {
+  color: rgba(136, 138, 141, 0.75);
+  position: relative;
+  font-size: 11px;
+  cursor: default;
+}
+
+.profile-body-navwrapper:hover profile-nav-select-textblock.active:hover {
+  color: $profile-navigator-text-color-selected;
+  position: relative;
+}
+
+.profile-nav-selectdiv.claim {
+  display: none;
+}
+.profile-nav-select-selector.notselected {
+  background-color: transparent;
+}
+.profile-nav-select-familyicon {
+  width: 33px;
+  height: 26px;
+  margin-top: 0px;
+  margin-right: 13px;
+  margin-left: 17px;
+  background-image: url("../../../../images/users-gray-v2.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+}
+.profile-nav-select-familyicon.active {
+  background-image: url("../../../../images/users-black.svg");
+  cursor: pointer;
+}
+.profile-nav-select-familyicon.selected {
+  background-image: url("../../../../images/users-blue-V2.svg");
+}
+.profile-nav-select-textblock.selected {
+  color: rgba(36, 90, 170, 0.8);
+  font-size: 11px;
+  font-weight: 600;
+  cursor: default;
+}
+.profile-nav-select-selector.active {
+  margin-right: 0px;
+  margin-top: -6px;
+  background-color: $profile-navigator-text-color-selected;
+}
+.profile-nav-select-phoneicon {
+  width: 29px;
+  height: 40px;
+  margin-right: 14px;
+  margin-left: 19px;
+  background-image: url("../../../../images/smartphone-gray-v2.svg");
+  background-position: 0px 0px;
+  background-size: 100% 100%;
+}
+.profile-nav-select-phoneicon.active {
+  background-image: url("../../../../images/smartphone-black.svg");
+  cursor: pointer;
+}
+.profile-nav-select-phoneicon.selected {
+  background-image: url("../../../../images/smartphone-blue.svg");
+}
+.profile-nav-select-textblock.inactive {
+  color: rgba(136, 138, 141, 0.75);
+  font-size: 11px;
+  cursor: default;
+}
+
+.profile-nav-select-textblock.active:hover {
+  color: rgba(36, 90, 170, 0.8);
+}
+
+.profile-nav-select-addressicon {
+  width: 33px;
+  height: 40px;
+  margin-top: 0px;
+  margin-right: 15px;
+  margin-left: 17px;
+  background-image: url("../../../../images/placeholder-gray-v2.svg");
+  background-position: 0px 0px;
+  background-size: 100% 100%;
+}
+.profile-nav-select-addressicon.active {
+  background-image: url("../../../../images/placeholder-black.svg");
+  cursor: pointer;
+}
+.profile-nav-select-addressicon.selected {
+  background-image: url("../../../../images/placeholder-Blue.svg");
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .profile-body-navwrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    border-top: 1px none rgba(136, 138, 141, 0.5);
+    border-bottom: 1px solid rgba(136, 138, 141, 0.5);
+    border-right-style: none;
+  }
+
+  .profile-body-navwrapper:hover {
+    width: auto;
+  }
+
+  .profile-nav-selectdiv {
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .profile-nav-select-selector {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 10px;
+  }
+  .profile-nav-select-namesicon {
+    margin: 0px 0px 5px;
+    height: 40px;
+    width: 30px;
+  }
+
+  .profile-nav-select-textblock {
+    display: block;
+    font-family: Graphik, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+  }
+
+  .profile-nav-select-textblock.inactive {
+    font-weight: 500;
+  }
+  .profile-nav-select-textblock-span {
+    display: none;
+  }
+  .profile-nav-select-selector.active {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .profile-nav-select-familyicon {
+    width: 35px;
+    height: 34px;
+    margin: 5px 0px;
+  }
+  .profile-nav-select-phoneicon {
+    margin: 4px 0px 3px;
+    height: 38px;
+  }
+  .profile-nav-select-addressicon {
+    width: 27px;
+    height: 38px;
+    margin: 5px 0px 1px;
+  }
+}
+@media (max-width: 479px) {
+  .profile-body-navwrapper {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  .profile-nav-selectdiv.claim {
+    display: none;
+  }
+  .profile-nav-select-selector {
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-bottom: 10px;
+  }
+  .profile-nav-select-namesicon {
+    width: 27px;
+    height: 37px;
+    margin-top: 0px;
+    margin-bottom: -1px;
+  }
+  .profile-nav-select-textblock.active {
+    font-size: 10px;
+  }
+  .profile-nav-select-selector.active {
+    height: 4px;
+    margin-bottom: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3px;
+  }
+  .profile-nav-select-familyicon {
+    width: 33px;
+    height: 26px;
+    margin-top: 2px;
+    margin-bottom: 7px;
+    margin-left: 0px;
+  }
+
+  .profile-nav-select-familyicon inactive {
+    margin-top: 2px;
+    margin-bottom: 7px;
+  }
+
+  .profile-nav-select-textblock.inactive {
+    font-size: 10px;
+  }
+  .profile-nav-select-phoneicon {
+    width: 23px;
+    height: 32px;
+    margin-top: 2px;
+    margin-bottom: 1px;
+    margin-left: 0px;
+  }
+  .profile-nav-select-addressicon {
+    width: 27px;
+    height: 30px;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    margin-left: 0px;
+  }
+}

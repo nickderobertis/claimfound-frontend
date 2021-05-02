@@ -1,0 +1,344 @@
+.modal-background {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed; /* Stay in place */
+  z-index: 15; /* Sit on top */
+  left: 0;
+  top: 0;
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.signupmodalcontainer {
+  width: 450px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.signupmodal-headerdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  padding-left: 15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(136, 138, 141, 0.5);
+  border-radius: 5px 5px 0px 0px;
+  background-color: #e4e7e9;
+  position: relative;
+}
+
+.signupmodal-headertextblock {
+  display: block;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+
+.signupmodal-headertextblock.mobile {
+  display: none;
+}
+
+.signupmodal-bodywrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.bodywrapper-footerdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-top: 1px solid rgba(136, 138, 141, 0.5);
+}
+
+.bodydiv-textlink {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+.textlink-bluespan {
+  color: #245aaa;
+}
+
+.textlink-bluespan:hover {
+  color: rgba(36, 90, 170, 0.8);
+}
+
+.signupmodal-headergraphic {
+  display: none;
+}
+
+.headerdiv-exitdiv {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.exit-icon {
+  width: 22px;
+  height: 19px;
+  margin-right: 5px;
+  background-image: url("/images/exit-icon-red.svg");
+  background-size: cover;
+}
+
+.signupmodalchoosercomponent.inactive {
+  display: none;
+}
+
+.deceased-claims-email-container {
+  padding: 25px 20px;
+}
+
+.deceased-claims-email-container.sent {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  padding: 0px 20px 25px;
+}
+
+.deceased-claims-email-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.deceased-claims-email-textblock.sent {
+  width: 100%;
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  padding: 10px;
+  background-color: #def9f3;
+  border-radius: 5px;
+  line-height: 16px;
+}
+
+.deceased-claims-emailDiv {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.deceased-claims-email-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+  height: 45px;
+  margin-right: 15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.deceased-claims-email-box-textblock {
+  padding-left: 10px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+}
+
+.deceased-claims-email-box-textblock:focus {
+  border: solid 1.5px rgba(36, 90, 170, 1);
+}
+
+.deceased-claims-email-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140px;
+  height: 45px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.deceased-claims-email-button:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.loading-spinner-wrapper {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: auto;
+  padding: 15px;
+}
+
+@media (max-width: 479px) {
+  .modal-background {
+  }
+  .signupmodalcontainer {
+    width: 350px;
+  }
+
+  .signupmodal-bodywrapper {
+  }
+  .bodywrapper-footerdiv {
+  }
+
+  .bodydiv-textlink {
+  }
+  .headerdiv-exitdiv {
+  }
+  .exit-icon {
+  }
+  .signupmodal-headergraphic {
+  }
+
+  .deceased-claims-email-container.sent {
+  }
+
+  .deceased-claims-email-textblock {
+    line-height: 20px;
+  }
+
+  .deceased-claims-email-textblock.sent {
+  }
+
+  .deceased-claims-emailDiv {
+    display: block;
+  }
+
+  .deceased-claims-email-box {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .deceased-claims-email-box-textblock {
+  }
+
+  .deceased-claims-email-box-textblock:focus {
+  }
+
+  .deceased-claims-email-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+<div class="formsPageContainer" id="esign-forms-page">
+  <div class="welcome-container">
+    <div class="welcome-wrapper">
+      <div class="welcome-div">
+        <div class="welcome-message-wrapper">
+          <div class="welcome-message-textblock-1">
+            Please review and sign your claim forms.
+          </div>
+          <div class="welcome-message-textblock-2">
+            Each state requires you to sign a unique form that outlines the
+            details of your claims before you can process them.
+          </div>
+          <a
+            href="https://help.claimfound.com/en/articles/4128965-e-sign-page"
+            target="_blank"
+            class="welcome-message-textlink"
+            ><span style="text-decoration: underline;"
+              >Need help with this step, read our instructions guide!</span
+            ></a
+          >
+        </div>
+        <img
+          src="/images/e-sign-documents-graphic-new.svg"
+          class="upload-documents-graphic"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!loading">
+    <div class="claims-header">
+      <h3 class="claims-header-h3">E-Sign Claim Form</h3>
+    </div>
+
+    <div class="displayBoxWrapper">
+      <p class="displayBox-textHeader">
+        Please complete the steps below to review and sign your claim form.
+      </p>
+
+      <div class="displayBox-stepWrapper">
+        <cf-review-incomplete-forms
+          [incompleteForms]="model.incompleteForms"
+          (taskCompleteEvent)="onReviewCompleted()"
+        ></cf-review-incomplete-forms>
+      </div>
+
+      <div class="displayBox-stepWrapper">
+        <cf-fill-and-sign
+          [stepOneDone]="reviewCompleted"
+          [model]="model"
+          (submitEvent)="onFormSubmit()"
+        ></cf-fill-and-sign>
+      </div>
+
+      <div class="displayBox-stepWrapper">
+        <p class="displayBox-textHeader alt">Completed Claim Forms</p>
+        <div class="completed-forms">
+          <div
+            class="link-text"
+            *ngFor="let completeForm of model.completeForms; index as i"
+            (click)="onCompleteFormLinkClick(i)"
+          >
+            View {{ completeForm.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <cf-dashboard-step [currentPage]="pageName"></cf-dashboard-step>
+</div>

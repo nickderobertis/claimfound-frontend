@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<div class="locationtablediv">
+  <h2 class="locationtable-h2">
+    Top 10 {{ model.listName }} In {{ locationsModel.selectedLocation }}
+  </h2>
+  <div class="locationtable-textblock">{{ model.description }}</div>
+  <div class="locationtable-tablewrapper">
+    <div class="locationtable-tableheaderrow">
+      <div class="locationtable-tableheader-textbock1">RANK</div>
+      <div class="locationtable-tableheader-textbock1 reporting-company">
+        {{ model.listName | uppercase }}
+      </div>
+      <div class="locationtable-tableheader-textbock1 claims">CLAIMS</div>
+      <div class="locationtable-tableheader-textbock1 value">DOLLAR VALUE</div>
+    </div>
+
+    <div
+      class="loationtable-tablerow"
+      *ngFor="let row of model.rows; let idx = index"
+    >
+      <div class="locationtable-tablerow-textblock1">#{{ idx + 1 }}</div>
+      <div class="locationtable-tablerow-textblock2">
+        {{ row.name | titlecase }}
+      </div>
+      <div class="locationtable-tablerow-textblock3">
+        {{ row.totalClaims | number: ".0" }}
+      </div>
+      <div class="locationtable-tablerow-textblock4">
+        {{ row.totalValue | currency: "USD":"symbol":"1.0-0" }}
+      </div>
+    </div>
+  </div>
+</div>

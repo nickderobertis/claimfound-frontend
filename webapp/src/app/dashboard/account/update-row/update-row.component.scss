@@ -1,0 +1,373 @@
+.update-rowContainer {
+  padding: 25px 20px;
+  border-bottom: 1px solid rgba(136, 138, 141, 0.5);
+}
+
+.update-rowWrapper {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.update-row-leftDiv {
+}
+
+.update-row-left-textHeader {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.update-row-left-textHeader.password {
+  margin-bottom: 0px;
+}
+
+.update-row-left-textBlock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.update-row-rightDiv {
+}
+
+.accountButton {
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.accountButton:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.update-inputContainer {
+  position: relative;
+  margin-top: 25px;
+}
+
+.update-input-exitIcon {
+  position: absolute;
+  right: 7.5px;
+  top: 9px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.update-input-formWrapper {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.update-input-formField {
+  width: 175px;
+  margin-right: 15px;
+}
+
+.update-input-formField.error {
+  border-width: 1.5px;
+  border-color: #df807f; /* Red Color */
+}
+
+.submit-button {
+  background-color: rgba(170, 185, 210, 0.8);
+}
+
+.submit-button.enabled {
+  background-color: #507bbb; /* Blue color */
+}
+.input-form-passwordtoggle {
+  width: 25px;
+  height: 16px;
+  background-image: url("/images/no-eye.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.input-form-passwordtoggle.toggled {
+  background-image: url(/images/eye.svg);
+}
+.input-form-passwordwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 15px;
+  margin-right: 15px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: stretch;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  border-radius: 5px;
+}
+
+.input-form-passwordwrapper.error {
+  border-width: 1.5px;
+  border-color: #df807f;
+  padding-bottom: 1px;
+  padding-left: 1px;
+}
+
+.input-form-passwordwrapper:focus-within {
+  border-color: rgba(36, 90, 170, 0.8);
+}
+
+.password-input {
+  border: none;
+  margin-right: 15px;
+  width: 125px;
+}
+.password-input:focus {
+  border: none;
+}
+.password-input.new {
+  width: 140px;
+}
+.password-input.current {
+  width: 160px;
+}
+
+@media (max-width: 991px) {
+  .update-rowContainer {
+  }
+
+  .update-rowWrapper {
+  }
+
+  .update-row-leftDiv {
+  }
+
+  .update-row-left-textHeader {
+  }
+
+  .update-row-left-textHeader.password {
+  }
+
+  .update-row-left-textBlock {
+  }
+
+  .update-row-rightDiv {
+  }
+
+  .accountButton {
+  }
+
+  .accountButton:hover {
+  }
+
+  .update-inputContainer {
+  }
+
+  .update-input-exitIcon {
+  }
+
+  .update-input-formWrapper {
+  }
+
+  .update-input-formField {
+  }
+
+  .update-input-formField.error {
+  }
+
+  .submit-button {
+  }
+
+  .submit-button.enabled {
+  }
+}
+
+@media (max-width: 767px) {
+  .update-rowContainer {
+  }
+
+  .update-rowWrapper {
+  }
+
+  .update-row-leftDiv {
+  }
+
+  .update-row-left-textHeader {
+  }
+
+  .update-row-left-textHeader.password {
+  }
+
+  .update-row-left-textBlock {
+  }
+
+  .update-row-rightDiv {
+  }
+
+  .accountButton {
+  }
+
+  .accountButton:hover {
+  }
+
+  .update-inputContainer {
+  }
+
+  .update-input-exitIcon {
+    right: -5px;
+    top: -45px;
+  }
+
+  .update-input-formWrapper {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .update-input-formField {
+    width: 97%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .update-input-formField.error {
+  }
+
+  .submit-button {
+  }
+
+  .submit-button.enabled {
+  }
+
+  .input-form-passwordwrapper {
+    width: 95%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .password-input {
+    width: 90%;
+  }
+  .password-input.new {
+    width: 90%;
+  }
+  .password-input.current {
+    width: 90%;
+  }
+}
+
+@media (max-width: 479px) {
+  .update-rowContainer {
+    padding: 25px 10px;
+  }
+
+  .update-rowWrapper {
+  }
+
+  .update-row-leftDiv {
+  }
+
+  .update-row-left-textHeader {
+  }
+
+  .update-row-left-textHeader.password {
+  }
+
+  .update-row-left-textBlock {
+  }
+
+  .update-row-rightDiv {
+  }
+
+  .accountButton {
+    width: 75px;
+  }
+
+  .accountButton:hover {
+  }
+
+  .update-inputContainer {
+  }
+
+  .update-input-exitIcon {
+  }
+
+  .update-input-formWrapper {
+  }
+
+  .update-input-formField {
+  }
+
+  .update-input-formField.error {
+  }
+
+  .submit-button {
+  }
+
+  .submit-button.enabled {
+  }
+}

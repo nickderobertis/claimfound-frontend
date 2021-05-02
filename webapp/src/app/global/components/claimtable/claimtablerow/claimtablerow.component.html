@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<cf-details-modal
+  #modal
+  *ngIf="modal"
+  [model]="model"
+  [modalCloseSubject]="modalCloseSubject"
+  [helpModalOpenSubject]="helpModalOpenSubject"
+></cf-details-modal>
+
+<cf-help-modal *ngIf="showHelpModal" (click)="closeHelpModal()"></cf-help-modal>
+
+<div class="pick-claims-wrapper review">
+  <div class="pick-claims-details-wrapper">
+    <div class="pick-claims-details-div">
+      <div class="pick-claims-amount-textblock">
+        {{ model.formattedAmount }}
+      </div>
+    </div>
+    <div class="pick-claims-details-div name">
+      <div class="pick-claims-details-textblock-2">
+        {{ model.firstandLastNameCapitalizedString }}
+      </div>
+    </div>
+    <div class="pick-claims-details-div state review">
+      <div class="pick-claims-details-textblock-2">{{ model.state }}</div>
+    </div>
+    <div class="pick-claims-details-div address review">
+      <div class="pick-claims-details-textblock-2">
+        {{ model.streetAddressString }}
+      </div>
+    </div>
+    <div class="pick-claims-details-div company review">
+      <div class="pick-claims-details-textblock-2">
+        {{ model.reportingCompany }}
+      </div>
+    </div>
+  </div>
+  <div (click)="openDocument($event)" class="pick-claims-select-wrapper">
+    <div class="pick-claims-select-textblock details">Details</div>
+  </div>
+</div>

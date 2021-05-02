@@ -1,0 +1,261 @@
+@import "src/variables";
+.button-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.button-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 730px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.back-button-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  padding-bottom: 0px;
+  float: left;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.back-arrow-icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.back-button-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+.back-button-textblock:hover {
+  color: rgba(36, 90, 170, 0.8);
+}
+
+.button-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 45px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  border-radius: 5px;
+  background-color: $button-bck-color;
+  font-family: $header_font_family;
+  color: $button-color;
+  letter-spacing: $button-letter-spacing;
+  cursor: pointer;
+}
+
+.button-div:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.button-div.inactive {
+  background-color: hsla(216, 2%, 54%, 0.25);
+  border: solid 1px hsla(216, 2%, 54%, 0.5);
+  cursor: auto;
+}
+
+.button-div.back {
+  background-color: rgba(36, 90, 170, 0.8);
+  cursor: pointer;
+}
+
+.button-div.back:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+  cursor: pointer;
+}
+
+.button-textblock {
+  margin-left: 7.5px;
+  color: $button-color;
+  font-weight: $button-font-wt;
+  letter-spacing: $button-letter-spacing;
+  font-size: 14px;
+  font-family: $header_font_family;
+}
+
+.button-textblock.inactive {
+  color: #888a8d;
+}
+
+.button-textblock.back {
+  color: $button-color;
+  margin-left: 0px;
+}
+
+.got-navigation-status-hidden-element {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .button-container {
+  }
+
+  .button-wrapper {
+  }
+
+  .back-button-div {
+  }
+
+  .back-button-textblock {
+  }
+
+  .button-div {
+  }
+
+  .button-div.inactive {
+  }
+
+  .button-div.next {
+  }
+
+  .button-textblock {
+  }
+
+  .button-textblock.inactive {
+  }
+
+  .button-textblock.next {
+  }
+}
+
+@media (max-width: 767px) {
+  .button-container {
+    width: 450px;
+  }
+
+  .button-wrapper {
+    width: 450px;
+  }
+
+  .back-button-div {
+  }
+
+  .back-button-textblock {
+  }
+
+  .button-div {
+    width: 120px;
+  }
+
+  .button-div.inactive {
+  }
+
+  .button-div.next {
+  }
+
+  .button-textblock {
+    font-size: 12px;
+  }
+
+  .button-textblock.inactive {
+  }
+
+  .button-textblock.next {
+  }
+}
+
+@media (max-width: 479px) {
+  .button-container {
+    width: auto;
+  }
+
+  .button-wrapper {
+    width: auto;
+  }
+
+  .back-button-div {
+    margin-right: 40px;
+  }
+
+  .back-button-textblock {
+  }
+
+  .button-div {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    width: 125px;
+  }
+
+  .button-div.inactive {
+  }
+
+  .button-div.next {
+  }
+
+  .button-textblock {
+    font-size: 14px;
+  }
+
+  .button-textblock.inactive {
+  }
+
+  .button-textblock.next {
+  }
+}

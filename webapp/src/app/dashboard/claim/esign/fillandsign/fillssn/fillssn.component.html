@@ -1,0 +1,15 @@
+<div>
+	<p class="formData-textHeader">🔖 Social Security Number</p>
+  <p class="formData-textBlock">To process your claim, the unclaimed property division needs your social security number.</p>
+	<p class="formData-textBlock end">ClaimFound never stores your SSN, we only pass it to the unclaimed property division.<a class="formData-textLink" (click)="onClickReadOurPolicyLink($event)"> Read our policy on SSNs.</a></p>
+
+  <div *ngIf="showError && anyFieldInvalid(formConstants)" class="error-message">Social Security number: please re-enter your social security number.</div>
+  <form [formGroup]="fillAndSignForm">
+    <input id="ssn-form" class="ssn-form {{textBoxErrorClass(formConstants.ssn)}}" type="text" placeholder="Enter Your SSN" formControlName="{{formConstants.ssn}}" (change)="onSSNInputChange()" (keyup)="onSSNKeyUp($event)" maxlength="11" #ssnInput>
+  </form>
+
+  <!--<label class="manual-claim"><input type="checkbox" name="manual-claim" [(ngModel)]="dontProvideSSN"> I’d prefer not to provide my SSN. I’ll process my claims manually and mail them to the unclaimed property department.</label>-->
+
+  <cf-ssn-popup *ngIf="showModal" [showModal]="showModal" (closeModalEvent)="onCloseModalEvent($event)"></cf-ssn-popup>
+
+</div>

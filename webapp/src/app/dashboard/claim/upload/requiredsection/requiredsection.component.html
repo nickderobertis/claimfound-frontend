@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+
+<div class="documents-status-container">
+    <div class="documents-status-header">
+        <div class="documents-status-header-h1">Required Claim Documents</div>
+    </div>
+    <div class="documents-status-body">
+        <div class="documents-status-header-div">
+            <div class="documents-status-header-textblock id">Claim ID</div>
+            <div class="documents-status-header-textblock company">Reporting Company</div>
+            <div class="documents-status-header-textblock docs">Required Documents</div>
+            <div class="documents-status-header-textblock status">Status</div>
+        </div>
+
+        <cf-required-row
+            *ngFor="let row of rowModels;"
+            [model]="row"
+            class="documents-status-body-div"
+        ></cf-required-row>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div tabindex="0" role="button" class="dropdown-check-list {{ getVisibleClass() }}" id="{{idPrefix}}-cf-dropdown" (keydown)="onKeyDown($event)">
+    <span class="anchor" (click)="onClick($event)" [innerHTML]="placeHolderText"></span>
+    <ul class="items">
+        <li *ngFor="let item of model.items; let i = index;">
+            <cf-namesearchdropdown-item [item]="item" [itemIndex]="i" [selectBooleans]="selectBooleans" (itemSelected)="onSelectionChange($event)"></cf-namesearchdropdown-item>
+        </li>
+    </ul>
+</div>

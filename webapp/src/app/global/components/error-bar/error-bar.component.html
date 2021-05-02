@@ -1,0 +1,6 @@
+<div class="signupmodal-input-form-errorwrapper" *ngIf="displayErrors">
+    <div class="signupmodal-input-form-error-noticediv"></div>
+    <div class="error-entry-wrapper">
+        <div class="signupmodal-input-form-error-textblock" *ngFor="let message of errorMessages">{{message}}</div>
+    </div>
+</div>

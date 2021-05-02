@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Magnify Glass</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="My-Claims" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard-New---Standard---state-1" transform="translate(-780.000000, -590.000000)">
+            <g id="Canvas-Area" transform="translate(21.000000, 160.000000)">
+                <g id="Message-Banner-2" transform="translate(200.000000, 182.000000)">
+                    <g id="Process---style-1" transform="translate(0.000000, 175.000000)">
+                        <g id="Magnify-Glass" transform="translate(559.000000, 73.000000)">
+                            <polyline id="Fill-9" fill="#27333F" points="7 8.31519747 8.31514567 7 11 9.68487971 9.68485433 11 7 8.31519747"></polyline>
+                            <path d="M5,0 C7.76143791,0 10,2.23856209 10,5 C10,7.76143791 7.76143791,10 5,10 C2.23856209,10 0,7.76143791 0,5 C0,2.23856209 2.23856209,0 5,0" id="Fill-10" fill="#2F424F"></path>
+                            <path d="M9,5 C9,7.20913706 7.20913706,9 5,9 C2.79086294,9 1,7.20913706 1,5 C1,2.79086294 2.79086294,1 5,1 C7.20913706,1 9,2.79086294 9,5 Z" id="Fill-11" fill="#E0E7F3"></path>
+                            <path d="M10.8496781,8.04680535 L9.04680535,9.84967806 C8.98439822,9.91208519 8.98439822,10.0230312 9.04680535,10.0854383 L13.9145617,14.9531947 C13.9769688,15.0156018 14.0879148,15.0156018 14.1503219,14.9531947 L15.9531947,13.1503219 C16.0156018,13.0879148 16.0156018,12.9769688 15.9531947,12.9145617 L11.0854383,8.04680535 C11.0230312,7.98439822 10.9190193,7.98439822 10.8496781,8.04680535" id="Fill-12" fill="#E6E9E9"></path>
+                            <polygon id="Fill-13" fill-opacity="0.8" fill="#245AAA" points="15 12.1091141 13.1091141 14 10 10.8908859 11.8908859 9"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

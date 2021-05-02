@@ -1,0 +1,1001 @@
+@import "src/variables";
+.panel-body-message-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.panel-body-message-wrapper-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.panel-body-message-wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.panel-body-message-div-header-texblock {
+  margin-bottom: 2.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.panel-body-message-div-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+
+.hour-glass-graphic {
+  margin-right: 20px;
+  margin-left: 25px;
+}
+
+.family-claims-graphic {
+  margin-right: 25px;
+  margin-left: 15px;
+}
+
+.panel-body-message-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 115px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  line-height: 0px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.panel-body-message-button:active {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.panel-body-message-button.deceased {
+  width: 200px;
+  margin-left: 100px;
+}
+
+.panel-body-data-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 0.5px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.panel-body-data-wrapper-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.panel-body-data-wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  max-width: 115px;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-left: 0.5px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.panel-body-data-wrapper-right:hover {
+  background-color: rgba(36, 90, 170, 0.25);
+}
+
+.panel-body-data-div-right-textlink {
+  padding-right: 0px;
+  font-family: Graphik, sans-serif;
+  color: rgba(36, 90, 170, 0.8);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+}
+
+.panel-body-data-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 125px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.panel-body-data-div.deceased {
+  max-width: 175px;
+}
+
+.panel-body-data-div-textheader {
+  margin-bottom: 7.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.panel-body-data-div-textblock {
+  font-family: Graphik, sans-serif;
+  color: #24d2aa;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-data-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-top: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.deceased-claims-data-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.deceased-claims-data-div-textheader {
+  margin-bottom: 7.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-data-div-textblock-1 {
+  font-family: Graphik, sans-serif;
+  color: rgba(36, 90, 170, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-data-div-textblock-2 {
+  font-family: Graphik, sans-serif;
+  color: $dashboard-numerics-color;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-questions-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 0.5px solid hsla(216, 2%, 54%, 0.5);
+  border-bottom: 0.5px none hsla(216, 2%, 54%, 0.5);
+  background-color: rgba(36, 90, 170, 0.15);
+}
+
+.deceased-claims-questions-textblock {
+  margin-right: 50px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+
+.deceaed-claims-data-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 135px;
+  height: 40px;
+  margin-right: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.deceaed-claims-data-button:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.deceased-claims-questions-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.deceased-claims-refer-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 0.5px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.deceased-claims-refer-div-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 0.5px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.deceased-claims-refer-div-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 0.5px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.deceased-claims-refer-div-2:hover {
+  background-color: rgba(36, 90, 170, 0.15);
+}
+
+.deceased-claims-refer-div-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-right: 0.5px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.deceased-claims-refer-div-3:hover {
+  background-color: rgba(36, 90, 170, 0.25);
+}
+
+.deceased-claims-refer-div-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.deceased-claims-refer-div-1-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-refer-div-2-textblock {
+  margin-bottom: 2.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-refer-div-3-textblock {
+  margin-bottom: 2.5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-refer-div-4-textblock-1 {
+  margin-bottom: 0px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-claims-refer-div-4-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  width: 92%;
+  height: 30px;
+  padding-left: 7.5px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f6f7f9;
+}
+
+.deceased-claims-refer-div-4-textblock-2 {
+  font-family: Graphik, sans-serif;
+  color: #888a8d;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.deceased-claims-refer-div-spacer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+}
+
+.deceased-relative-modal {
+  width: 400px;
+  height: auto;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.deceased-relative-modal-exit-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  padding-right: 10px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.deceased-relative-modal-header-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 0.5px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.claimfound-check-graphic {
+  margin-bottom: 25px;
+}
+
+.deceased-relative-modal-header-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.deceased-relative-modal-data-wrapper {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid hsla(216, 2%, 54%, 0.5);
+}
+
+.deceased-relative-modal-data-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.deceased-relative-modal-data-textblock-1 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-relative-modal-data-textblock-2 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.deceased-relative-modal-data-textblock-3 {
+  font-family: Graphik, sans-serif;
+  color: #24d2aa;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.deceased-relative-modal-message-wrapper {
+  padding: 15px 20px 20px;
+}
+
+.deceased-relative-modal-message-textblock {
+  margin-bottom: 10px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.deceased-relative-modal-message-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+
+.deceased-relative-modal-message-button:hover {
+  background-color: rgba(36, 90, 170, 0.5);
+}
+
+.deceased-relative-modal-message-button-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  /*All the of CSS for this media break is the same as the css from the above*/
+}
+
+@media (max-width: 767px) {
+  .panel-header {
+    width: 481px;
+  }
+  .panel-body {
+    width: 481px;
+  }
+  .panel-body-message-wrapper-left {
+    width: 25%;
+  }
+  .panel-body-message-wrapper-right {
+    width: 75%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .hour-glass-graphic {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .family-claims-graphic {
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+  .panel-body-message-button {
+    width: 125px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .panel-body-data-wrapper-right {
+    max-width: 90px;
+  }
+  .panel-body-data-div-right-textlink {
+    font-size: 10px;
+  }
+  .panel-body-data-div {
+    width: auto;
+    max-width: 110px;
+  }
+  .panel-body-data-div-textheader {
+    font-size: 12px;
+  }
+  .panel-body-data-div-textblock {
+    font-size: 14px;
+  }
+  .deceased-claims-data-div-textheader {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .deceased-claims-data-div-textblock-1 {
+    font-size: 12px;
+  }
+  .deceased-claims-questions-container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .deceased-claims-questions-textblock {
+    margin-right: 0px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  .deceaed-claims-data-button {
+    width: 125px;
+    margin-right: 0px;
+    font-size: 14px;
+  }
+  .deceased-claims-questions-wrapper {
+    width: 75%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .deceased-claims-refer-div-1 {
+    width: 32.5%;
+  }
+  .deceased-claims-refer-div-2 {
+    width: 22%;
+  }
+  .deceased-claims-refer-div-3 {
+    width: 22%;
+  }
+  .deceased-claims-refer-div-4 {
+    width: 56%;
+  }
+  .deceased-claims-refer-div-1-textblock {
+    font-size: 12px;
+  }
+  .deceased-claims-refer-div-spacer {
+    width: 67.5%;
+  }
+  .deceased-claims-email-container {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .deceased-claims-email-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    margin-right: 10px;
+  }
+  .deceased-claims-email-textblock {
+    display: none;
+    margin-right: 10px;
+  }
+  .deceased-claims-email-box-textblock {
+    line-height: 12px;
+  }
+}
+
+@media (max-width: 479px) {
+  .panel-header {
+    width: auto;
+    min-width: 305px;
+  }
+  .panel-header-textblock {
+    font-size: 13px;
+  }
+  .panel-body {
+    width: auto;
+    min-width: 305px;
+    float: none;
+  }
+  .panel-body-message-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .panel-body-message-wrapper-left {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .panel-body-message-wrapper-right {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .panel-body-message-div-header-texblock {
+    text-align: center;
+  }
+  .panel-body-message-div-textblock {
+    text-align: center;
+  }
+  .family-claims-graphic {
+    margin-left: 0px;
+  }
+  .panel-body-message-button {
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  .panel-body-message-button.deceased {
+    margin-left: 0px;
+  }
+  .panel-body-data-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .panel-body-data-wrapper-left {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .panel-body-data-wrapper-right {
+    width: 100%;
+    max-width: auto;
+    min-width: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 0.5px solid hsla(216, 2%, 54%, 0.5);
+    border-left-style: none;
+  }
+  .panel-body-data-div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: auto;
+    min-width: 305px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    text-align: left;
+  }
+  .panel-body-data-div.middle {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .panel-body-data-div.middle.deceased {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  .panel-body-data-div-textheader {
+    margin-bottom: 5px;
+  }
+  .deceased-claims-data-wrapper {
+    padding-bottom: 20px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .deceased-claims-data-div {
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .deceased-claims-questions-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .deceased-claims-questions-textblock {
+    font-size: 14px;
+  }
+  .deceaed-claims-data-button {
+    width: 120px;
+    font-size: 14px;
+  }
+  .deceased-claims-questions-wrapper {
+    width: 90%;
+  }
+  .deceased-claims-refer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .deceased-claims-refer-div-1 {
+    width: 100%;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    padding-left: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-bottom: 0.5px solid hsla(216, 2%, 54%, 0.5);
+    border-right-style: none;
+  }
+  .deceased-claims-refer-div-spacer {
+    width: 100%;
+  }
+  .deceased-relative-modal {
+    width: auto;
+  }
+  .deceased-relative-modal-header-div {
+    padding-bottom: 15px;
+  }
+  .deceased-relative-modal-header-textblock {
+    font-size: 12px;
+    text-align: center;
+  }
+  .deceased-relative-modal-data-wrapper {
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+  .deceased-relative-modal-data-textblock-1 {
+    font-size: 12px;
+  }
+  .deceased-relative-modal-data-textblock-2 {
+    font-size: 12px;
+  }
+  .deceased-relative-modal-data-textblock-3 {
+    font-size: 12px;
+  }
+  .deceased-relative-modal-message-textblock {
+    font-size: 11px;
+  }
+  .deceased-relative-modal-message-button {
+    width: 175px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .deceased-claims-email-container {
+    padding-left: 0px;
+  }
+  .deceased-claims-email-box {
+    width: 175px;
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="116px" height="116px" viewBox="0 0 116 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>ClaimFound Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="---▶︎--Style-Guide-/-Symbols-/-Icons-/-Graphics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Overview" transform="translate(-456.000000, -1728.000000)">
+            <g id="ClaimFound-Logo" transform="translate(463.000000, 1735.000000)">
+                <g id="ClaimFound-Icon">
+                    <circle id="Oval-14" stroke="#325C9A" stroke-width="14" cx="51" cy="51" r="51"></circle>
+                    <path d="M74.1595294,29.4527712 L63.6111933,40.0047119 C60.6049748,36.9568136 56.4285714,35.0659492 51.8093109,35.0659492 C42.6541513,35.0659492 35.2318655,42.4897288 35.2318655,51.6480169 C35.2318655,60.8073475 42.6541513,68.2311271 51.8093109,68.2311271 C56.4890084,68.2311271 60.7154286,66.2902288 63.7299832,63.1693644 L74.2783193,73.7213051 C68.5638992,79.5419153 60.6091429,83.1537373 51.8093109,83.1537373 C34.4149244,83.1537373 20.3143529,69.0483475 20.3143529,51.6480169 C20.3143529,34.2487288 34.4149244,20.143339 51.8093109,20.143339 C60.5476639,20.143339 68.4534454,23.7040847 74.1595294,29.4527712 Z" id="Fill-11" fill="#24D2AA"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

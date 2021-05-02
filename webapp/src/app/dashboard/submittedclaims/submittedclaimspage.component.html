@@ -1,0 +1,14 @@
+
+<div class="dashboard-canvas-section">
+    <div class="canvas-body-containeir">
+    <div class="canvas-body-wrapper">
+        <div class="my-claims-container" *ngIf="!loading">
+
+            <cf-submitted-claims-totals-widget [model]="model" [linkURL]="'/dashboard/myclaims'" [linkText]="'Back To My Claims'"></cf-submitted-claims-totals-widget>
+
+            <cf-claim-submission *ngFor="let mod of model.submittedClaims;" [model]="mod"></cf-claim-submission>
+
+        </div>
+    </div>
+    </div>
+</div>

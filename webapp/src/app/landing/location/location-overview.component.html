@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<div class="locationoverviewcontainer">
+  <div class="locationoverviewwrapper">
+    <div class="locationoverview-headerdiv">
+      <div class="locationoverview-header-textblock1">
+        {{ locationTypeText | uppercase }}
+      </div>
+      <h1 class="locationoverview-header-h1">
+        {{ locationsModel.selectedLocation | uppercase }}
+      </h1>
+    </div>
+    <div class="locationoverview-statcontainer">
+      <div class="locationoverview-statwrapper">
+        <div class="locationoverview-stat-graphic claim"></div>
+        <div class="locationoverview-statdiv">
+          <div class="locationoverview-stat-textblock1">
+            {{ model.totalClaims | number: ".0" }}
+          </div>
+          <div class="locationoverview-stat-textblock3">
+            TOTAL CLAIMS OUTSTANDING
+          </div>
+        </div>
+      </div>
+      <div class="locationoverview-statwrapper">
+        <div class="locationoverview-stat-graphic coin"></div>
+        <div class="locationoverview-statdiv">
+          <div class="locationoverview-stat-textblock2">
+            {{ model.totalValue | currency: "USD":"symbol":"1.0-0" }}
+          </div>
+          <div class="locationoverview-stat-textblock3">
+            TOTAL MONEY OUTSTANDING
+          </div>
+        </div>
+      </div>
+      <div class="locationoverview-statwrapper">
+        <div class="locationoverview-stat-graphic money-stack"></div>
+        <div class="locationoverview-statdiv">
+          <div class="locationoverview-stat-textblock2">
+            {{ model.averageValue | currency: "USD":"symbol":"1.0-0" }}
+          </div>
+          <div class="locationoverview-stat-textblock3">
+            AVERAGE CLAIM VALUE
+          </div>
+        </div>
+      </div>
+      <div class="locationoverview-statwrapper">
+        <div class="locationoverview-stat-graphic person"></div>
+        <div class="locationoverview-statdiv">
+          <div class="locationoverview-stat-textblock1">
+            {{ model.numberOfPeople | number: ".0" }}
+          </div>
+          <div class="locationoverview-stat-textblock3">
+            # OF PEOPLE WITH CLAIMS
+          </div>
+        </div>
+      </div>
+      <div class="locationoverview-statwrapper end">
+        <div class="locationoverview-stat-graphic business"></div>
+        <div class="locationoverview-statdiv">
+          <div class="locationoverview-stat-textblock1">
+            {{ model.numberOfBusinesses | number: ".0" }}
+          </div>
+          <div class="locationoverview-stat-textblock3">
+            # OF BUSINESSES WITH CLAIMS
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="locationoverview-infodiv">
+      <h3 class="locationoverview-info-h3">How To Find Your Lost Money</h3>
+      <div class="locationoverview-info-textblock">
+        <ol class="locationoverview-info-listDiv">
+          <li class="locationoverview-info-listItem">
+            Check your current address and all of the places you have lived
+            previously.
+          </li>
+          <li class="locationoverview-info-listItem">
+            Check your family's addresses, especially your parents since you
+            might be able to claim their money if they are deceased.
+          </li>
+          <li class="locationoverview-info-listItem">
+            Don’t forget to let your friends and neighbors know if you find
+            unclaimed money for them!
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="locationoverview-graphicdiv">
+      <div class="locationoverview-graphic"></div>
+    </div>
+    <div class="locationoverview-dropdowncontainer">
+      <cf-location-dropdown
+        [model]="locationTypeDropDownModel"
+        [disabled]="false"
+        (selectionsChanged)="onLocationTypeDropDownSelectionChange()"
+      >
+      </cf-location-dropdown>
+      <cf-location-dropdown
+        [model]="locationDropDownModel"
+        [disabled]="false"
+        [scrollable]="true"
+        (selectionsChanged)="onLocationDropDownSelectionChange()"
+      ></cf-location-dropdown>
+    </div>
+  </div>
+</div>

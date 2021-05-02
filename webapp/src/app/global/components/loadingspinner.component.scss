@@ -1,0 +1,150 @@
+@import "src/variables";
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#CircleBlue {
+  stroke-dasharray: 2250;
+  -webkit-animation: progress 3s ease-in-out infinite;
+  animation: progress 3s ease-in-out infinite;
+}
+
+.st1 {
+  -webkit-animation: spin 6s linear infinite;
+  animation: spin 6s linear infinite;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    stroke-dashoffset: -2250;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 2250;
+  }
+}
+.spinner {
+  animation: rotator 1.4s linear infinite;
+  margin-right: 15px;
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+@keyframes colors {
+  0% {
+    stroke: #4285f4;
+  }
+
+  25% {
+    stroke: #de3e35;
+  }
+
+  50% {
+    stroke: #f7c223;
+  }
+  75% {
+    stroke: #1b9a59;
+  }
+
+  100% {
+    stroke: #4285f4;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    transform: rotate(450deg);
+  }
+}
+
+.cfspinner {
+  display: $cf-spinner;
+}
+.defaultspinner {
+  display: $default-spinner;
+}
+@keyframes progress {
+  0% {
+    stroke-dashoffset: -2250;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 2250;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.st0 {
+  fill: none;
+  stroke: $logo-spin-frame-color;
+  stroke-width: 98.1207;
+  stroke-miterlimit: 10;
+}
+.st1 {
+  fill: none;
+  stroke: $logo-spin-color;
+  stroke-width: 98.1207;
+  stroke-miterlimit: 10;
+}
+.st2 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: $logo-sign-color;
+}

@@ -1,0 +1,24 @@
+<div class="modal-background message" *ngIf="modalVisible" (click)="closeIfClickedOutside($event)">
+    <div #profileCompletionModalWrapper class="messagemodalcomponent">
+      <div class="messagemodalcontainer">
+
+        <div class="messagemodal-graphicwrapper">
+          <div class="messagemodal-header">
+            <div class="messagemodal-header-close" *ngIf="showRedCross">
+              <a href="#" (click)="disableModal()"><img src="/images/documents-exit-icon.svg"></a>
+            </div>
+          </div>
+          <div class="messagemodal-content-textheader">Help us solve your lost money puzzle.</div>
+          <div class="messagemodal-graphic"></div>
+        </div>
+
+        <div id="messagemodalContentwrapper" class="messagemodal-contentwrapper">
+          <div class="messagemodal-content-textheader sub">You haven't completed your profile yet.</div>
+          <div class="messagemodal-content-textblock1">Please complete your profile so that we can auto-fill your forms and submit your claims to the Unclaimed Property Department.</div>
+          <div class="messagemodal-content-textblock2">We can also more accurately match you and your family with your unclaimed money. </div>
+          <a routerLink="/dashboard/profile" class="messagemodal-content-button w-button">Complete Profile</a>
+        </div>
+
+      </div>
+    </div>
+</div>

@@ -1,0 +1,929 @@
+@import "src/variables";
+.top-level-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.loading-spinner-div {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.claims-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.message-container {
+  margin-bottom: 30px;
+}
+.welcome-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  min-height: 0px;
+  background-color: white;
+  border-radius: 5px;
+}
+.welcome-notification-div {
+  width: 6px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: rgba(36, 90, 170, 0.8);
+}
+.welcome-div {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0px 25px 0px;
+  float: left;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.welcome-header {
+  display: block;
+  padding: 15px 0px 10px 12.5px;
+}
+.welcome-h1 {
+  display: inline;
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-bottom: 1px none #888a8d;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.welcome-message-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 10px 10px 0px 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+.welcome-ul {
+  margin-bottom: 5px;
+  padding-left: 37.5px;
+}
+.welcome-message-textblock {
+  display: block;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 13px;
+  letter-spacing: 0.75px;
+  margin-bottom: 15px;
+  line-height: 23px;
+  font-weight: 400;
+}
+.welcome-message-textblock.myclaims {
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+.welcome-wrapper.pick {
+  width: 730px;
+}
+.claims-process-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 730px;
+  border-style: none;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  background-color: #fff;
+  border-radius: 5px;
+}
+.claims-process-wrapper {
+  width: 33.3%;
+}
+.claim-process-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.claims-process-step-textblock {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.claims-process-step-graphic {
+  background-image: url("/images/upload-documents-grahpic-1.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+  width: 98px;
+  height: 80px;
+}
+.claims-process-text-textblock {
+  margin-top: 20px;
+  padding-left: 0px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  text-align: left;
+}
+.claim-process-div.middle {
+  border-right: 1px solid hsla(216, 2%, 54%, 0.5);
+  border-left: 1px solid hsla(216, 2%, 54%, 0.5);
+}
+.claims-process-step-textblock.step1 {
+  margin-right: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.claims-process-step-graphic.step1 {
+  background-image: url("/images/e-sign-documents-grahpic-1.svg");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+}
+.claims-process-step-textblock.step2 {
+  padding-left: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.claims-process-step-graphic.step2 {
+  background-image: url("/images/review-documents-graphic.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+  width: 70px;
+  height: 80px;
+}
+.multi-owner-container {
+  width: 730px;
+  margin-bottom: 30px;
+}
+.multi-owner-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  background-color: #dee7f3;
+  border-style: solid;
+  border-width: 1px;
+  border-color: hsla(216, 2%, 54%, 0.5);
+  border-radius: 5px;
+}
+.multi-owner-div-left {
+  width: 150px;
+  padding-right: 25px;
+  padding-top: 35px;
+}
+.multi-owner-div-right {
+  padding: 30px 35px 20px 25px;
+}
+.multi-owner-div-textblock-1 {
+  font-family: "Graphik", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+.multi-owner-div-textblock-2 {
+  font-family: "Graphik", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+
+.submitted-claims-wrapper {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 730px;
+}
+
+.myclaims-instructionscontainer {
+  width: 730px;
+  padding: 20px 25px 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(136, 138, 141, 0.5);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.instructions-headerwrapper {
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.instructions-header-textheader {
+  margin-bottom: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.instructions-header-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.instructions-rowwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 22.5px 10px 20px 20px;
+  border-top: 0.5px solid rgba(136, 138, 141, 0.5);
+}
+
+.instructions-row-graphic1 {
+  width: 50px;
+  height: 41px;
+  background-image: url("../../../../images/Upload-documents-graphic-new.svg");
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.instructions-row-contentdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding-left: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.instructions-row-textheader {
+  margin-bottom: 10px;
+  font-family: Graphik, sans-serif;
+  color: $instructions-text-header-color;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.instructions-row-textblock {
+  font-family: Graphik, sans-serif;
+  color: $instructions-text-block-color;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.instructions-row-graphic2 {
+  width: 45px;
+  height: 45px;
+  background-image: url("../../../../images/e-sign-documents-graphic-new.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.instructions-row-graphic3 {
+  width: 40px;
+  height: 45px;
+  background-image: url("../../../../images/review-documents-graphic-new.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.instructions-row-graphicdiv {
+  width: 11%;
+  margin-right: 5px;
+}
+
+.instructions-row-navdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  clear: none;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.instructions-row-navdiv.hidden {
+  display: none;
+}
+
+.instructions-row-nav-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  padding: 0px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(36, 90, 170, 0.8);
+  font-family: Graphik, sans-serif;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.instructions-row-nav-button.inactive {
+  background-color: #e1e2e2;
+  color: #888a8d;
+  font-size: 11px;
+}
+
+.instructions-row-nav-button.hidden {
+  display: none;
+}
+
+.instructions-row-nav-taskwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.instructions-row-nav-taskwrapper.hidden {
+  display: none;
+}
+
+.instructions-row-nav-task-icon {
+  margin-right: 7.5px;
+}
+
+.instructions-row-nav-task-textblock {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.instructions-row-nav-taskdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2.5px;
+}
+
+.instructions-row-nav-textlink {
+  font-family: Graphik, sans-serif;
+  color: #2592d2;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.dashboard-step-wrapper {
+  border-bottom: solid 1px #ccd1d4;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .welcome-wrapper {
+  }
+  .welcome-div {
+  }
+  .welcome-header {
+  }
+  .welcome-h1 {
+  }
+  .welcome-message-div {
+  }
+  .welcome-message-textblock {
+  }
+  .claims-process-container {
+  }
+  .claims-process-wrapper {
+  }
+  .claim-process-div {
+  }
+  .claims-process-step-textblock {
+  }
+  .claims-process-step-graphic.step1 {
+  }
+  .claims-process-text-textblock {
+  }
+  .claim-process-div.middle {
+  }
+  .claims-process-step-textblock.step1 {
+  }
+  .claims-process-step-graphic.step2 {
+  }
+  .claims-process-step-textblock.step2 {
+  }
+  .claims-process-step-graphic.step3 {
+  }
+  .multi-owner-container {
+  }
+  .multi-owner-wrapper {
+  }
+  .multi-owner-div-left {
+  }
+  .multi-owner-div-right {
+  }
+  .multi-owner-div-textblock-1 {
+  }
+  .multi-owner-div-textblock-2 {
+  }
+}
+@media (max-width: 767px) {
+  .welcome-wrapper {
+    width: 481px;
+  }
+  .welcome-div {
+    display: block;
+    width: 481px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-color: hsla(216, 2%, 54%, 0.5);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0px 20px;
+  }
+  .welcome-header {
+    width: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    border-style: none none;
+    border-color: hsla(216, 2%, 54%, 0.5);
+    border-width: 1px;
+  }
+  .welcome-h1 {
+    display: inline;
+    margin-bottom: 0px;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 13px;
+    letter-spacing: 0.75px;
+  }
+  .welcome-message-div {
+    width: 100%;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    padding-left: 7.5px;
+  }
+  .welcome-ul {
+    padding-left: 25px;
+  }
+  .welcome-message-textblock {
+    font-size: 12px;
+    padding: 0px 5px;
+    margin-bottom: 10px;
+  }
+  .welcome-wrapper.pick {
+    width: 481px;
+  }
+  .claims-process-container {
+    width: 480px;
+    border-style: none solid none none;
+    margin-bottom: 0px;
+  }
+  .claims-process-wrapper {
+  }
+  .claim-process-div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .claims-process-step-textblock {
+    font-size: 12px;
+  }
+  .claims-process-step-graphic {
+    width: 74px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .claims-process-text-textblock {
+    font-size: 12px;
+  }
+  .claims-process-step-textblock.step1 {
+    font-size: 14px;
+  }
+  .claims-process-step-graphic.step1 {
+    width: 60px;
+    height: 60px;
+  }
+  .claims-process-step-textblock.step2 {
+    font-size: 14px;
+  }
+  .claims-process-step-graphic.step2 {
+    width: 53px;
+    height: 60px;
+  }
+  .multi-owner-container {
+    width: 450px;
+  }
+  .multi-owner-wrapper {
+  }
+  .multi-owner-div-left {
+    display: none;
+  }
+  .multi-owner-div-right {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  .multi-owner-div-textblock-1 {
+    font-size: 14px;
+  }
+  .multi-owner-div-textblock-2 {
+  }
+
+  .myclaims-instructionscontainer {
+    width: 450px;
+    padding: 15px 15px 0px;
+  }
+
+  .instructions-header-textheader {
+    font-size: 14px;
+  }
+
+  .instructions-rowwrapper {
+    padding: 20px 10px 15px;
+  }
+  .instructions-row-contentdiv {
+    width: auto;
+    padding-right: 15px;
+    padding-left: 10px;
+  }
+  .instructions-row-textheader {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+  .instructions-row-textblock {
+    font-size: 9px;
+    line-height: 18px;
+  }
+  .instructions-row-graphicdiv {
+    width: auto;
+  }
+  .instructions-row-navdiv {
+    width: auto;
+  }
+  .instructions-row-nav-task-icon {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 479px) {
+  .claims-container {
+    display: block;
+  }
+  .welcome-wrapper {
+    width: 350px;
+    margin-bottom: 30px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .welcome-div {
+    width: auto;
+    height: auto;
+    float: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #fff;
+  }
+  .welcome-header {
+    font-size: 12px;
+    height: auto;
+  }
+  .welcome-h1 {
+    display: inline;
+    height: auto;
+    margin-bottom: 15px;
+    padding-left: 0px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .welcome-message-div {
+    padding: 5px 10px 5px 10px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .welcome-message-textblock {
+    display: block;
+    margin-bottom: 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: left;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+  }
+  .welcome-wrapper.pick {
+    width: 350px;
+  }
+  .claims-process-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 349px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .claims-process-wrapper {
+    width: auto;
+  }
+  .claim-process-div {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .claims-process-step-textblock {
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .claims-process-step-graphic {
+    width: 99px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .claims-process-text-textblock {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .claim-process-div.middle {
+    border-style: solid none;
+    border-top-width: 1px;
+    border-top-color: hsla(216, 2%, 54%, 0.5);
+    border-bottom-width: 1px;
+    border-bottom-color: hsla(216, 2%, 54%, 0.5);
+  }
+  .claims-process-step-graphic.step1 {
+    width: 80px;
+    height: 80px;
+  }
+  .claims-process-step-graphic.step2 {
+    width: 73px;
+    height: 80px;
+  }
+  .multi-owner-container {
+    width: auto;
+  }
+  .multi-owner-wrapper {
+  }
+
+  .multi-owner-div-right {
+    padding: 20px 20px 10px;
+  }
+  .multi-owner-div-textblock-1 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .multi-owner-div-textblock-2 {
+    font-size: 11px;
+  }
+
+  .myclaims-instructionscontainer {
+    width: auto;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .instructions-headerwrapper {
+    padding-left: 10px;
+  }
+  .instructions-header-textheader {
+    font-size: 12px;
+  }
+  .instructions-header-textblock {
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .instructions-row-contentdiv {
+    width: auto;
+    padding-right: 0px;
+  }
+  .instructions-row-navdiv.hidden {
+    display: none;
+  }
+
+  .submitted-claims-wrapper {
+    display: block;
+    width: auto;
+  }
+}

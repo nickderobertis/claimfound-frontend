@@ -1,0 +1,594 @@
+.locationoverviewcontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 150px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.locationoverviewwrapper {
+  width: 1306px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.locationoverview-headerdiv {
+  margin-bottom: 70px;
+}
+
+.locationoverview-header-textblock1 {
+  margin-bottom: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.locationoverview-header-h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Graphik, sans-serif;
+  font-size: 60px;
+  line-height: 80px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.locationoverview-statcontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin-bottom: 20px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+}
+
+.locationoverview-statwrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+  margin-bottom: 50px;
+}
+
+.locationoverview-stat-graphic {
+  margin-right: 20px;
+}
+
+.locationoverview-stat-graphic.claim {
+  width: 35px;
+  height: 46px;
+  background-image: url("./images/claims-graphic.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.locationoverview-stat-graphic.coin {
+  width: 53px;
+  height: 56px;
+  background-image: url("./images/coins-graphic.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.locationoverview-stat-graphic.money-stack {
+  width: 44px;
+  height: 47px;
+  background-image: url("./images/money-stack-graphic.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.locationoverview-stat-graphic.person {
+  width: 31px;
+  height: 47px;
+  background-image: url("./images/claim-people-graphic.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.locationoverview-stat-graphic.business {
+  width: 46px;
+  height: 47px;
+  background-image: url("./images/business-claim-graphic.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.locationoverview-stat-textblock1 {
+  font-family: Graphik, sans-serif;
+  color: #245aaa;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  margin-bottom: 2.5px;
+}
+
+.locationoverview-stat-textblock3 {
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.locationoverview-stat-textblock2 {
+  font-family: Graphik, sans-serif;
+  color: #24d2aa;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  margin-bottom: 2.5px;
+}
+
+.coins {
+  width: 55px;
+  height: 47px;
+  background-image: url("./images/coins-graphic.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.locationoverview-infodiv {
+  width: 50%;
+}
+
+.locationoverview-info-h3 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family: Graphik, sans-serif;
+  color: #245aaa;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.locationoverview-info-span {
+  color: #245aaa;
+  font-weight: 600;
+}
+
+.locationoverview-info-textblock {
+  margin-bottom: 5px;
+  font-family: Graphik, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+
+.locationoverview-graphicdiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  margin-bottom: 0px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.locationoverview-graphic {
+  position: relative;
+  top: -280px;
+  width: 481px;
+  height: 359px;
+  background-image: url("./images/Location-plants-graphic.svg");
+  background-position: 0px 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.locationoverview-dropdowncontainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.locationdropdowncomponent {
+}
+
+.locationoverview-info-listDiv {
+  padding-left: 25px;
+  margin-bottom: 0px;
+}
+
+.locationoverview-info-listItem {
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+  .locationoverviewcontainer {
+  }
+
+  .locationoverviewwrapper {
+  }
+
+  .locationoverview-headerdiv {
+  }
+
+  .locationoverview-header-textblock1 {
+  }
+
+  .locationoverview-header-h1 {
+  }
+
+  .locationoverview-statcontainer {
+    width: 90%;
+  }
+
+  .locationoverview-statwrapper {
+  }
+
+  .locationoverview-stat-graphic {
+  }
+
+  .locationoverview-stat-graphic.claim {
+  }
+
+  .locationoverview-stat-graphic.coin {
+  }
+
+  .locationoverview-stat-graphic.money-stack {
+  }
+
+  .locationoverview-stat-graphic.person {
+  }
+
+  .locationoverview-stat-graphic.business {
+  }
+
+  .locationoverview-stat-textblock1 {
+  }
+
+  .locationoverview-stat-textblock3 {
+  }
+
+  .locationoverview-stat-textblock2 {
+  }
+
+  .locationoverview-infodiv {
+    width: 45%;
+  }
+
+  .locationoverview-info-h3 {
+  }
+
+  .locationoverview-info-span {
+  }
+
+  .locationoverview-info-textblock {
+  }
+
+  .locationoverview-graphicdiv {
+    height: 46px;
+  }
+
+  .locationoverview-graphic {
+  }
+
+  .locationoverview-dropdowncontainer {
+  }
+
+  .locationdropdowncomponent {
+  }
+
+  .locationoverview-dropdownwrapper {
+  }
+
+  .locationoverview-dropdowntoggle {
+  }
+
+  .locationoverview-dropdown-textblock {
+  }
+
+  .locationoverview-dropdownlist.w--open {
+  }
+
+  .locationoverview-dropdownlist-textblock {
+  }
+
+  .locationoverview-dropdownlist-textblock:hover {
+  }
+}
+
+@media (max-width: 991px) {
+  .locationoverviewcontainer {
+    padding-top: 115px;
+  }
+  .locationoverviewwrapper {
+    width: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .locationoverview-headerdiv {
+    margin-bottom: 50px;
+  }
+
+  .locationoverview-header-h1 {
+    font-size: 54px;
+    line-height: 64px;
+  }
+
+  .locationoverview-statcontainer {
+    width: 100%;
+    margin-bottom: 0px;
+    padding-left: 25px;
+  }
+  .locationoverview-statwrapper {
+    width: 50%;
+  }
+  .locationoverview-infodiv {
+    width: 50%;
+  }
+
+  .locationoverview-info-h3 {
+    margin-bottom: 10px;
+  }
+
+  .locationoverview-info-textblock {
+    margin-bottom: 10px;
+  }
+
+  .locationoverview-info-textblock {
+    padding-right: 30px;
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .locationoverview-graphicdiv {
+    height: 30px;
+  }
+  .locationoverview-graphic {
+    top: -260px;
+    width: 375px;
+    height: 280px;
+    margin-right: 0px;
+  }
+  .locationoverview-dropdowncontainer {
+    margin-bottom: 0px;
+  }
+
+  .locationoverview-info-listItem {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 857px) {
+  .locationoverview-graphic {
+    top: -312px;
+  }
+}
+
+@media (max-width: 767px) {
+  .locationoverviewwrapper {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .locationoverview-headerdiv {
+    margin-bottom: 40px;
+  }
+  .locationoverview-statcontainer {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .locationoverview-statwrapper {
+    width: 50%;
+    margin-bottom: 40px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .locationoverview-stat-graphic {
+    margin-right: 10px;
+  }
+  .locationoverview-stat-graphic.claim {
+    width: 25px;
+    height: 33px;
+  }
+  .locationoverview-stat-graphic.coin {
+    width: 35px;
+    height: 30px;
+  }
+  .locationoverview-stat-graphic.money-stack {
+    width: 30px;
+    height: 32px;
+  }
+  .locationoverview-stat-graphic.person {
+    width: 25px;
+    height: 38px;
+  }
+  .locationoverview-stat-graphic.business {
+    width: 30px;
+    height: 32px;
+  }
+  .locationoverview-stat-textblock1 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .locationoverview-stat-textblock3 {
+    font-size: 9px;
+  }
+  .locationoverview-stat-textblock2 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .locationoverview-infodiv {
+    width: 100%;
+    margin-bottom: 40px;
+    padding-right: 25px;
+  }
+  .locationoverview-info-textblock {
+    margin-bottom: 10px;
+    padding-right: 0px;
+    font-size: 12px;
+    line-height: 23px;
+  }
+  .locationoverview-graphicdiv {
+    height: auto;
+    margin-bottom: 40px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .locationoverview-graphic {
+    top: 0px;
+  }
+  .locationoverview-dropdowncontainer {
+  }
+  .locationdropdowncomponent {
+  }
+}
+
+@media (max-width: 479px) {
+  .locationoverviewcontainer {
+    padding-top: 95px;
+  }
+
+  .locationoverviewwrapper {
+    padding: 0px 5px;
+  }
+
+  .locationoverview-headerdiv {
+    margin-bottom: 40px;
+    padding-left: 15px;
+  }
+  .locationoverview-header-textblock1 {
+    margin-bottom: 10px;
+  }
+  .locationoverview-header-h1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .locationoverview-statcontainer {
+    padding-left: 35px;
+    margin-bottom: 10px;
+  }
+  .locationoverview-statwrapper {
+    width: 100%;
+    margin-bottom: 50px;
+    padding-left: 0px;
+  }
+  .locationoverview-statwrapper.end {
+    margin-bottom: 30px;
+  }
+  .locationoverview-stat-graphic {
+    margin-right: 20px;
+  }
+  .locationoverview-stat-graphic.claim {
+    width: 40px;
+    height: 40px;
+  }
+  .locationoverview-stat-graphic.coin {
+    width: 40px;
+    height: 33px;
+  }
+  .locationoverview-stat-graphic.money-stack {
+    width: 40px;
+    height: 44px;
+  }
+  .locationoverview-stat-graphic.person {
+    width: 40px;
+    height: 46px;
+  }
+  .locationoverview-stat-graphic.business {
+    width: 40px;
+    height: 40px;
+  }
+  .locationoverview-stat-textblock1 {
+    font-size: 16px;
+  }
+  .locationoverview-stat-textblock3 {
+    font-size: 10px;
+  }
+  .locationoverview-stat-textblock2 {
+    font-size: 16px;
+  }
+  .locationoverview-infodiv {
+    margin-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .locationoverview-graphicdiv {
+    margin-bottom: 30px;
+  }
+  .locationoverview-graphic {
+    width: 320px;
+    height: 240px;
+  }
+  .locationoverview-dropdowncontainer {
+    margin-bottom: 0px;
+    padding-right: 25px;
+    padding-left: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .locationoverview-info-listDiv {
+    padding-left: 15px;
+  }
+
+  .locationoverview-info-listItem {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
