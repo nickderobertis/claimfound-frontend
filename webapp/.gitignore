@@ -1,12 +1,5 @@
-env.js
 .idea
 documentation
-frontend.packages.ts
-src/app/global/error-response-types.ts
-src/app/global/utils/landing-links.ts
-src/app/global/env.ts
-constants/
-src/app/global/utils/landing-links.ts
 setup-config.ini
 
 # See http://help.github.com/ignore-files/ for more about ignoring files.
@@ -57,8 +50,3 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Generated files
-src/app/global/org-settings.ts
-svelte-app/src/org-settings.ts
-svelte-app/index.html
-orgdist

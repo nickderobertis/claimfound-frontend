@@ -1,0 +1,2 @@
+export const CLIENT_API_KEY = "1234567";
+export const GOOGLE_MAPS_API_KEY = "AIzaSyBWpdL8aPORGoIhZ27LsGhAn9MGlRJZwPk";
