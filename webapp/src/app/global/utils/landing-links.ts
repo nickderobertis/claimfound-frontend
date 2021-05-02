@@ -8,21 +8,9 @@ export const LANDING_LINKS = {
       url: "/unclaimed-money-success-stories",
       text: "Users",
     },
-    help: {
-      url: "http://help.claimfound.com",
-      text: "Learn",
-    },
     about: {
       url: "/aboutus",
       text: "About Us",
-    },
-    blog: {
-      url: "/blog",
-      text: "Blog",
-    },
-    maps: {
-      url: "/map",
-      text: "Maps",
     },
     signup: {
       url: "/login?get_started=true",
@@ -50,21 +38,9 @@ export const LANDING_LINKS = {
       url: "/unclaimed-money-success-stories",
       text: "Customer Stories",
     },
-    help: {
-      url: "http://help.claimfound.com",
-      text: "Learn",
-    },
     about: {
       url: "/aboutus",
       text: "About Us",
-    },
-    blog: {
-      url: "/blog",
-      text: "Blog",
-    },
-    maps: {
-      url: "/map",
-      text: "Maps",
     },
     signup: {
       url: "/login?get_started=true",

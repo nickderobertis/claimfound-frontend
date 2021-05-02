@@ -13,16 +13,9 @@
       >
         {{ links.header.userStories.text }}
       </a>
-      <a class="header-textlink" href="{{ links.header.help.url }}">
-        {{ links.header.help.text }}
-      </a>
 
       <a class="header-textlink" routerLink="{{ links.header.about.url }}">
         {{ links.header.about.text }}
-      </a>
-
-      <a class="header-textlink blog" routerLink="{{ links.header.maps.url }}">
-        {{ links.header.maps.text }}
       </a>
 
       <a
@@ -97,27 +90,12 @@
         {{ links.header.userStories.text }}
       </a>
 
-      <a class="hamberger-menu-textlink" href="{{ links.header.help.url }}">
-        {{ links.header.help.text }}
-      </a>
-
       <a
         class="hamberger-menu-textlink"
         routerLink="{{ links.header.about.url }}"
         (click)="hideMenu($event)"
       >
         {{ links.header.about.text }}
-      </a>
-
-      <a class="hamberger-menu-textlink" href="{{ links.header.blog.url }}">
-        {{ links.header.blog.text }}
-      </a>
-
-      <a
-        class="hamberger-menu-textlink"
-        routerLink="{{ links.header.maps.url }}"
-      >
-        {{ links.header.maps.text }}
       </a>
 
       <a
