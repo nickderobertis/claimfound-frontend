@@ -53,13 +53,20 @@ export class PropertySearchService extends BaseService {
       this.storage.write("cf-user-last-name", modelData.lastName);
     }
 
-    let options = new ServiceRequestOptions({
-      url: "namecheck",
-      data: modelData.toRequestArgs(),
-    });
-    return this.postInject(this.get(options), (res: NameCheckApiArgs) => {
-      return new NameCheckModel(res);
-    });
+    const data: NameCheckApiArgs = {
+      stateWiseSplit: [
+        {
+          state: "FL",
+          number: 102,
+          value: 4564.54,
+        },
+      ],
+      number: 102,
+      totalValue: 4564.54,
+      referralToken: "",
+    };
+
+    return from([new NameCheckModel(data)]);
   }
 
   /**
