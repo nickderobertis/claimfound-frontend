@@ -4,6 +4,8 @@ import { from, Observable } from "rxjs";
 import { NameCheckApiArgs } from "src/app/global/api/interfaces/general/name-check.interface";
 import { NameCheckModel } from "./models/name-check.model";
 import { PropertySearchModel } from "./models/property-search.model";
+import { sleep } from "src/app/global/utils";
+import { delay } from "rxjs/operators";
 
 @Injectable()
 export class MockSearchService {
@@ -14,7 +16,7 @@ export class MockSearchService {
 
   search(model: PropertySearchModel): Observable<NameCheckModel> {
     this.searchModel = model;
-    return from([this.result]);
+    return from([this.result]).pipe(delay(getRandomFloat(3000)));
   }
 
   private get _cacheBeginKey(): string {
@@ -61,17 +63,21 @@ function getRandomInt(max: number): number {
   return Math.floor(Math.random() * (max - 1)) + 1;
 }
 
-function getRandomFloat(max: number): number {
+function getRandomFloatMin10(max: number): number {
   if (max < 10) {
     throw new Error("max above 10");
   }
   return Math.random() * (max - 10) + 10;
 }
 
+function getRandomFloat(max: number): number {
+  return Math.random() * max;
+}
+
 function getMockResult(): NameCheckModel {
   const numClaims = getRandomInt(1000);
 
-  const totalValue = getRandomFloat(200 * numClaims);
+  const totalValue = getRandomFloatMin10(200 * numClaims);
 
   return nameCheckModelFromNumAndValue(numClaims, totalValue);
 }
